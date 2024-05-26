@@ -1,0 +1,28 @@
+project:
+  type: website 
+
+website:
+  title: "Minyeong Yoon"
+  navbar: 
+    left: 
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: project.qmd
+        text: Project
+      - href: "CV_Yoon_May2024.pdf"
+        text: Curriculum Vitae
+      - href: http://www.linkedin.com/in/minyeongyoon 
+        text: LinkedIn 
+        
+        
+format:
+  html:
+    theme: Lux 
+    css: styles.css
+    toc: true
+    
+editor: visual 
