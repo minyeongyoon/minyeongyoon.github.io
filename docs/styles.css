@@ -1,0 +1,7 @@
+/*-- scss:defaults --*/
+$primary: #003366;
+$font-family-sans-serif: "Source Sans Pro", sans-serif;
+$h1-font-size: 2.2rem;
+/*-- scss:rules --*/
+.navbar { border-bottom: 3px solid $primary; }
+h2 { border-bottom: 1px solid #e0e0e0; padding-bottom: 0.3rem; } 
