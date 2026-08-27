@@ -1,7 +1,0 @@
----
-title: "Index"
----
-
-## Hello,
-
-My name is Minyeong Yoon, and I am a first-year PhD student in UT dallas.
