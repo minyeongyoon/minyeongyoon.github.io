@@ -1,10 +1,18 @@
 ---
-title: "연구"
+title: "Research"
 ---
 
-My research focuses on evaluating community-based crime prevention and reentry programs, particularly those serving justice-involved youth and emerging adults. I am interested in understanding how program works and individual circumstances shape outcomes such as employment and recidivism, as well as why programs may work differently for different people. Through quantitative research, I seek to identify both the potential and the limitations of these interventions. Ultimately, I hope my research can inform policies and practices that support successful reentry and expand opportunities for justice-involved individuals. 
+My research focuses on evaluating community-based crime prevention and
+reentry programs, particularly those serving justice-involved youth and
+emerging adults. I am interested in understanding how program works and
+individual circumstances shape outcomes such as employment and
+recidivism, as well as why programs may work differently for different
+people. Through quantitative research, I seek to identify both the
+potential and the limitations of these interventions. Ultimately, I hope
+my research can inform policies and practices that support successful
+reentry and expand opportunities for justice-involved individuals.
 
-## 출판물
+## Publications
 
 Yoon, M. (2026). Prevention programs, youth. In J. P. Stamatel, T. Wang,
 K. Powell, & K. Ratajczak (Eds.), The SAGE Encyclopedia of Crime and
@@ -23,33 +31,51 @@ Police Science*, 23(1), 141-169.
 Ahn, J., Kim, Y., Yoon, M., Choi, J., & Seung-Kook, R. (2020). Analysis
 of Statistical Data Usage and Methodology in Korean Criminological
 Research (2016-2020). *Journal of Korean Criminological Association*,
-14(3), 167-184. 
+14(3), 167-184.
 
 ## Manuscripts Under Review
 
-*Krajewski, A. T., Berg, M. T., & Yoon, M. (under review). Disrespect and Dispute Escalation: Evidence from an Experimental Vignette Study.* 
+*Krajewski, A. T., Berg, M. T., & Yoon, M. (under review). Disrespect
+and Dispute Escalation: Evidence from an Experimental Vignette Study.*
 
-## Working Papers 
+## Working Papers
 
-*Effects of Offender Characteristics on Public Perceptions of Parole Decision: A Conjoint Experiment. with Wenyi Wang* 
+*Effects of Offender Characteristics on Public Perceptions of Parole
+Decision: A Conjoint Experiment. with Wenyi Wang*
 
-*Evaluating the Effects of NYC Graffiti Removal Program: Detecting Crime Hotspots. with Pyung Kim* 
+*Evaluating the Effects of NYC Graffiti Removal Program: Detecting Crime
+Hotspots. with Pyung Kim*
 
+## Conference Presentations
 
-## 학회 발표
+"Effects of Offender Characteristics on Public Perceptions of Parole
+Decision: A Conjoint Experiment." \@ European Society of Criminology,
+Sep 2026, Warsaw, Poland
 
-"Effects of Offender Characteristics on Public Perceptions of Parole Decision: A Conjoint Experiment." \@ European Society of Criminology, Sep 2026, Warsaw, Poland 
+"Identifying Key Predictors of Employment Among Justice-Involved
+Emerging Youths: The Role of Vocational Credentialing in Community-Based
+Reentry" (Poster Session) \@ European Society of Criminology, Sep 2026,
+Warsaw, Poland
 
-"Identifying Key Predictors of Employment Among Justice-Involved Emerging Youths: The Role of Vocational Credentialing in Community-Based Reentry" (Poster Session) \@ European Society of Criminology, Sep 2026, Warsaw, Poland 
+“Broken Windows in the Age of Big Data: Detecting Crime Hotspots.” \@
+Academy of Criminal Justice Science (ACJS), Mar 2025, Denver, CO
 
-“Broken Windows in the Age of Big Data: Detecting Crime Hotspots.” \@ Academy of Criminal Justice Science (ACJS), Mar 2025, Denver, CO
+“Spatiotemporal Approach to Social Disorganization and Crime: Evidence
+from Austin's Changing Population.” \@ American Society of Criminology
+(ASC), Nov 2024, San Francisco, CA
 
-“Spatiotemporal Approach to Social Disorganization and Crime: Evidence from Austin's Changing Population.” \@ American Society of Criminology (ASC), Nov 2024, San Francisco, CA 
+“Factors Associated with Arrest Decision Making on Domestic Violence in
+Korea.” \@ Academy of Criminal Justice Science (ACJS), Mar 2024,
+Chicago, IL
 
-“Factors Associated with Arrest Decision Making on Domestic Violence in Korea.” \@ Academy of Criminal Justice Science (ACJS), Mar 2024, Chicago, IL 
+“Exploring Factors Affecting the Willingness of Providing Personal
+Information for Preventing Crime.” (Poster Session) \@ Korean
+Criminological Association, Jun 2021, Online
 
-“Exploring Factors Affecting the Willingness of Providing Personal Information for Preventing Crime.” (Poster Session) \@ Korean Criminological Association, Jun 2021, Online 
+“Factors Associated with the Victim-Offender Overlap in the Juvenile
+Cybercrime.” \@ Police Trend Research Center, Korean National Police
+University, Dec 2020, South Korea
 
-“Factors Associated with the Victim-Offender Overlap in the Juvenile Cybercrime.” \@ Police Trend Research Center, Korean National Police University, Dec 2020, South Korea 
-
-“Why Does the Victims Turn into a Criminal? - Focusing on Juvenile Cybercrime.” (Poster Session) \@ Korean Criminological Association, Dec 2020, Online 
+“Why Does the Victims Turn into a Criminal? - Focusing on Juvenile
+Cybercrime.” (Poster Session) \@ Korean Criminological Association, Dec
+2020, Online

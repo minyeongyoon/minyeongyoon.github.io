@@ -1,10 +1,10 @@
 ---
-title: "강의"
+title: "Teaching"
 ---
 
 My goal as an educator is to help students move beyond memorizing concepts to critically examining how the criminal justice system operates, whom it affects, and how it might be improved. I view the criminology classroom as a space where students can connect academic knowledge and curiosity with real-world questions about crime, justice, and social responsibility based on evidence. Ultimately, I hope my students can leave my courses better prepared to evaluate information, engage thoughtfully with perspectives different from their own, and contribute to discussions about the criminal justice system. 
 
-## 강사 이력 
+## Teaching Instructor 
 
 - My syllabi are available upon request! 
 
@@ -22,7 +22,7 @@ CRIM 3310 Youth Crime and Justice (Undergraduate Level, Co-teaching, Online, Sum
 
 
 
-## 강의 조교 이력 
+## Teaching Assistant 
 
 EPPS 6316 Applied Regression (Graduate Level, In-Person, Spring 25)
 

@@ -1,6 +1,6 @@
 ---
-title: "홈"
-image: ../Headshot_resize.jpg
+title: "Index"
+image: Headshot_resize.jpg
 about:
   template: trestles 
   image-shape: round
@@ -33,6 +33,6 @@ community sports center.
 
 ## Research Interests
 
-- 청소년 범죄 
-- 지역사회 기반의 범죄 예방 및 재범 방지 프로그램 
-- 프로그램 평가 
+- Juvenile Delinquency
+- Community-based Crime Prevention and Reentry Programs
+- Program Evaluation

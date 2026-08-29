@@ -1,7 +1,7 @@
 ---
-title: "이력서"
+title: "CV"
 ---
 
-[PDF 다운로드](../CV_Yoon_July26.pdf){.btn .btn-primary} 
+[Download PDF](CV_Yoon_July26.pdf){.btn .btn-primary} 
 
 <iframe src="CV_Yoon_July26.pdf" width="100%" height="800px"></iframe> 
