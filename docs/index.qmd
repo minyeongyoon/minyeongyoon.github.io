@@ -1,0 +1,38 @@
+---
+title: "홈"
+image: ../Headshot_resize.jpg
+about:
+  template: trestles 
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:you@utdallas.edu
+    - icon: github
+      text: GitHub
+      href: https://github.com/minyeongyoon 
+    - icon: linkedin
+      text: LinkedIn
+      href: http://www.linkedin.com/in/minyeongyoon 
+    - icon: mortarboard 
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=4JTNrE0AAAAJ&hl=en
+---
+
+My name is Minyeong Yoon, and I am a fourth-year PhD Candidate at the
+University of Texas at Dallas.
+
+My research examines the effectiveness of crime prevention programs
+using quantitative methods, including geospatial analysis and causal
+inference.
+
+Outside of research, I enjoy watching sports, especially baseball ⚾ and
+hockey 🏒. I've recently started learning to play hockey at a local
+community sports center.
+
+## Research Interests
+
+- 청소년 범죄 
+- 지역사회 기반의 범죄 예방 및 재범 방지 프로그램 
+- 프로그램 평가 

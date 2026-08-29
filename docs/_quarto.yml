@@ -1,0 +1,33 @@
+project:
+  type: website 
+  output-dir: ../docs/ko
+
+website:
+  title: "윤민영"
+  description: "지역사회 수준의 범죄예방 프로그램 평가 연구자" 
+  navbar: 
+    left: 
+      - href: index.qmd
+        text: 홈
+      - href: research.qmd
+        text: 연구
+      - href: teaching.qmd
+        text: 강의 
+      - href: awards.qmd
+        text: 수상 및 펠로우십 
+      - href: cv.qmd 
+        text: 이력서
+        
+    right: 
+      - text: English
+        href: ../
+      - icon: github 
+        href: https://github.com/minyeongyoon 
+      - icon: envelope 
+        href: mailto:minyeong.yoon@utdallas.edu 
+        
+format:
+  html:
+    theme: [cosmo, ../styles.css] 
+    css: ../styles.css 
+    toc: true
