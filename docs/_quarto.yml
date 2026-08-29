@@ -1,26 +1,26 @@
 project:
   type: website 
-  output-dir: ../docs/ko
+  output-dir: docs
 
 website:
-  title: "윤민영"
-  description: "지역사회 수준의 범죄예방 프로그램 평가 연구자" 
+  title: "Minyeong Yoon"
+  description: "Community-level Crime Prevention Program Evaluator" 
   navbar: 
     left: 
       - href: index.qmd
-        text: 홈
+        text: Home
       - href: research.qmd
-        text: 연구
+        text: Research
       - href: teaching.qmd
-        text: 강의 
+        text: Teaching 
       - href: awards.qmd
-        text: 수상 및 펠로우십 
+        text: Honors, Awards, & Fellowships 
       - href: cv.qmd 
-        text: 이력서
+        text: Curriculum Vitae
         
     right: 
-      - text: English
-        href: ../
+      - text: 한국어 
+        href: ko/index.html  
       - icon: github 
         href: https://github.com/minyeongyoon 
       - icon: envelope 
@@ -28,6 +28,6 @@ website:
         
 format:
   html:
-    theme: [cosmo, ../styles.css] 
-    css: ../styles.css 
+    theme: [cosmo, styles.css] 
+    css: styles.css 
     toc: true
