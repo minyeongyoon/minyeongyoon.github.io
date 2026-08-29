@@ -2,14 +2,14 @@
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "CV",
+    "title": "이력서",
     "section": "",
     "text": "PDF 다운로드"
   },
   {
     "objectID": "teaching.html",
     "href": "teaching.html",
-    "title": "Teaching",
+    "title": "강의",
     "section": "",
     "text": "My goal as an educator is to help students move beyond memorizing concepts to critically examining how the criminal justice system operates, whom it affects, and how it might be improved. I view the criminology classroom as a space where students can connect academic knowledge and curiosity with real-world questions about crime, justice, and social responsibility based on evidence. Ultimately, I hope my students can leave my courses better prepared to evaluate information, engage thoughtfully with perspectives different from their own, and contribute to discussions about the criminal justice system."
   },
@@ -30,7 +30,7 @@
   {
     "objectID": "awards.html",
     "href": "awards.html",
-    "title": "Honors, Awards, & Fellowships",
+    "title": "수상 및 펠로우십",
     "section": "",
     "text": "International Travel Award – $3,000 award to support international travel to present to a paper at a peer-reviewed conference (Annual Conference of the European Society of Criminology) from Criminology and Criminal Justice Program, The University of Texas at Dallas, Richardson, TX. (2026)\nFinalists, The Outstanding Student Organization of the Year Award from Dean’s Council, School of Economic, Political, and Policy Sciences, The University of Texas at Dallas, Richardson, TX. (2026)\nUTD Korean Alumni Scholarship from Korean Student Association, The University of Texas at Dallas, TX. (2024)"
   },
@@ -51,7 +51,7 @@
   {
     "objectID": "research.html",
     "href": "research.html",
-    "title": "Research",
+    "title": "연구",
     "section": "",
     "text": "My research focuses on evaluating community-based crime prevention and reentry programs, particularly those serving justice-involved youth and emerging adults. I am interested in understanding how program works and individual circumstances shape outcomes such as employment and recidivism, as well as why programs may work differently for different people. Through quantitative research, I seek to identify both the potential and the limitations of these interventions. Ultimately, I hope my research can inform policies and practices that support successful reentry and expand opportunities for justice-involved individuals."
   },
@@ -65,14 +65,14 @@
   {
     "objectID": "research.html#manuscripts-under-review",
     "href": "research.html#manuscripts-under-review",
-    "title": "Research",
+    "title": "연구",
     "section": "Manuscripts Under Review",
     "text": "Manuscripts Under Review\nKrajewski, A. T., Berg, M. T., & Yoon, M. (under review). Disrespect and Dispute Escalation: Evidence from an Experimental Vignette Study."
   },
   {
     "objectID": "research.html#working-papers",
     "href": "research.html#working-papers",
-    "title": "Research",
+    "title": "연구",
     "section": "Working Papers",
     "text": "Working Papers\nEffects of Offender Characteristics on Public Perceptions of Parole Decision: A Conjoint Experiment. with Wenyi Wang\nEvaluating the Effects of NYC Graffiti Removal Program: Detecting Crime Hotspots. with Pyung Kim"
   },
@@ -86,15 +86,57 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Index",
+    "title": "홈",
     "section": "",
     "text": "My name is Minyeong Yoon, and I am a fourth-year PhD Candidate at the University of Texas at Dallas.\nMy research examines the effectiveness of crime prevention programs using quantitative methods, including geospatial analysis and causal inference.\nOutside of research, I enjoy watching sports, especially baseball ⚾ and hockey 🏒. I’ve recently started learning to play hockey at a local community sports center."
   },
   {
     "objectID": "index.html#research-interests",
     "href": "index.html#research-interests",
-    "title": "Index",
+    "title": "홈",
     "section": "Research Interests",
-    "text": "Research Interests\n\nJuvenile Delinquency\nCommunity-based Crime Prevention and Reentry Programs\nProgram Evaluation"
+    "text": "Research Interests\n\n청소년 범죄\n지역사회 기반의 범죄 예방 및 재범 방지 프로그램\n프로그램 평가"
+  },
+  {
+    "objectID": "teaching.html#강사-이력",
+    "href": "teaching.html#강사-이력",
+    "title": "강의",
+    "section": "강사 이력",
+    "text": "강사 이력\n\nMy syllabi are available upon request!\n\nCRIM 1301 Introduction to Criminal Justice (Undergraduate Level, In-person, Fall 26)\nCRIM 3303 Advanced Criminal Justice (Undergraduate Level, Co-teaching, In-person, Summer 26)\nCRIM 3307 Immigration and Crime (Undergraduate Level, In-person, Spring 26)\nCRIM 3310 Youth Crime and Justice (Undergraduate Level, Co-teaching, Online, Summer 25)\nCRIM 3310 Youth Crime and Justice (Undergraduate Level, In-Person, Fall 24)\nCRIM 3310 Youth Crime and Justice (Undergraduate Level, Co-teaching, Online, Summer 24)"
+  },
+  {
+    "objectID": "teaching.html#강의-조교-이력",
+    "href": "teaching.html#강의-조교-이력",
+    "title": "강의",
+    "section": "강의 조교 이력",
+    "text": "강의 조교 이력\nEPPS 6316 Applied Regression (Graduate Level, In-Person, Spring 25)\nCRIM 4322 Senior Research Seminar (Undergraduate Level, In-Person, Spring 25)\nCRIM 3302 Advanced Criminology (Undergraduate Level, Online, Spring 24)\nCRIM 3302 Advanced Criminology (Undergraduate Level, Online, Fall 23)"
+  },
+  {
+    "objectID": "awards.html#미국",
+    "href": "awards.html#미국",
+    "title": "수상 및 펠로우십",
+    "section": "",
+    "text": "International Travel Award – $3,000 award to support international travel to present to a paper at a peer-reviewed conference (Annual Conference of the European Society of Criminology) from Criminology and Criminal Justice Program, The University of Texas at Dallas, Richardson, TX. (2026)\nFinalists, The Outstanding Student Organization of the Year Award from Dean’s Council, School of Economic, Political, and Policy Sciences, The University of Texas at Dallas, Richardson, TX. (2026)\nUTD Korean Alumni Scholarship from Korean Student Association, The University of Texas at Dallas, TX. (2024)"
+  },
+  {
+    "objectID": "awards.html#대한민국",
+    "href": "awards.html#대한민국",
+    "title": "수상 및 펠로우십",
+    "section": "대한민국",
+    "text": "대한민국\nAcademic Excellence Scholarship for Freshmen from Korean National Police University, Asan, South Korea. (2020)\nMerit Scholarship from College of Social Sciences, Chung-Ang University, Seoul, South Korea. (2018)\n3rd Da Vinci Software Hackathon Contest Excellence Award from Da Vinci Software Education Institute, Chung-Ang University, Seoul, South Korea. (2018)\n1st On-campus Academic Conference (2nd Place) from College of Social Sciences, Chung-Ang University, Seoul, South Korea. (2018)\nNational Digital Forensic Center (NDFC) “Scientific Investigation in the 4th Industrial Revolution Undergraduate/Graduate Student Idea Contest” Excellence Award from Supreme Prosecutors’ Office of the Republic of Korea & National Research Foundation of Korea, Seoul, South Korea. (2018)"
+  },
+  {
+    "objectID": "research.html#출판물",
+    "href": "research.html#출판물",
+    "title": "연구",
+    "section": "출판물",
+    "text": "출판물\nYoon, M. (2026). Prevention programs, youth. In J. P. Stamatel, T. Wang, K. Powell, & K. Ratajczak (Eds.), The SAGE Encyclopedia of Crime and Gender. SAGE Publications.\nHong, S., Hull, K. A., Yoon, M., Kim, D., & Kim, Y. (2026). Gender differences in fear of crime: Analyzing the impact of various levels of factors in South Korea. Victims & Offenders, 21(6), 1184-1202. [DOI]\nYoon, M., & Roh, S. H. (2023). Factors Associated with the Victim-Offender Overlap in the Juvenile Cyber Crime. The Journal of Police Science, 23(1), 141-169. [DOI]\nAhn, J., Kim, Y., Yoon, M., Choi, J., & Seung-Kook, R. (2020). Analysis of Statistical Data Usage and Methodology in Korean Criminological Research (2016-2020). Journal of Korean Criminological Association, 14(3), 167-184."
+  },
+  {
+    "objectID": "research.html#학회-발표",
+    "href": "research.html#학회-발표",
+    "title": "연구",
+    "section": "학회 발표",
+    "text": "학회 발표\n“Effects of Offender Characteristics on Public Perceptions of Parole Decision: A Conjoint Experiment.” @ European Society of Criminology, Sep 2026, Warsaw, Poland\n“Identifying Key Predictors of Employment Among Justice-Involved Emerging Youths: The Role of Vocational Credentialing in Community-Based Reentry” (Poster Session) @ European Society of Criminology, Sep 2026, Warsaw, Poland\n“Broken Windows in the Age of Big Data: Detecting Crime Hotspots.” @ Academy of Criminal Justice Science (ACJS), Mar 2025, Denver, CO\n“Spatiotemporal Approach to Social Disorganization and Crime: Evidence from Austin’s Changing Population.” @ American Society of Criminology (ASC), Nov 2024, San Francisco, CA\n“Factors Associated with Arrest Decision Making on Domestic Violence in Korea.” @ Academy of Criminal Justice Science (ACJS), Mar 2024, Chicago, IL\n“Exploring Factors Affecting the Willingness of Providing Personal Information for Preventing Crime.” (Poster Session) @ Korean Criminological Association, Jun 2021, Online\n“Factors Associated with the Victim-Offender Overlap in the Juvenile Cybercrime.” @ Police Trend Research Center, Korean National Police University, Dec 2020, South Korea\n“Why Does the Victims Turn into a Criminal? - Focusing on Juvenile Cybercrime.” (Poster Session) @ Korean Criminological Association, Dec 2020, Online"
   }
 ]
