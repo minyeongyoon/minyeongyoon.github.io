@@ -41,7 +41,7 @@ and Dispute Escalation: Evidence from an Experimental Vignette Study.*
 ## Working Papers
 
 *Effects of Offender Characteristics on Public Perceptions of Parole
-Decision: A Conjoint Experiment. with Wenyi Wang*
+Decision: A Conjoint Experiment. with Wenyi Wang* -> Data-generating process: Primary data collection - Conducted online surveys to all students at the University of Texas at Dallas, using Qualtrics after getting approved by IRB. After completing distribution, data have been processed using approved computers only. 
 
 *Evaluating the Effects of NYC Graffiti Removal Program: Detecting Crime
 Hotspots. with Pyung Kim*
