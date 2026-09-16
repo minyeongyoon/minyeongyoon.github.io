@@ -1,0 +1,37 @@
+project:
+  type: website 
+  output-dir: docs
+
+website:
+  title: "Minyeong Yoon"
+  description: "Community-level Crime Prevention Program Evaluator" 
+  navbar: 
+    left: 
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching 
+      - href: awards.qmd
+        text: Honors, Awards, & Fellowships 
+      - text: Assignments
+        menu: 
+        - href: assignments/assign02.qmd
+          text: Assignment 2 
+      - href: cv.qmd 
+        text: Curriculum Vitae
+        
+    right: 
+      - text: 한국어 
+        href: ko/index.html 
+      - icon: github 
+        href: https://github.com/minyeongyoon 
+      - icon: envelope 
+        href: mailto:minyeong.yoon@utdallas.edu 
+        
+format:
+  html:
+    theme: [cosmo, styles.css] 
+    css: styles.css 
+    toc: true

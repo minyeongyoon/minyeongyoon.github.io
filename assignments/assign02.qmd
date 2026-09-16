@@ -1,0 +1,55 @@
+---
+title: "Assignment 2"
+format: html 
+---
+
+### Query Parameters
+
+- **Search terms:** Trump, Harris, and Election
+- **Geography:** Worldwide
+- **Time window:** Past 5 years
+- **Category:** Crime & Justice 
+- **Search type:** Web Search 
+- **Retrieval date and time:** September 15, 2026, 1:39 PM
+
+I first collected Google Trends data manually from the website and then reproduced the query using the `gtrendsR` package in R. The five-year window produced weekly observations. When I changed the time window to the past 30 days, the observations changed to daily intervals.
+
+Google Trends values are normalized relative search-interest scores rather than raw search counts or percentages. A value of 100 represents the peak search interest within the selected query, while 0 indicates very low relative search interest rather than necessarily zero searches.
+
+```{r}
+#| label: main-query
+#| eval: false
+
+library(gtrendsR)
+library(readr) 
+
+TrumpHarrisElection = gtrends(c("Trump","Harris","election"), onlyInterest = TRUE, gprop = "web", time = "today+5-y", category = 704, ) # last five years
+the_df=TrumpHarrisElection$interest_over_time
+plot(TrumpHarrisElection)
+write_csv(the_df, paste0("gtrends_worldwide_5y_CrimeJustice", Sys.Date(), ".csv")) 
+
+``` 
+
+### Search Term and Measurement Changes 
+
+When I removed Election and repeated the search using only Trump and Harris, the values for the remaining terms remained similar. Because Election had relatively low search interest in the original query, its removal produced only minor changes in the normalized values. 
+
+```{r}
+#| label: remove-election
+#| eval: false
+#| 
+TrumpHarris <- gtrends(c("Trump", "Harris"), onlyInterest = TRUE,  gprop = "web", time = "today+5-y", category = 704, )
+
+TrumpHarris_df <- TrumpHarris$interest_over_time 
+```
+
+I also compared "Kamala Harris" with "Harris." The two series were different. This matters because a search term does not necessarily measure the exact concept of interest. "Harris" can refer to people, places, or organizations other than Kamala Harris, while "Kamala Harris" is a more specific search term. 
+
+### Website versus R code
+
+The website and R results were identical when I used the same search terms. The values and overall temporal patterns matched across the two methods.
+
+The two approaches differ methodologically. Manual website downloads require the researcher to record the search settings separately, while R code directly documents many of the query parameters and therefore provides clearer provenance. R is also more scalable because many terms or locations can be collected programmatically rather than downloaded individually. 
+However, R code can be fragile because it relies on the Google Trends service rather than an official public API. Reproducibility is also imperfect because Google Trends relies on sampled and normalized search data. 
+
+When I repeated the same R query a few minutes later, the results were slightly different. This suggests that findings based on Google Trends should be interpreted as relative and potentially sample-dependent measures rather than fixed counts. 
