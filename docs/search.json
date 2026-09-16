@@ -81,7 +81,7 @@
     "href": "research.html#working-papers",
     "title": "Research",
     "section": "Working Papers",
-    "text": "Working Papers\nEffects of Offender Characteristics on Public Perceptions of Parole Decision: A Conjoint Experiment. with Wenyi Wang\nEvaluating the Effects of NYC Graffiti Removal Program: Detecting Crime Hotspots. with Pyung Kim"
+    "text": "Working Papers\nEffects of Offender Characteristics on Public Perceptions of Parole Decision: A Conjoint Experiment. with Wenyi Wang -&gt; Data-generating process: Primary data collection - Conducted online surveys to all students at the University of Texas at Dallas, using Qualtrics after getting approved by IRB. After completing distribution, data have been processed using approved computers only.\nEvaluating the Effects of NYC Graffiti Removal Program: Detecting Crime Hotspots. with Pyung Kim"
   },
   {
     "objectID": "research.html#conference-presentations",
@@ -96,5 +96,12 @@
     "title": "CV",
     "section": "",
     "text": "Download PDF"
+  },
+  {
+    "objectID": "assignments/Assignment 2.html",
+    "href": "assignments/Assignment 2.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "Query Parameters\n\nSearch terms: Trump, Harris, and Election\nGeography: Worldwide\nTime window: Past 5 years\nCategory: Crime & Justice\nSearch type: Web Search\nRetrieval date and time: September 15, 2026, 1:39 PM\n\nI first collected Google Trends data manually from the website and then reproduced the query using the gtrendsR package in R. The five-year window produced weekly observations. When I changed the time window to the past 30 days, the observations changed to daily intervals.\nGoogle Trends values are normalized relative search-interest scores rather than raw search counts or percentages. A value of 100 represents the peak search interest within the selected query, while 0 indicates very low relative search interest rather than necessarily zero searches.\n\nlibrary(gtrendsR)\nlibrary(readr) \n\nTrumpHarrisElection = gtrends(c(\"Trump\",\"Harris\",\"election\"), onlyInterest = TRUE, gprop = \"web\", time = \"today+5-y\", category = 704, ) # last five years\nthe_df=TrumpHarrisElection$interest_over_time\nplot(TrumpHarrisElection)\nwrite_csv(the_df, paste0(\"gtrends_worldwide_5y_CrimeJustice\", Sys.Date(), \".csv\")) \n\n\n\nSearch Term and Measurement Changes\nWhen I removed Election and repeated the search using only Trump and Harris, the values for the remaining terms remained similar. Because Election had relatively low search interest in the original query, its removal produced only minor changes in the normalized values.\n\nTrumpHarris &lt;- gtrends(c(\"Trump\", \"Harris\"), onlyInterest = TRUE,  gprop = \"web\", time = \"today+5-y\", category = 704, )\n\nTrumpHarris_df &lt;- TrumpHarris$interest_over_time \n\nI also compared “Kamala Harris” with “Harris.” The two series were different. This matters because a search term does not necessarily measure the exact concept of interest. “Harris” can refer to people, places, or organizations other than Kamala Harris, while “Kamala Harris” is a more specific search term.\n\n\nWebsite versus R code\nThe website and R results were identical when I used the same search terms. The values and overall temporal patterns matched across the two methods.\nThe two approaches differ methodologically. Manual website downloads require the researcher to record the search settings separately, while R code directly documents many of the query parameters and therefore provides clearer provenance. R is also more scalable because many terms or locations can be collected programmatically rather than downloaded individually. However, R code can be fragile because it relies on the Google Trends service rather than an official public API. Reproducibility is also imperfect because Google Trends relies on sampled and normalized search data.\nWhen I repeated the same R query a few minutes later, the results were slightly different. This suggests that findings based on Google Trends should be interpreted as relative and potentially sample-dependent measures rather than fixed counts."
   }
 ]
