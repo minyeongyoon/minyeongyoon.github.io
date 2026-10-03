@@ -2,24 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Insang Lee, Minyeong Yoon">
 
-<title>Assignment 4: 48-Hour Chart Hackathon – Minyeong Yoon</title>
+<title>Assignment 4: 48-Hour Chart Hackathon – Insang Lee</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
+code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: 1.5em;}
-div.column{flex: auto;}
-@media screen {
-div.columns{gap: min(4vw, 1.5em);}
-div.column{overflow-x: auto;}
-}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -65,23 +62,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9a582cb0f0af47620c0618dc1c3baeb9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -111,18 +108,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Minyeong Yoon</span>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Insang Lee</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -132,42 +129,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research.html"> 
+    <a class="nav-link" href="./research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../teaching.html"> 
+    <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../awards.html"> 
-<span class="menu-text">Honors, Awards, &amp; Fellowships</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
+        <li>
+    <a class="dropdown-item" href="./epps6302.html">
+ <span class="dropdown-text">EPPS 6302</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> 
-<span class="menu-text">Curriculum Vitae</span></a>
+        <li>
+    <a class="dropdown-item" href="./epps6356.html">
+ <span class="dropdown-text">EPPS 6356</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../../assignments/index.html" aria-current="page"> 
-<span class="menu-text">Class Assignments</span></a>
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../ko/index.html"> 
-<span class="menu-text">한국어</span></a>
-  </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/minyeongyoon"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/insanglee"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:minyeong.yoon@utdallas.edu"> <i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:Insang.Lee@utdallas.edu"> <i class="bi bi-envelope" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -177,97 +177,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../assignments/Visualization/assign01.html">EPPS6356</a></li><li class="breadcrumb-item"><a href="../../assignments/Visualization/assign04.html">Assignment 4</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../assignments/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">All Assignments</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">EPPS6302</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../assignments/Collection/assign02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../assignments/Collection/assign03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../assignments/Collection/assign04.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 4</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">EPPS6356</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../assignments/Visualization/assign01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../assignments/Visualization/assign02.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../assignments/Visualization/assign03.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../assignments/Visualization/assign04.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Assignment 4</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -279,13 +192,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#chart-2-table-with-embedded-charts" id="toc-chart-2-table-with-embedded-charts" class="nav-link" data-scroll-target="#chart-2-table-with-embedded-charts">Chart 2: Table with embedded charts</a></li>
   <li><a href="#chart-3-bar-chart" id="toc-chart-3-bar-chart" class="nav-link" data-scroll-target="#chart-3-bar-chart">Chart 3: Bar Chart</a></li>
   <li><a href="#chart-4-column-chart" id="toc-chart-4-column-chart" class="nav-link" data-scroll-target="#chart-4-column-chart">Chart 4: Column chart</a></li>
+  <li><a href="#supporting-documentation" id="toc-supporting-documentation" class="nav-link" data-scroll-target="#supporting-documentation">Supporting Documentation</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../assignments/Visualization/assign01.html">EPPS6356</a></li><li class="breadcrumb-item"><a href="../../assignments/Visualization/assign04.html">Assignment 4</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Assignment 4: 48-Hour Chart Hackathon</h1>
 </div>
@@ -536,23 +450,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>plot2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="hrbkxwlalo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#hrbkxwlalo table {
+<div id="ynvobgrvmi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ynvobgrvmi table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hrbkxwlalo thead, #hrbkxwlalo tbody, #hrbkxwlalo tfoot, #hrbkxwlalo tr, #hrbkxwlalo td, #hrbkxwlalo th {
+#ynvobgrvmi thead, #ynvobgrvmi tbody, #ynvobgrvmi tfoot, #ynvobgrvmi tr, #ynvobgrvmi td, #ynvobgrvmi th {
   border-style: none;
 }
 
-#hrbkxwlalo p {
+#ynvobgrvmi p {
   margin: 0;
   padding: 0;
 }
 
-#hrbkxwlalo .gt_table {
+#ynvobgrvmi .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -578,12 +492,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_caption {
+#ynvobgrvmi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hrbkxwlalo .gt_title {
+#ynvobgrvmi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -595,7 +509,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#hrbkxwlalo .gt_subtitle {
+#ynvobgrvmi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -607,7 +521,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#hrbkxwlalo .gt_heading {
+#ynvobgrvmi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -619,13 +533,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_bottom_border {
+#ynvobgrvmi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_col_headings {
+#ynvobgrvmi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -640,7 +554,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_col_heading {
+#ynvobgrvmi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -660,7 +574,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#hrbkxwlalo .gt_column_spanner_outer {
+#ynvobgrvmi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -672,15 +586,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#hrbkxwlalo .gt_column_spanner_outer:first-child {
+#ynvobgrvmi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hrbkxwlalo .gt_column_spanner_outer:last-child {
+#ynvobgrvmi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hrbkxwlalo .gt_column_spanner {
+#ynvobgrvmi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -692,11 +606,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#hrbkxwlalo .gt_spanner_row {
+#ynvobgrvmi .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hrbkxwlalo .gt_group_heading {
+#ynvobgrvmi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -722,7 +636,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#hrbkxwlalo .gt_empty_group_heading {
+#ynvobgrvmi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -737,15 +651,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#hrbkxwlalo .gt_from_md > :first-child {
+#ynvobgrvmi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hrbkxwlalo .gt_from_md > :last-child {
+#ynvobgrvmi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hrbkxwlalo .gt_row {
+#ynvobgrvmi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -764,7 +678,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#hrbkxwlalo .gt_stub {
+#ynvobgrvmi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -777,7 +691,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hrbkxwlalo .gt_stub_row_group {
+#ynvobgrvmi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -791,15 +705,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#hrbkxwlalo .gt_row_group_first td {
+#ynvobgrvmi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hrbkxwlalo .gt_row_group_first th {
+#ynvobgrvmi .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hrbkxwlalo .gt_summary_row {
+#ynvobgrvmi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -809,16 +723,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hrbkxwlalo .gt_first_summary_row {
+#ynvobgrvmi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_first_summary_row.thick {
+#ynvobgrvmi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hrbkxwlalo .gt_last_summary_row {
+#ynvobgrvmi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -828,7 +742,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_grand_summary_row {
+#ynvobgrvmi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -838,7 +752,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hrbkxwlalo .gt_first_grand_summary_row {
+#ynvobgrvmi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -848,7 +762,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_last_grand_summary_row_top {
+#ynvobgrvmi .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -858,11 +772,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_striped {
+#ynvobgrvmi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hrbkxwlalo .gt_table_body {
+#ynvobgrvmi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -871,7 +785,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_footnotes {
+#ynvobgrvmi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -885,7 +799,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_footnote {
+#ynvobgrvmi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -894,7 +808,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hrbkxwlalo .gt_sourcenotes {
+#ynvobgrvmi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -908,7 +822,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#hrbkxwlalo .gt_sourcenote {
+#ynvobgrvmi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -916,72 +830,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#hrbkxwlalo .gt_left {
+#ynvobgrvmi .gt_left {
   text-align: left;
 }
 
-#hrbkxwlalo .gt_center {
+#ynvobgrvmi .gt_center {
   text-align: center;
 }
 
-#hrbkxwlalo .gt_right {
+#ynvobgrvmi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hrbkxwlalo .gt_font_normal {
+#ynvobgrvmi .gt_font_normal {
   font-weight: normal;
 }
 
-#hrbkxwlalo .gt_font_bold {
+#ynvobgrvmi .gt_font_bold {
   font-weight: bold;
 }
 
-#hrbkxwlalo .gt_font_italic {
+#ynvobgrvmi .gt_font_italic {
   font-style: italic;
 }
 
-#hrbkxwlalo .gt_super {
+#ynvobgrvmi .gt_super {
   font-size: 65%;
 }
 
-#hrbkxwlalo .gt_footnote_marks {
+#ynvobgrvmi .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hrbkxwlalo .gt_asterisk {
+#ynvobgrvmi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hrbkxwlalo .gt_indent_1 {
+#ynvobgrvmi .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hrbkxwlalo .gt_indent_2 {
+#ynvobgrvmi .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hrbkxwlalo .gt_indent_3 {
+#ynvobgrvmi .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hrbkxwlalo .gt_indent_4 {
+#ynvobgrvmi .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hrbkxwlalo .gt_indent_5 {
+#ynvobgrvmi .gt_indent_5 {
   text-indent: 25px;
 }
 
-#hrbkxwlalo .katex-display {
+#ynvobgrvmi .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#hrbkxwlalo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ynvobgrvmi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1016,7 +930,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">1</td>
 <td class="gt_row gt_left" headers="country">Costa Rica</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="98.37" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="100.07" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">68.3</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="98.37" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="100.07" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">68.3</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">81.2</td>
 <td class="gt_row gt_right" headers="life_satisfaction">7.6</td>
@@ -1026,7 +940,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">2</td>
 <td class="gt_row gt_left" headers="country">Guatemala</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="87.42" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="89.11" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.7</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="87.42" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="89.11" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.7</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">72.9</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.7</td>
@@ -1036,7 +950,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">3</td>
 <td class="gt_row gt_left" headers="country">Tajikistan</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="87.36" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="89.05" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.7</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="87.36" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="89.05" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.7</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">72.1</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.0</td>
@@ -1046,7 +960,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">4</td>
 <td class="gt_row gt_left" headers="country">Spain</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="87.25" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="88.95" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.6</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="87.25" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="88.95" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.6</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">84.0</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.6</td>
@@ -1056,7 +970,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">5</td>
 <td class="gt_row gt_left" headers="country">Colombia</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="87.22" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="88.91" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.6</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="87.22" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="88.91" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.6</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">78.1</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.0</td>
@@ -1066,7 +980,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">6</td>
 <td class="gt_row gt_left" headers="country">Switzerland</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="86.91" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="88.60" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.4</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="86.91" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="88.60" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.4</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">84.2</td>
 <td class="gt_row gt_right" headers="life_satisfaction">7.1</td>
@@ -1076,7 +990,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">7</td>
 <td class="gt_row gt_left" headers="country">Ecuador</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="86.86" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="88.56" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.3</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="86.86" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="88.56" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">60.3</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">77.8</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.4</td>
@@ -1086,7 +1000,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">8</td>
 <td class="gt_row gt_left" headers="country">Nicaragua</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="85.81" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="87.50" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">59.6</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="85.81" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="87.50" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">59.6</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">75.3</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.2</td>
@@ -1096,7 +1010,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">9</td>
 <td class="gt_row gt_left" headers="country">Mexico</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="85.74" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="87.44" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">59.5</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="85.74" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="87.44" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">59.5</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">75.4</td>
 <td class="gt_row gt_right" headers="life_satisfaction">7.0</td>
@@ -1106,7 +1020,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">10</td>
 <td class="gt_row gt_left" headers="country">Brazil</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="85.59" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="87.29" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">59.4</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="85.59" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="87.29" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">59.4</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">76.2</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.7</td>
@@ -1116,7 +1030,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">11</td>
 <td class="gt_row gt_left" headers="country">Philippines</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="85.40" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="87.09" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">59.3</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="85.40" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="87.09" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">59.3</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">70.1</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.4</td>
@@ -1126,7 +1040,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">12</td>
 <td class="gt_row gt_left" headers="country">Honduras</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="84.81" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="86.50" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">58.9</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="84.81" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="86.50" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">58.9</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">73.2</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.3</td>
@@ -1136,7 +1050,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">13</td>
 <td class="gt_row gt_left" headers="country">Laos</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="84.72" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="86.42" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">58.8</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="84.72" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="86.42" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">58.8</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">69.5</td>
 <td class="gt_row gt_right" headers="life_satisfaction">5.9</td>
@@ -1146,7 +1060,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">14</td>
 <td class="gt_row gt_left" headers="country">El Salvador</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="84.22" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="85.91" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">58.5</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="84.22" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="85.91" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">58.5</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">72.5</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.8</td>
@@ -1156,7 +1070,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="rank">15</td>
 <td class="gt_row gt_left" headers="country">Albania</td>
 <td class="gt_row gt_left" headers="hpi"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="113.39pt" height="14.17pt" viewbox="0 0 113.39 14.17">
-<g class="svglite"><defs> <style type="text/css">    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {      fill: none;      stroke: #000000;      stroke-linecap: round;      stroke-linejoin: round;      stroke-miterlimit: 10.00;    }    .svglite text {      white-space: pre;    }    .svglite g.glyphgroup path {      fill: inherit;      stroke: none;    }  </style></defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="83.98" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000018" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="85.67" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">58.3</text></g></g>
+<g class="svglite"><defs> </defs><rect width="100%" height="100%" style="stroke: none; fill: none;"></rect><defs> <clippath id="cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw=="> <rect x="0.00" y="0.00" width="113.39" height="14.17"></rect> </clippath></defs><g clip-path="url(#cpMC4wMHwxMTMuMzl8MC4wMHwxNC4xNw==)"><rect x="0.00" y="0.0000000000000018" width="113.39" height="14.17" style="stroke-width: 0.00; stroke: none;"></rect><rect x="5.02" y="0.89" width="83.98" height="12.40" style="stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #5D478B;"></rect><line x1="5.02" y1="14.17" x2="5.02" y2="0.0000000000000016" style="stroke-width: 1.07; stroke-linecap: butt;"></line><text x="85.67" y="10.14" text-anchor="end" style="font-size: 8.54px; font-weight: bold;fill: #FFFFFF; font-family: &quot;Arial&quot;;" textlength="16.62px" lengthadjust="spacingAndGlyphs">58.3</text></g></g>
 </svg></td>
 <td class="gt_row gt_right" headers="life_expectancy">80.0</td>
 <td class="gt_row gt_right" headers="life_satisfaction">6.0</td>
@@ -1399,7 +1313,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Our AI prompts and revisions are documented in <a href="../../assignments/Visualization/prompts.html">prompts.md</a>. Our synergy report is <a href="../../assignments/Visualization/synergyreport.html">synergy report.md</a></p>
+</section>
+<section id="supporting-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-documentation">Supporting Documentation</h2>
+<ul>
+<li><a href="README.md">README</a></li>
+<li><a href="prompts.md">AI Prompts and Revisions</a></li>
+<li><a href="synergyreport.md">Synergy Report</a></li>
+<li><a href="sessionInfo.txt">Session Information</a></li>
+</ul>
 
 
 </section>
