@@ -1,57 +1,67 @@
-# Minyeong Yoon's Academic Website
+# Assignment 4: 48-Hour Chart Hackathon
 
-This repository contains the source files and rendered output for my personal academic website:
+## Team Members
+- Insang Lee
+- Minyeong Yoon
 
-**Website:** https://minyeongyoon.github.io
+## Project Overview
+This repository contains our team submission for EPPS 6356 Assignment 4: 48-Hour Chart Hackathon.
 
-I am a Ph.D. Candidate in Criminology at the University of Texas at Dallas. This website presents my research interests, publications, teaching experience, honors and awards, and curriculum vitae.
+Using the 2025 Happy Planet Index (HPI) data, we created four visualizations in R:
 
-## Built With
+1. Variable-width column chart
+2. Table with embedded charts
+3. Bar chart comparing the Top 20 and Bottom 20 countries by HPI
+4. Column chart comparing mean HPI across continents
 
-The website was created using:
+The charts were created in R and rendered as a Quarto HTML page.
 
-* [Quarto](https://quarto.org/)
-* RStudio
-* GitHub Pages
+## Data
+We used the Happy Planet Index public dataset covering 2006–2025.
 
-## Repository Structure
+Data file:  
+`Happy-Planet-Index-2006-2025-public-data-set.xlsx`
 
-* `_quarto.yml`: Website configuration and navigation
-* `index.qmd`: Home page
-* `research.qmd`: Research and publications
-* `teaching.qmd`: Teaching philosophy and experience
-* `awards.qmd`: Honors, awards, and fellowships
-* `cv.qmd`: Curriculum vitae page
-* `styles.css`: Custom website styling
-* `docs/`: Rendered website files published through GitHub Pages
+Source:  
+Happy Planet Index  
+https://happyplanetindex.org/countries/
 
-## Rebuilding the Website
+For this assignment, we filtered the dataset to observations from 2025.
 
-To rebuild or update this website:
+## Repository Files
+- `assign04.qmd` — Quarto source file containing the R code and four charts
+- `assign04.html` — rendered assignment page
+- `Happy-Planet-Index-2006-2025-public-data-set.xlsx` — HPI dataset
+- `prompts.md` — AI prompt and revision documentation
+- `synergyreport.md` — team synergy report
+- `sessionInfo.txt` — session information for both team members, including R version, platform, locale, time zone, and loaded packages
+- `README.md` — project documentation
 
-1. Clone or download this repository.
-2. Open the `.Rproj` file in RStudio.
-3. Make sure Quarto is installed and available in RStudio.
-4. Edit the relevant `.qmd` source files.
-5. Save the changes.
-6. Click **Render Website** in RStudio, or run the following command in the Terminal:
+## R Packages
+The project uses the following R packages:
 
-```bash
-quarto render
-```
+- `readxl`
+- `tidyverse`
+- `patchwork`
+- `dplyr`
+- `ggplot2`
+- `gt`
+- `gtExtras`
+- `svglite`
 
-7. Confirm that the updated HTML files have been generated in the `docs/` directory.
-8. Review the changes in GitHub Desktop.
-9. Commit the source files and the updated `docs/` files with a meaningful commit message.
-10. Push the commit to the `main` branch on GitHub.
+## Reproducibility
+To reproduce the charts:
 
-GitHub Pages publishes the website from the `docs/` directory of the `main` branch.
+1. Download or clone the repository.
+2. Keep the HPI Excel file in the same folder as `assign04.qmd`.
+3. Open `assign04.qmd` in RStudio.
+4. Make sure the required R packages are installed.
+5. Restart R to begin with a clean R session.
+6. Render `assign04.qmd`.
 
-## Data and Privacy
+Rendering `assign04.qmd` from a clean R session should reproduce all four charts using only the files included in the repository.
 
-This repository does not contain confidential research data, personally identifiable information, passwords, or authentication credentials.
+The `sessionInfo.txt` file records the R environments used by both team members.
 
-## License
-
-The website source code and configuration files are available under the [MIT License](LICENSE).
-All personal photographs, CV materials, publication information, and original written content are © 2026 Minyeong Yoon and are not covered by the MIT License unless otherwise noted. 
+## AI Use
+AI tools were used to assist with R coding, troubleshooting, and visualization design. Full prompts and revisions are documented in `prompts.md`.
