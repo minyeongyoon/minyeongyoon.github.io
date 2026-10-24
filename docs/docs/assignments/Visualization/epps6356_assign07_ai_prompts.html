@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Insang Lee">
+<meta name="author" content="Minyeong Yoon">
+<meta name="dcterms.date" content="2026-10-23">
+
+<title>AI Prompts and Revisions – Minyeong Yoon</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9a582cb0f0af47620c0618dc1c3baeb9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Minyeong Yoon</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../awards.html"> 
+<span class="menu-text">Honors, Awards, &amp; Fellowships</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html"> 
+<span class="menu-text">Curriculum Vitae</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../assignments/index.html"> 
+<span class="menu-text">Class Assignments</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../ko/index.html"> 
+<span class="menu-text">한국어</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/minyeongyoon"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:minyeong.yoon@utdallas.edu"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#ai-use-disclosure" id="toc-ai-use-disclosure" class="nav-link active" data-scroll-target="#ai-use-disclosure">AI Use Disclosure</a></li>
+  <li><a href="#insang-lee" id="toc-insang-lee" class="nav-link" data-scroll-target="#insang-lee">Insang Lee</a>
+  <ul class="collapse">
+  <li><a href="#assignment-requirements-and-chart-selection" id="toc-assignment-requirements-and-chart-selection" class="nav-link" data-scroll-target="#assignment-requirements-and-chart-selection">Assignment Requirements and Chart Selection</a></li>
+  <li><a href="#data-preparation-and-troubleshooting" id="toc-data-preparation-and-troubleshooting" class="nav-link" data-scroll-target="#data-preparation-and-troubleshooting">Data Preparation and Troubleshooting</a></li>
+  <li><a href="#revising-the-research-question-and-variables" id="toc-revising-the-research-question-and-variables" class="nav-link" data-scroll-target="#revising-the-research-question-and-variables">Revising the Research Question and Variables</a></li>
+  <li><a href="#improving-the-static-scatter-plot" id="toc-improving-the-static-scatter-plot" class="nav-link" data-scroll-target="#improving-the-static-scatter-plot">Improving the Static Scatter Plot</a></li>
+  <li><a href="#converting-chart-9-into-an-interactive-shiny-application" id="toc-converting-chart-9-into-an-interactive-shiny-application" class="nav-link" data-scroll-target="#converting-chart-9-into-an-interactive-shiny-application">Converting Chart 9 into an Interactive Shiny Application</a></li>
+  <li><a href="#coordinating-the-visual-design-with-the-team" id="toc-coordinating-the-visual-design-with-the-team" class="nav-link" data-scroll-target="#coordinating-the-visual-design-with-the-team">Coordinating the Visual Design with the Team</a></li>
+  <li><a href="#adding-an-optional-loess-trend-line" id="toc-adding-an-optional-loess-trend-line" class="nav-link" data-scroll-target="#adding-an-optional-loess-trend-line">Adding an Optional LOESS Trend Line</a></li>
+  <li><a href="#checking-assignment-requirements-and-shared-reactivity" id="toc-checking-assignment-requirements-and-shared-reactivity" class="nav-link" data-scroll-target="#checking-assignment-requirements-and-shared-reactivity">Checking Assignment Requirements and Shared Reactivity</a></li>
+  <li><a href="#preparing-the-ai-prompt-documentation" id="toc-preparing-the-ai-prompt-documentation" class="nav-link" data-scroll-target="#preparing-the-ai-prompt-documentation">Preparing the AI Prompt Documentation</a></li>
+  <li><a href="#summary-of-insangs-ai-assisted-work" id="toc-summary-of-insangs-ai-assisted-work" class="nav-link" data-scroll-target="#summary-of-insangs-ai-assisted-work">Summary of Insang’s AI-Assisted Work</a></li>
+  </ul></li>
+  <li><a href="#minyeong-yoon" id="toc-minyeong-yoon" class="nav-link" data-scroll-target="#minyeong-yoon">Minyeong Yoon</a>
+  <ul class="collapse">
+  <li><a href="#building-the-bubble-chart" id="toc-building-the-bubble-chart" class="nav-link" data-scroll-target="#building-the-bubble-chart">Building the Bubble Chart</a></li>
+  <li><a href="#styling-the-bubble-chart" id="toc-styling-the-bubble-chart" class="nav-link" data-scroll-target="#styling-the-bubble-chart">Styling the Bubble Chart</a></li>
+  <li><a href="#exploring-a-contour-chart" id="toc-exploring-a-contour-chart" class="nav-link" data-scroll-target="#exploring-a-contour-chart">Exploring a Contour Chart</a></li>
+  <li><a href="#downloading-charts" id="toc-downloading-charts" class="nav-link" data-scroll-target="#downloading-charts">Downloading Charts</a></li>
+  <li><a href="#combining-the-three-apps-for-submission" id="toc-combining-the-three-apps-for-submission" class="nav-link" data-scroll-target="#combining-the-three-apps-for-submission">Combining the Three Apps for Submission</a></li>
+  <li><a href="#improving-the-contour-png-export" id="toc-improving-the-contour-png-export" class="nav-link" data-scroll-target="#improving-the-contour-png-export">Improving the Contour PNG Export</a></li>
+  <li><a href="#preparing-the-prompt-document" id="toc-preparing-the-prompt-document" class="nav-link" data-scroll-target="#preparing-the-prompt-document">Preparing the Prompt Document</a></li>
+  <li><a href="#summary-of-minyeongs-ai-assisted-work" id="toc-summary-of-minyeongs-ai-assisted-work" class="nav-link" data-scroll-target="#summary-of-minyeongs-ai-assisted-work">Summary of Minyeong’s AI-Assisted Work</a></li>
+  </ul></li>
+  <li><a href="#team-integration" id="toc-team-integration" class="nav-link" data-scroll-target="#team-integration">Team Integration</a></li>
+  <li><a href="#final-ai-use-statement" id="toc-final-ai-use-statement" class="nav-link" data-scroll-target="#final-ai-use-statement">Final AI Use Statement</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">AI Prompts and Revisions</h1>
+<p class="subtitle lead">EPPS 6356 Assignment 7: Hackathon 2.0</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Insang Lee </p>
+             <p>Minyeong Yoon </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 23, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ai-use-disclosure" class="level1">
+<h1>AI Use Disclosure</h1>
+<p>Generative AI was used to support R coding, debugging, Shiny application development, visualization design, wording, organization, and integration of the team application.</p>
+<p>AI-generated suggestions were reviewed against the actual R output, assignment instructions, and team decisions. The final code, visualization choices, interpretations, and submission materials were reviewed and finalized by the team.</p>
+<hr>
+</section>
+<section id="insang-lee" class="level1">
+<h1>Insang Lee</h1>
+<p><strong>Contribution:</strong> Chart 9 — Interactive Scatter Plot: GDP per Capita vs.&nbsp;Happy Planet Index<br>
+<strong>Tool:</strong> ChatGPT<br>
+<strong>Date:</strong> October 23, 2026<br>
+<strong>Dataset:</strong> Happy Planet Index 2026 edition, using 2025 observations<br>
+<strong>Software:</strong> R, ggplot2, Shiny, and Plotly</p>
+<hr>
+<section id="assignment-requirements-and-chart-selection" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-requirements-and-chart-selection">Assignment Requirements and Chart Selection</h2>
+<section id="prompt-1-reviewing-the-assignment-and-selecting-variables" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-1-reviewing-the-assignment-and-selecting-variables">Prompt 1 — Reviewing the Assignment and Selecting Variables</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>EPPS 6356 Assignment 7 할껀데, 우리 팀은 Happy Planet Index 데이터를 사용하기로 했고 나는 Chart 9를 담당하기 함. 과제 요구사항을 확인해서 Chart 9에 어떤 변수들을 사용하는 게 적절할지 추천해주고, R에서 ggplot2를 이용해 어떻게 만들면 되는지 코드를 알려줘. 그리고 왜 그 변수와 그래프 구성을 추천하는지도 설명해줘.</p>
+<p><strong>English Translation</strong></p>
+<p>I am working on EPPS 6356 Assignment 7. Our team decided to use the Happy Planet Index dataset, and I am responsible for Chart 9.</p>
+<p>Please review the assignment requirements and recommend appropriate variables for Chart 9. Also, provide R code using ggplot2 and explain why you recommend those variables and the chart design.</p>
+<p><strong>Attachment:</strong> Assignment 7 instructions (PDF)</p>
+</section>
+<section id="prompt-2-adding-comments-to-the-r-code" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-2-adding-comments-to-the-r-code">Prompt 2 — Adding Comments to the R Code</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>좋은데 이거 코드에서도 이게 뭔지 왜하는지 등 설명이 간단히 적혀있어서 내가 바로 확인가능하면 더 좋을거 같은데 그렇게 표기가 가능한가?</p>
+<p><strong>English Translation</strong></p>
+<p>This looks good, but I think it would be better if the code itself included brief explanations of what each section does and why it is necessary, so I can understand it directly while reviewing the code.</p>
+<p>Is it possible to add those explanations as comments?</p>
+</section>
+<section id="what-i-revised-after-ai-assistance" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-revised-after-ai-assistance">What I Revised After AI Assistance</h3>
+<p>I reviewed the assignment requirements and initially considered GDP per capita and wellbeing-related measures for Chart 9. I also added explanatory comments to the R code so that each step would be easier to understand, modify, and document.</p>
+<hr>
+</section>
+</section>
+<section id="data-preparation-and-troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation-and-troubleshooting">Data Preparation and Troubleshooting</h2>
+<section id="prompt-3-troubleshooting-an-empty-scatter-plot" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-3-troubleshooting-an-empty-scatter-plot">Prompt 3 — Troubleshooting an Empty Scatter Plot</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>하다 보니 이런 오류가 뜨네? 왜 그런가? 어떤 수정이 가능해?</p>
+<p><strong>English Translation</strong></p>
+<p>While running the code, I encountered this error or warning. Why is it happening, and what changes can I make to fix it?</p>
+<p><strong>Attachment:</strong> Screenshot of the RStudio warning and empty scatter plot</p>
+</section>
+<section id="prompt-4-troubleshooting-the-remaining-warning" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-4-troubleshooting-the-remaining-warning">Prompt 4 — Troubleshooting the Remaining Warning</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>수정해봤는데 이렇게 되는데 또 경고가 뜨네.</p>
+<p><strong>English Translation</strong></p>
+<p>I modified the code, and the scatter plot now appears, but I am still getting a warning message. What is causing it, and how can I resolve it?</p>
+<p><strong>Attachment:</strong> Screenshot of the updated plot and warning message</p>
+</section>
+<section id="what-i-revised-after-ai-assistance-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-revised-after-ai-assistance-1">What I Revised After AI Assistance</h3>
+<p>I checked variable names, missing values, and GDP observations that could not be displayed on a logarithmic scale. I revised the data preparation steps to exclude missing or non-positive GDP values.</p>
+<hr>
+</section>
+</section>
+<section id="revising-the-research-question-and-variables" class="level2">
+<h2 class="anchored" data-anchor-id="revising-the-research-question-and-variables">Revising the Research Question and Variables</h2>
+<section id="prompt-5-changing-the-scatter-plot-to-gdp-and-hpi" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-5-changing-the-scatter-plot-to-gdp-and-hpi">Prompt 5 — Changing the Scatter Plot to GDP and HPI</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>민영이랑 상의해보니 Chart 9는 GDP per capita와 HPI의 관계를 보는 scatter plot으로 바꾸는 게 더 좋을 것 같아. 지금까지 만든 코드에서 어떻게 수정하면 좋을까? 2025년 데이터를 쓰고, continent별 색상 구분과 GDP 로그 스케일은 유지하고 싶어. 그리고 왜 이 구성이 더 적절한지도 간단히 설명해줘.</p>
+<p><strong>English Translation</strong></p>
+<p>After discussing the chart with Minyeong, we think it would be better to use a scatter plot showing the relationship between GDP per capita and the Happy Planet Index (HPI).</p>
+<p>How should I modify the existing code? I want to use the 2025 observations while keeping the continent-based colors and the logarithmic GDP scale.</p>
+<p>Please also briefly explain why this variable combination is more appropriate.</p>
+</section>
+<section id="prompt-6-reviewing-the-revised-scatter-plot" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-6-reviewing-the-revised-scatter-plot">Prompt 6 — Reviewing the Revised Scatter Plot</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>이렇게 괜찮나?</p>
+<p><strong>English Translation</strong></p>
+<p>Does the revised scatter plot look appropriate now? Please review its design and whether it meets the assignment requirements.</p>
+<p><strong>Attachment:</strong> Screenshot of the revised GDP–HPI scatter plot</p>
+</section>
+<section id="prompt-7-reviewing-another-plot-output" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-7-reviewing-another-plot-output">Prompt 7 — Reviewing Another Plot Output</h3>
+<p><strong>Original Prompt</strong></p>
+<p>[Updated chart screenshot]</p>
+<p><strong>English Description</strong></p>
+<p>I shared another screenshot of the scatter plot to check whether the previous changes had been applied correctly and whether any additional adjustments were necessary.</p>
+</section>
+<section id="what-i-revised-after-ai-assistance-2" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-revised-after-ai-assistance-2">What I Revised After AI Assistance</h3>
+<p>After discussing the research question with my teammate, I replaced life expectancy with HPI as the y-axis variable.</p>
+<p>This allowed the chart to focus directly on whether higher economic wealth is associated with higher sustainable wellbeing.</p>
+<p>I retained GDP per capita on the x-axis, continent-based coloring, the logarithmic GDP scale, and the 2025 HPI observations.</p>
+<hr>
+</section>
+</section>
+<section id="improving-the-static-scatter-plot" class="level2">
+<h2 class="anchored" data-anchor-id="improving-the-static-scatter-plot">Improving the Static Scatter Plot</h2>
+<section id="prompt-8-improving-chart-appearance-and-exporting-an-image" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-8-improving-chart-appearance-and-exporting-an-image">Prompt 8 — Improving Chart Appearance and Exporting an Image</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>지금 Chart 9를 GDP per capita와 HPI의 관계를 보는 scatter plot으로 수정해서 그래프가 정상적으로 나왔어. 이걸 최종 제출과 PPT에 사용하기 좋게 조금 더 깔끔하게 다듬고 싶은데, 현재 코드에서 어떤 부분을 수정하면 좋을까? 특히 x축 숫자 표시, 긴 continent 범례가 잘리지 않도록 하는 방법, 그리고 PPT에 넣을 수 있도록 그래프를 이미지로 저장하는 코드도 같이 알려줘. 기존 코드의 목적이나 구조는 최대한 유지해줘.</p>
+<p><strong>English Translation</strong></p>
+<p>I successfully revised Chart 9 into a scatter plot showing the relationship between GDP per capita and HPI.</p>
+<p>I would like to improve its appearance for the final submission and PowerPoint presentation.</p>
+<p>Which parts of the current code should I modify? In particular, please explain how to format the x-axis numbers, prevent long continent names in the legend from being cut off, and save the graph as an image for PowerPoint.</p>
+<p>Please preserve the original purpose and structure of the code as much as possible.</p>
+</section>
+<section id="prompt-9-reviewing-the-updated-figure" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-9-reviewing-the-updated-figure">Prompt 9 — Reviewing the Updated Figure</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>괜찮나?</p>
+<p><strong>English Translation</strong></p>
+<p>Does the updated figure look good enough for the final presentation? Please check whether the formatting changes were applied correctly.</p>
+<p><strong>Attachment:</strong> Screenshot of the updated ggplot</p>
+</section>
+<section id="prompt-10-fixing-the-clipped-title-and-legend" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-10-fixing-the-clipped-title-and-legend">Prompt 10 — Fixing the Clipped Title and Legend</h3>
+<p><strong>Original Prompt</strong></p>
+<p>[Image of the exported scatter plot]</p>
+<p><strong>English Description</strong></p>
+<p>I shared the exported PNG image to check the final appearance. The screenshot showed that the chart title and some continent legend labels were clipped.</p>
+</section>
+<section id="prompt-11-requesting-further-layout-corrections" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-11-requesting-further-layout-corrections">Prompt 11 — Requesting Further Layout Corrections</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>제목이랑 레전드가 좀 짤리는데 수정해야할 것 같아.</p>
+<p><strong>English Translation</strong></p>
+<p>The title and legend are partially cut off, so I think the layout needs to be revised. How can I fix them without changing the chart itself?</p>
+</section>
+<section id="prompt-12-troubleshooting-the-legend-again" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-12-troubleshooting-the-legend-again">Prompt 12 — Troubleshooting the Legend Again</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>레전드가 아직 짤려보여.</p>
+<p><strong>English Translation</strong></p>
+<p>The continent legend still appears to be cut off. How can I adjust the legend layout so that all region names are fully visible?</p>
+<p><strong>Attachment:</strong> Screenshot showing the remaining legend clipping</p>
+</section>
+<section id="prompt-13-requesting-the-complete-revised-code" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-13-requesting-the-complete-revised-code">Prompt 13 — Requesting the Complete Revised Code</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>여기서 전체 변경으로 알려줘봐.</p>
+<p><strong>English Translation</strong></p>
+<p>Please provide the complete revised R code rather than individual code fragments, incorporating all the changes needed to fix the title and legend layout.</p>
+</section>
+<section id="prompt-14-reviewing-the-final-exported-image" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-14-reviewing-the-final-exported-image">Prompt 14 — Reviewing the Final Exported Image</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>됐나?</p>
+<p><strong>English Translation</strong></p>
+<p>Does the final exported image look correct now? Please check whether the title, legend, axes, and chart layout are properly displayed.</p>
+<p><strong>Attachment:</strong> Final exported Chart 9 PNG</p>
+</section>
+<section id="prompt-15-reviewing-the-complete-static-chart-code" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-15-reviewing-the-complete-static-chart-code">Prompt 15 — Reviewing the Complete Static Chart Code</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>이게 전체코드인데 과제 요구사항 등에 다 맞게 된지 최종점검해줘.</p>
+<p><strong>English Translation</strong></p>
+<p>This is the complete R code for Chart 9. Please conduct a final review and check whether it meets the assignment requirements and whether anything is missing or incorrect.</p>
+</section>
+<section id="what-i-revised-after-ai-assistance-3" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-revised-after-ai-assistance-3">What I Revised After AI Assistance</h3>
+<p>I improved the static chart through several iterations based on the rendered output.</p>
+<p>I revised the GDP axis formatting, title placement, legend arrangement, figure dimensions, and text sizes. I also used <code>ggsave()</code> to export a high-resolution image for the presentation.</p>
+<hr>
+</section>
+</section>
+<section id="converting-chart-9-into-an-interactive-shiny-application" class="level2">
+<h2 class="anchored" data-anchor-id="converting-chart-9-into-an-interactive-shiny-application">Converting Chart 9 into an Interactive Shiny Application</h2>
+<section id="prompt-16-adding-shiny-and-plotly-interactivity" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-16-adding-shiny-and-plotly-interactivity">Prompt 16 — Adding Shiny and Plotly Interactivity</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>여기서 Chart 9 scatter plot 코드를 Shiny + Plotly를 이용한 interactive 버전으로 바꾸고 싶은데, 어떻게 코드를 추가하면 될까?</p>
+<p>구체적으로는 GDP range slider, continent filter, country name checkbox, hover 기능을 추가하고 싶고 기존 GDP-HPI 관계와 continent 색상 구분은 유지하고 싶어. 구체적으로 코드 추천해주고 왜 추천하는지도 설명해줘.</p>
+<p><strong>English Translation</strong></p>
+<p>I want to convert my existing Chart 9 scatter plot into an interactive version using Shiny and Plotly.</p>
+<p>Specifically, I want to add a GDP range slider, a continent filter, a checkbox to show or hide country names, and hover tooltips.</p>
+<p>I want to preserve the original GDP–HPI relationship and continent-based colors.</p>
+<p>Please recommend specific code and explain why you recommend each feature.</p>
+</section>
+<section id="prompt-17-improving-the-interactive-chart-layout" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-17-improving-the-interactive-chart-layout">Prompt 17 — Improving the Interactive Chart Layout</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>이렇게 나오는데 제목이 짤리기 때문에 두 줄로 바꾸거나 수정이 좀 필요할 것 같고 그래프도 중간으로 와야 할 것 같은데 어떻게 생각해?</p>
+<p>또 다른 문제는 없나?</p>
+<p><strong>English Translation</strong></p>
+<p>The interactive chart now appears as shown in the screenshot, but the title is cut off, so I think it needs to be split into two lines or otherwise adjusted.</p>
+<p>I also think the graph should be more centered. What do you think?</p>
+<p>Are there any other problems with the current layout or functionality?</p>
+<p><strong>Attachment:</strong> Screenshot of the interactive Shiny application</p>
+</section>
+<section id="what-i-revised-after-ai-assistance-4" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-revised-after-ai-assistance-4">What I Revised After AI Assistance</h3>
+<p>I converted the original ggplot2 scatter plot into an interactive Shiny application using Plotly.</p>
+<p>I added a GDP range slider, continent selection, optional country labels, and hover tooltips. I also refined the chart title, dimensions, and margins.</p>
+<hr>
+</section>
+</section>
+<section id="coordinating-the-visual-design-with-the-team" class="level2">
+<h2 class="anchored" data-anchor-id="coordinating-the-visual-design-with-the-team">Coordinating the Visual Design with the Team</h2>
+<section id="prompt-18-unifying-the-teams-chart-designs" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-18-unifying-the-teams-chart-designs">Prompt 18 — Unifying the Team’s Chart Designs</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>민영이 다음에 이어서 한 과제들인데 좀 통일되게 해야 할 것 같아. 색깔이나 글꼴 등 비슷하게 바꾸고 싶은데 어떻게 바꾸면 될까?</p>
+<p><strong>English Translation</strong></p>
+<p>These are the additional parts of the assignment that Minyeong worked on. I think our charts should have a more consistent visual appearance.</p>
+<p>How can we make the colors, fonts, and overall design more similar across the charts?</p>
+<p><strong>Attachments:</strong> Teammate’s Shiny application R files</p>
+</section>
+<section id="what-i-revised-after-ai-assistance-5" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-revised-after-ai-assistance-5">What I Revised After AI Assistance</h3>
+<p>I compared my Chart 9 design with the other team charts and worked toward a more consistent visual style, including fonts, title sizing, spacing, and coordinated colors.</p>
+<hr>
+</section>
+</section>
+<section id="adding-an-optional-loess-trend-line" class="level2">
+<h2 class="anchored" data-anchor-id="adding-an-optional-loess-trend-line">Adding an Optional LOESS Trend Line</h2>
+<section id="prompt-19-adding-a-trend-line-checkbox" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-19-adding-a-trend-line-checkbox">Prompt 19 — Adding a Trend Line Checkbox</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>지금 interactive Chart 9 scatter plot에 사용자가 선택해서 볼 수 있는 trend line 기능을 추가하고 싶은데, 그냥 있는 건 아니고 <code>Show trend line</code> 체크박스를 만들고, 체크했을 때 전체 GDP-HPI 관계를 보여주는 LOESS 추세선이 하나만 나타나도록 도와줘.</p>
+<p><strong>English Translation</strong></p>
+<p>I want to add an optional trend line to my interactive Chart 9 scatter plot.</p>
+<p>Instead of displaying the trend line by default, I want to add a <code>Show trend line</code> checkbox.</p>
+<p>When the checkbox is selected, only one overall LOESS trend line should appear, showing the GDP–HPI relationship across the selected countries rather than separate trend lines for each continent.</p>
+</section>
+<section id="prompt-20-troubleshooting-warning-messages" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-20-troubleshooting-warning-messages">Prompt 20 — Troubleshooting Warning Messages</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>이런 오류가 뜨는데.</p>
+<p><strong>English Translation</strong></p>
+<p>I am getting these warning or error messages after modifying the application. What is causing them, and how can I resolve them?</p>
+<p><strong>Attachment:</strong> Screenshot of RStudio warning messages</p>
+</section>
+<section id="prompt-21-changing-the-trend-line-color" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-21-changing-the-trend-line-color">Prompt 21 — Changing the Trend Line Color</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>좋은데 지금 추세선 색깔을 팀 색깔로 변경하고 싶은데 어떤 색깔 추천해?</p>
+<p><strong>English Translation</strong></p>
+<p>The trend line works, but I want to change its color to match our team’s visual style.</p>
+<p>Which color would you recommend for the trend line, considering the existing continent colors and the colors used in the other team charts?</p>
+</section>
+<section id="what-i-revised-after-ai-assistance-6" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-revised-after-ai-assistance-6">What I Revised After AI Assistance</h3>
+<p>I added a <code>Show trend line</code> checkbox and configured the smoothing layer to display one overall LOESS trend line rather than separate lines by continent.</p>
+<p>I also revised the trend-line color so that it remained visually distinct from the continent categories.</p>
+<hr>
+</section>
+</section>
+<section id="checking-assignment-requirements-and-shared-reactivity" class="level2">
+<h2 class="anchored" data-anchor-id="checking-assignment-requirements-and-shared-reactivity">Checking Assignment Requirements and Shared Reactivity</h2>
+<section id="prompt-22-reviewing-missing-assignment-requirements" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-22-reviewing-missing-assignment-requirements">Prompt 22 — Reviewing Missing Assignment Requirements</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>지금 전체 코드를 보면 과제에서 요구하는 사항 중에 충족이 안 되는 게 있는 것 같아.</p>
+<p><strong>English Translation</strong></p>
+<p>Looking at the complete team application code, I think some of the assignment requirements may not have been satisfied.</p>
+<p>Please review the code against the Assignment 7 instructions and identify any missing or incomplete requirements.</p>
+</section>
+<section id="prompt-23-keeping-the-contour-plot-independent" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-23-keeping-the-contour-plot-independent">Prompt 23 — Keeping the Contour Plot Independent</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p><code>reactive()</code> 이거 contour에는 안 뜨게 하고 싶은데 어떻게 할 수 있어?</p>
+<p><strong>English Translation</strong></p>
+<p>I want the shared <code>reactive()</code> data filtering to apply to the scatter plot and bubble chart, but not to the contour plot.</p>
+<p>How can I structure the code so that the contour plot remains independent while the other two charts share the same reactive data?</p>
+</section>
+<section id="prompt-24-final-code-review" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-24-final-code-review">Prompt 24 — Final Code Review</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>최종 코드인데 괜찮은지 최종확인해줘.</p>
+<p><strong>English Translation</strong></p>
+<p>This is my final version of the code. Please review it carefully and check whether it works as intended and meets the Assignment 7 requirements.</p>
+</section>
+<section id="what-i-revised-after-ai-assistance-7" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-revised-after-ai-assistance-7">What I Revised After AI Assistance</h3>
+<p>I reviewed the complete application against the assignment requirements and identified the requirement for at least two charts to use the same reactive dataset.</p>
+<p>The Scatter and Bubble charts were connected through a shared GDP range filter, while the Contour chart retained its independent controls.</p>
+<hr>
+</section>
+</section>
+<section id="preparing-the-ai-prompt-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="preparing-the-ai-prompt-documentation">Preparing the AI Prompt Documentation</h2>
+<section id="prompt-25-preparing-the-ai-prompt-record" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-25-preparing-the-ai-prompt-record">Prompt 25 — Preparing the AI Prompt Record</h3>
+<p><strong>Original Prompt (Korean)</strong></p>
+<p>지금까지 내가 말한 거 다 모아서 영어 번역 넣어줘. AI prompt 만들어서 제출하려고, 각 부분마다 수정사항들 영어로 간단히 설명해주고.</p>
+<p><strong>English Translation</strong></p>
+<p>Please collect all the prompts I have used so far and organize them into an AI prompt record for submission.</p>
+<p>Include an English translation of each prompt and briefly explain in English what I revised or corrected in each section after using AI suggestions.</p>
+<p>Please format the result so that I can submit it as my AI prompt documentation.</p>
+<hr>
+</section>
+</section>
+<section id="summary-of-insangs-ai-assisted-work" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-insangs-ai-assisted-work">Summary of Insang’s AI-Assisted Work</h2>
+<p>AI assistance supported the interpretation of assignment requirements, variable selection, R coding, debugging, visualization design, Shiny and Plotly interactivity, visual integration, and final code review.</p>
+<p>The final Chart 9 retained the GDP–HPI relationship, logarithmic GDP scale, continent-based colors, interactive filtering, hover information, optional country labels, and an optional LOESS trend line.</p>
+<p>All AI suggestions were reviewed against the actual R output and revised as needed.</p>
+<hr>
+</section>
+</section>
+<section id="minyeong-yoon" class="level1">
+<h1>Minyeong Yoon</h1>
+<p><strong>Contribution:</strong> Chart 18 Bubble Chart, Contour Plot, and Shiny Application Integration<br>
+<strong>Tool:</strong> ChatGPT<br>
+<strong>Dataset:</strong> Happy Planet Index 2026 edition, using 2025 observations<br>
+<strong>Software:</strong> R, ggplot2, Shiny, Plotly, and related packages</p>
+<hr>
+<section id="building-the-bubble-chart" class="level2">
+<h2 class="anchored" data-anchor-id="building-the-bubble-chart">Building the Bubble Chart</h2>
+<section id="prompt-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-1">Prompt 1</h3>
+<p>How should I write code to create a bubble chart in Shiny using the 2025 Happy Planet Index data? Please show me the code structure.</p>
+</section>
+<section id="prompt-2" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-2">Prompt 2</h3>
+<p>I added GDP per capita to the data preparation code, but <code>gdp</code> is returning <code>NA</code>. Why is this happening?</p>
+</section>
+<section id="prompt-3" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-3">Prompt 3</h3>
+<p>I received the following error. How can I fix it?</p>
+<pre class="text"><code>Error in plotlyOutput("bubble_chart", height = "600px") :
+  could not find function "plotlyOutput"</code></pre>
+</section>
+<section id="prompt-4" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-4">Prompt 4</h3>
+<p>What is Plotly used for? Can I create the chart without it?</p>
+</section>
+<section id="prompt-5" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-5">Prompt 5</h3>
+<p>An error appears in the Shiny app. Can you help me identify the problem?</p>
+<p><strong>Attachment:</strong> Screenshot</p>
+</section>
+<section id="prompt-6" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-6">Prompt 6</h3>
+<p>I am now using a revised server function. It filters countries by GDP, plots GDP on the X-axis and ecological footprint on the Y-axis, and represents life satisfaction through bubble area. Can you review this version in relation to the error?</p>
+</section>
+<section id="prompt-7" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-7">Prompt 7</h3>
+<p>When I run the app, I receive Excel import warnings about columns V and W, automatic names for blank columns, and a filtering error for <code>gdp &gt;= input$gdp[1]</code>.</p>
+<p>The error says the condition must be of size 134 or 1, not size 0. There are also <code>jsonlite</code> warnings about named vectors. How can I resolve these messages?</p>
+</section>
+<section id="prompt-8" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-8">Prompt 8</h3>
+<p>Could you reorganize the complete code? I do not know where to put the individual changes.</p>
+</section>
+<section id="what-was-revised-after-ai-assistance" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-revised-after-ai-assistance">What Was Revised After AI Assistance</h3>
+<p>The Bubble Chart code was reorganized and debugged so that the required variables could be loaded correctly and the Shiny inputs could be used without the earlier filtering errors.</p>
+<hr>
+</section>
+</section>
+<section id="styling-the-bubble-chart" class="level2">
+<h2 class="anchored" data-anchor-id="styling-the-bubble-chart">Styling the Bubble Chart</h2>
+<section id="prompt-9" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-9">Prompt 9</h3>
+<p>The app works now. How can I change the font and add a border around each circle?</p>
+</section>
+<section id="prompt-10" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-10">Prompt 10</h3>
+<p>I would like to use a Google Font with Medium 500 weight.</p>
+</section>
+<section id="prompt-11" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-11">Prompt 11</h3>
+<p>Should I use a color gradient? I would like a purple-to-blue gradient.</p>
+</section>
+<section id="prompt-12" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-12">Prompt 12</h3>
+<p>Can I use color names instead of numeric color codes?</p>
+</section>
+<section id="prompt-13" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-13">Prompt 13</h3>
+<p>I reduced the bubble size, and I think the chart looks better now.</p>
+<p><strong>Attachment:</strong> Screenshot</p>
+</section>
+<section id="what-was-revised-after-ai-assistance-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-revised-after-ai-assistance-1">What Was Revised After AI Assistance</h3>
+<p>The Bubble Chart styling was refined by adjusting the font, bubble borders, bubble sizes, and color gradient to improve readability and visual consistency.</p>
+<hr>
+</section>
+</section>
+<section id="exploring-a-contour-chart" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-a-contour-chart">Exploring a Contour Chart</h2>
+<section id="prompt-14" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-14">Prompt 14</h3>
+<p>How should I write code to create a contour chart in Shiny using the 2025 HPI data? Please show me the code structure.</p>
+</section>
+<section id="prompt-15" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-15">Prompt 15</h3>
+<p>The contour chart came out like this, but I find it difficult to interpret. Is this correct?</p>
+<p><strong>Attachment:</strong> Screenshot</p>
+</section>
+<section id="prompt-16" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-16">Prompt 16</h3>
+<p>I wanted to examine the potentially weak relationships between GDP and the indicators used in HPI: ecological footprint, wellbeing, and life expectancy.</p>
+</section>
+<section id="prompt-17" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-17">Prompt 17</h3>
+<p>Which parts of the code should I change to reflect that purpose?</p>
+</section>
+<section id="prompt-18" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-18">Prompt 18</h3>
+<p>I used the revised code for three side-by-side charts, but I received an object-not-found error. Can you check my code?</p>
+<p>My data preparation includes <code>country</code>, <code>gdp</code>, <code>footprint</code>, and <code>satisfaction</code>, while the server also refers to <code>life_expectancy</code>.</p>
+</section>
+<section id="prompt-19" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-19">Prompt 19</h3>
+<p>Is this the right chart, or should I instead put GDP and HPI on the X- and Y-axes and show the number of countries through contours?</p>
+<p><strong>Attachment:</strong> Screenshot</p>
+</section>
+<section id="prompt-20" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-20">Prompt 20</h3>
+<p>What would the code look like for GDP on the X-axis, HPI on the Y-axis, and density contours showing where countries cluster?</p>
+</section>
+<section id="prompt-21" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-21">Prompt 21</h3>
+<p>This version seems to make more sense. What do you think?</p>
+<p><strong>Attachment:</strong> Screenshot</p>
+</section>
+<section id="what-was-revised-after-ai-assistance-2" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-revised-after-ai-assistance-2">What Was Revised After AI Assistance</h3>
+<p>The initial Contour Plot concept was revised after reviewing the output.</p>
+<p>The final version uses GDP per capita on the X-axis and HPI on the Y-axis, with density contours showing where countries are concentrated within the joint GDP–HPI distribution.</p>
+<hr>
+</section>
+</section>
+<section id="downloading-charts" class="level2">
+<h2 class="anchored" data-anchor-id="downloading-charts">Downloading Charts</h2>
+<section id="prompt-22" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-22">Prompt 22</h3>
+<p>Why do some Shiny charts allow me to download a PNG directly while others do not?</p>
+</section>
+<section id="prompt-23" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-23">Prompt 23</h3>
+<p>I do not understand the third step for adding the PNG download feature. Is the following arrangement correct?</p>
+<p>I placed <code>renderPlot()</code> and <code>downloadHandler()</code> inside <code>contour_plot &lt;- reactive({...})</code>, before the chart-building code, and added <code>res = 96</code> at the end of that reactive expression.</p>
+</section>
+<section id="what-was-revised-after-ai-assistance-3" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-revised-after-ai-assistance-3">What Was Revised After AI Assistance</h3>
+<p>A PNG download function was added to the Contour Plot so that the visualization could be exported directly from the Shiny application.</p>
+<hr>
+</section>
+</section>
+<section id="combining-the-three-apps-for-submission" class="level2">
+<h2 class="anchored" data-anchor-id="combining-the-three-apps-for-submission">Combining the Three Apps for Submission</h2>
+<section id="prompt-24" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-24">Prompt 24</h3>
+<p>I need to submit the files now. How should I combine the three <code>app.R</code> files?</p>
+</section>
+<section id="prompt-25" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-25">Prompt 25</h3>
+<p>Can I integrate them simply by copying and pasting the code?</p>
+</section>
+<section id="prompt-26" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-26">Prompt 26</h3>
+<p>Here are my three files:</p>
+<ul>
+<li><code>epps6356_assign07_chart18_bubble.R</code></li>
+<li><code>epps6356_assign07_contour.R</code></li>
+<li><code>epps6356_assign07_chart9_scatter.R</code></li>
+</ul>
+</section>
+<section id="what-was-revised-after-ai-assistance-4" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-revised-after-ai-assistance-4">What Was Revised After AI Assistance</h3>
+<p>The three separately developed visualizations were organized into a single Shiny application.</p>
+<p>The final application uses separate navigation tabs for the Scatter, Bubble, and Contour visualizations while retaining chart-specific controls.</p>
+<hr>
+</section>
+</section>
+<section id="improving-the-contour-png-export" class="level2">
+<h2 class="anchored" data-anchor-id="improving-the-contour-png-export">Improving the Contour PNG Export</h2>
+<section id="prompt-27" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-27">Prompt 27</h3>
+<p>Can the contour PNG be exported more attractively? The title looks much smaller than it does in the Shiny app. Is that expected?</p>
+<p><strong>Attachment:</strong> PNG export</p>
+</section>
+<section id="what-was-revised-after-ai-assistance-5" class="level3">
+<h3 class="anchored" data-anchor-id="what-was-revised-after-ai-assistance-5">What Was Revised After AI Assistance</h3>
+<p>The exported Contour Plot was reviewed separately from the browser display because exported graphics may use different physical dimensions and text scaling.</p>
+<p>The export settings were adjusted to improve readability in the saved image.</p>
+<hr>
+</section>
+</section>
+<section id="preparing-the-prompt-document" class="level2">
+<h2 class="anchored" data-anchor-id="preparing-the-prompt-document">Preparing the Prompt Document</h2>
+<section id="prompt-28" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-28">Prompt 28</h3>
+<p>Please create <code>prompt.qmd</code> from everything I asked in this conversation.</p>
+<p>The document should be in English and does not need to include the times of my questions or your responses.</p>
+<hr>
+</section>
+</section>
+<section id="summary-of-minyeongs-ai-assisted-work" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-minyeongs-ai-assisted-work">Summary of Minyeong’s AI-Assisted Work</h2>
+<p>AI assistance supported the development and debugging of the Bubble Chart, development and interpretation of the Contour Plot, chart styling, PNG export, and integration of the team’s three visualizations into a single Shiny application.</p>
+<p>Minyeong reviewed the visual outputs throughout the process and revised the code, variable choices, styling, and application structure based on the rendered results.</p>
+<hr>
+</section>
+</section>
+<section id="team-integration" class="level1">
+<h1>Team Integration</h1>
+<p>The two team members developed different components of the application and then combined them into a single Shiny dashboard.</p>
+<p><strong>Insang Lee</strong> - Developed Chart 9: Interactive Scatter Plot - Implemented continent filtering, country labels, hover information, and the optional LOESS trend line - Helped implement the shared GDP reactive filter - Prepared presentation materials and team documentation</p>
+<p><strong>Minyeong Yoon</strong> - Proposed the overall Happy Planet Index visualization direction - Developed Chart 18: Interactive Bubble Chart - Developed the Contour Plot - Organized and integrated the overall Shiny application</p>
+<p>A shared GDP range filter was used by the Scatter and Bubble charts so that both charts can display the same filtered subset of countries. The Contour Plot remains independent because its purpose and controls are different.</p>
+<hr>
+</section>
+<section id="final-ai-use-statement" class="level1">
+<h1>Final AI Use Statement</h1>
+<p>Generative AI was used as a support tool during the iterative development of this assignment.</p>
+<p>It assisted with:</p>
+<ul>
+<li>interpreting assignment requirements;</li>
+<li>writing and debugging R code;</li>
+<li>developing Shiny and Plotly interactions;</li>
+<li>improving chart design and layout;</li>
+<li>troubleshooting errors and warnings;</li>
+<li>integrating separate application components;</li>
+<li>organizing documentation; and</li>
+<li>reviewing wording and presentation.</li>
+</ul>
+<p>The team reviewed the generated suggestions, compared them with the actual R output, and made the final decisions regarding the code, visualizations, interpretation, and submission materials.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
