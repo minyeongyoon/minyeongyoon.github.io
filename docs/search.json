@@ -26,7 +26,7 @@
     "href": "assignments/index.html#epps6356-data-visualization",
     "title": "Class Assignments",
     "section": "EPPS6356 Data Visualization",
-    "text": "EPPS6356 Data Visualization\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nAI Prompts and Revisions\n\n\n\n\n\n\nAssignment 1\n\n\n\n\n\n\nAssignment 2\n\n\n\n\n\n\nAssignment 4: 48-Hour Chart Hackathon\n\n\n\n\n\n\nAssignment 7: Hackathon 2.0\n\n\n\n\n\n\nNo matching items",
+    "text": "EPPS6356 Data Visualization\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nAI Prompts and Revisions\n\n\n\n\n\n\nAssignment 1\n\n\n\n\n\n\nAssignment 2\n\n\n\n\n\n\nAssignment 3\n\n\n\n\n\n\nAssignment 4: 48-Hour Chart Hackathon\n\n\n\n\n\n\nAssignment 7: Hackathon 2.0\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Class Assignments",
       "All Assignments"
@@ -174,6 +174,690 @@
       "Class Assignments",
       "EPPS6302",
       "Assignment 4"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/SYNERGY.html",
+    "href": "assignments/Visualization/SYNERGY.html",
+    "title": "SYNERGY",
+    "section": "",
+    "text": "Insang Lee\nMinyeong Yoon\n\n\n\n\n\n\n\nDeveloped Chart 9: Interactive Scatter Plot examining the relationship between GDP per capita and the Happy Planet Index (HPI).\nAdded interactive features including the continent filter, country labels, hover information, and an optional trend line.\nHelped connect the Scatter and Bubble charts through a shared GDP range filter so that both charts use the same filtered subset of countries.\nPrepared the presentation slides and presentation materials.\nCreated and organized the SYNERGY.md file documenting team contributions and the integration process.\n\n\n\n\n\nProposed the overall topic and visualization direction for the project using the Happy Planet Index data and helped shape how the three charts would work together.\nDeveloped Chart 18: Interactive Bubble Chart examining GDP per capita, life satisfaction, and ecological footprint, including interactive controls for bubble size, logarithmic GDP scaling, country labels, and hover information.\nDeveloped the additional Contour Plot to examine the distribution and concentration of countries across GDP per capita and HPI, including controls for contour levels, country points, labels, and a trend line.\nOrganized the overall Shiny app structure and integrated the Scatter, Bubble, and Contour visualizations into a single application with separate navigation tabs.\n\n\n\n\n\nWe first developed our assigned visualizations separately and then combined them into one Shiny application. We used the same Happy Planet Index dataset and coordinated the visual design, labels, fonts, and interactive features across the charts.\nTo meet the reactivity requirement, we connected the Scatter and Bubble charts to a shared GDP range filter. This allows both charts to display data from the same GDP subset while preserving their chart-specific interactive controls.\n\n\n\nCombining the three charts provides a more complete view of sustainable wellbeing than any single visualization alone. The Scatter Plot focuses on the relationship between GDP and HPI, the Bubble Chart adds life satisfaction and ecological footprint, and the Contour Plot shows where countries are concentrated within the GDP-HPI distribution.\nThe shared GDP filter also makes it easier for users to compare patterns across the Scatter and Bubble charts using the same group of countries.\n\n\n\nIf we had more time, we would plan the shared reactive structure earlier in the development process rather than integrating it near the end. We would also further standardize the controls and styling across all three charts and explore additional cross-chart interactions."
+  },
+  {
+    "objectID": "assignments/Visualization/SYNERGY.html#team-members",
+    "href": "assignments/Visualization/SYNERGY.html#team-members",
+    "title": "SYNERGY",
+    "section": "",
+    "text": "Insang Lee\nMinyeong Yoon"
+  },
+  {
+    "objectID": "assignments/Visualization/SYNERGY.html#who-did-what",
+    "href": "assignments/Visualization/SYNERGY.html#who-did-what",
+    "title": "SYNERGY",
+    "section": "",
+    "text": "Developed Chart 9: Interactive Scatter Plot examining the relationship between GDP per capita and the Happy Planet Index (HPI).\nAdded interactive features including the continent filter, country labels, hover information, and an optional trend line.\nHelped connect the Scatter and Bubble charts through a shared GDP range filter so that both charts use the same filtered subset of countries.\nPrepared the presentation slides and presentation materials.\nCreated and organized the SYNERGY.md file documenting team contributions and the integration process.\n\n\n\n\n\nProposed the overall topic and visualization direction for the project using the Happy Planet Index data and helped shape how the three charts would work together.\nDeveloped Chart 18: Interactive Bubble Chart examining GDP per capita, life satisfaction, and ecological footprint, including interactive controls for bubble size, logarithmic GDP scaling, country labels, and hover information.\nDeveloped the additional Contour Plot to examine the distribution and concentration of countries across GDP per capita and HPI, including controls for contour levels, country points, labels, and a trend line.\nOrganized the overall Shiny app structure and integrated the Scatter, Bubble, and Contour visualizations into a single application with separate navigation tabs."
+  },
+  {
+    "objectID": "assignments/Visualization/SYNERGY.html#how-we-combined-our-work",
+    "href": "assignments/Visualization/SYNERGY.html#how-we-combined-our-work",
+    "title": "SYNERGY",
+    "section": "",
+    "text": "We first developed our assigned visualizations separately and then combined them into one Shiny application. We used the same Happy Planet Index dataset and coordinated the visual design, labels, fonts, and interactive features across the charts.\nTo meet the reactivity requirement, we connected the Scatter and Bubble charts to a shared GDP range filter. This allows both charts to display data from the same GDP subset while preserving their chart-specific interactive controls."
+  },
+  {
+    "objectID": "assignments/Visualization/SYNERGY.html#what-was-better-together",
+    "href": "assignments/Visualization/SYNERGY.html#what-was-better-together",
+    "title": "SYNERGY",
+    "section": "",
+    "text": "Combining the three charts provides a more complete view of sustainable wellbeing than any single visualization alone. The Scatter Plot focuses on the relationship between GDP and HPI, the Bubble Chart adds life satisfaction and ecological footprint, and the Contour Plot shows where countries are concentrated within the GDP-HPI distribution.\nThe shared GDP filter also makes it easier for users to compare patterns across the Scatter and Bubble charts using the same group of countries."
+  },
+  {
+    "objectID": "assignments/Visualization/SYNERGY.html#what-we-would-do-differently",
+    "href": "assignments/Visualization/SYNERGY.html#what-we-would-do-differently",
+    "title": "SYNERGY",
+    "section": "",
+    "text": "If we had more time, we would plan the shared reactive structure earlier in the development process rather than integrating it near the end. We would also further standardize the controls and styling across all three charts and explore additional cross-chart interactions."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html",
+    "title": "AI Prompts and Revisions",
+    "section": "",
+    "text": "Generative AI was used to support R coding, debugging, Shiny application development, visualization design, wording, organization, and integration of the team application.\nAI-generated suggestions were reviewed against the actual R output, assignment instructions, and team decisions. The final code, visualization choices, interpretations, and submission materials were reviewed and finalized by the team."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#assignment-requirements-and-chart-selection",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#assignment-requirements-and-chart-selection",
+    "title": "AI Prompts and Revisions",
+    "section": "Assignment Requirements and Chart Selection",
+    "text": "Assignment Requirements and Chart Selection\n\nPrompt 1 — Reviewing the Assignment and Selecting Variables\nOriginal Prompt (Korean)\nEPPS 6356 Assignment 7 할껀데, 우리 팀은 Happy Planet Index 데이터를 사용하기로 했고 나는 Chart 9를 담당하기 함. 과제 요구사항을 확인해서 Chart 9에 어떤 변수들을 사용하는 게 적절할지 추천해주고, R에서 ggplot2를 이용해 어떻게 만들면 되는지 코드를 알려줘. 그리고 왜 그 변수와 그래프 구성을 추천하는지도 설명해줘.\nEnglish Translation\nI am working on EPPS 6356 Assignment 7. Our team decided to use the Happy Planet Index dataset, and I am responsible for Chart 9.\nPlease review the assignment requirements and recommend appropriate variables for Chart 9. Also, provide R code using ggplot2 and explain why you recommend those variables and the chart design.\nAttachment: Assignment 7 instructions (PDF)\n\n\nPrompt 2 — Adding Comments to the R Code\nOriginal Prompt (Korean)\n좋은데 이거 코드에서도 이게 뭔지 왜하는지 등 설명이 간단히 적혀있어서 내가 바로 확인가능하면 더 좋을거 같은데 그렇게 표기가 가능한가?\nEnglish Translation\nThis looks good, but I think it would be better if the code itself included brief explanations of what each section does and why it is necessary, so I can understand it directly while reviewing the code.\nIs it possible to add those explanations as comments?\n\n\nWhat I Revised After AI Assistance\nI reviewed the assignment requirements and initially considered GDP per capita and wellbeing-related measures for Chart 9. I also added explanatory comments to the R code so that each step would be easier to understand, modify, and document."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#data-preparation-and-troubleshooting",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#data-preparation-and-troubleshooting",
+    "title": "AI Prompts and Revisions",
+    "section": "Data Preparation and Troubleshooting",
+    "text": "Data Preparation and Troubleshooting\n\nPrompt 3 — Troubleshooting an Empty Scatter Plot\nOriginal Prompt (Korean)\n하다 보니 이런 오류가 뜨네? 왜 그런가? 어떤 수정이 가능해?\nEnglish Translation\nWhile running the code, I encountered this error or warning. Why is it happening, and what changes can I make to fix it?\nAttachment: Screenshot of the RStudio warning and empty scatter plot\n\n\nPrompt 4 — Troubleshooting the Remaining Warning\nOriginal Prompt (Korean)\n수정해봤는데 이렇게 되는데 또 경고가 뜨네.\nEnglish Translation\nI modified the code, and the scatter plot now appears, but I am still getting a warning message. What is causing it, and how can I resolve it?\nAttachment: Screenshot of the updated plot and warning message\n\n\nWhat I Revised After AI Assistance\nI checked variable names, missing values, and GDP observations that could not be displayed on a logarithmic scale. I revised the data preparation steps to exclude missing or non-positive GDP values."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#revising-the-research-question-and-variables",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#revising-the-research-question-and-variables",
+    "title": "AI Prompts and Revisions",
+    "section": "Revising the Research Question and Variables",
+    "text": "Revising the Research Question and Variables\n\nPrompt 5 — Changing the Scatter Plot to GDP and HPI\nOriginal Prompt (Korean)\n민영이랑 상의해보니 Chart 9는 GDP per capita와 HPI의 관계를 보는 scatter plot으로 바꾸는 게 더 좋을 것 같아. 지금까지 만든 코드에서 어떻게 수정하면 좋을까? 2025년 데이터를 쓰고, continent별 색상 구분과 GDP 로그 스케일은 유지하고 싶어. 그리고 왜 이 구성이 더 적절한지도 간단히 설명해줘.\nEnglish Translation\nAfter discussing the chart with Minyeong, we think it would be better to use a scatter plot showing the relationship between GDP per capita and the Happy Planet Index (HPI).\nHow should I modify the existing code? I want to use the 2025 observations while keeping the continent-based colors and the logarithmic GDP scale.\nPlease also briefly explain why this variable combination is more appropriate.\n\n\nPrompt 6 — Reviewing the Revised Scatter Plot\nOriginal Prompt (Korean)\n이렇게 괜찮나?\nEnglish Translation\nDoes the revised scatter plot look appropriate now? Please review its design and whether it meets the assignment requirements.\nAttachment: Screenshot of the revised GDP–HPI scatter plot\n\n\nPrompt 7 — Reviewing Another Plot Output\nOriginal Prompt\n[Updated chart screenshot]\nEnglish Description\nI shared another screenshot of the scatter plot to check whether the previous changes had been applied correctly and whether any additional adjustments were necessary.\n\n\nWhat I Revised After AI Assistance\nAfter discussing the research question with my teammate, I replaced life expectancy with HPI as the y-axis variable.\nThis allowed the chart to focus directly on whether higher economic wealth is associated with higher sustainable wellbeing.\nI retained GDP per capita on the x-axis, continent-based coloring, the logarithmic GDP scale, and the 2025 HPI observations."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#improving-the-static-scatter-plot",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#improving-the-static-scatter-plot",
+    "title": "AI Prompts and Revisions",
+    "section": "Improving the Static Scatter Plot",
+    "text": "Improving the Static Scatter Plot\n\nPrompt 8 — Improving Chart Appearance and Exporting an Image\nOriginal Prompt (Korean)\n지금 Chart 9를 GDP per capita와 HPI의 관계를 보는 scatter plot으로 수정해서 그래프가 정상적으로 나왔어. 이걸 최종 제출과 PPT에 사용하기 좋게 조금 더 깔끔하게 다듬고 싶은데, 현재 코드에서 어떤 부분을 수정하면 좋을까? 특히 x축 숫자 표시, 긴 continent 범례가 잘리지 않도록 하는 방법, 그리고 PPT에 넣을 수 있도록 그래프를 이미지로 저장하는 코드도 같이 알려줘. 기존 코드의 목적이나 구조는 최대한 유지해줘.\nEnglish Translation\nI successfully revised Chart 9 into a scatter plot showing the relationship between GDP per capita and HPI.\nI would like to improve its appearance for the final submission and PowerPoint presentation.\nWhich parts of the current code should I modify? In particular, please explain how to format the x-axis numbers, prevent long continent names in the legend from being cut off, and save the graph as an image for PowerPoint.\nPlease preserve the original purpose and structure of the code as much as possible.\n\n\nPrompt 9 — Reviewing the Updated Figure\nOriginal Prompt (Korean)\n괜찮나?\nEnglish Translation\nDoes the updated figure look good enough for the final presentation? Please check whether the formatting changes were applied correctly.\nAttachment: Screenshot of the updated ggplot\n\n\nPrompt 10 — Fixing the Clipped Title and Legend\nOriginal Prompt\n[Image of the exported scatter plot]\nEnglish Description\nI shared the exported PNG image to check the final appearance. The screenshot showed that the chart title and some continent legend labels were clipped.\n\n\nPrompt 11 — Requesting Further Layout Corrections\nOriginal Prompt (Korean)\n제목이랑 레전드가 좀 짤리는데 수정해야할 것 같아.\nEnglish Translation\nThe title and legend are partially cut off, so I think the layout needs to be revised. How can I fix them without changing the chart itself?\n\n\nPrompt 12 — Troubleshooting the Legend Again\nOriginal Prompt (Korean)\n레전드가 아직 짤려보여.\nEnglish Translation\nThe continent legend still appears to be cut off. How can I adjust the legend layout so that all region names are fully visible?\nAttachment: Screenshot showing the remaining legend clipping\n\n\nPrompt 13 — Requesting the Complete Revised Code\nOriginal Prompt (Korean)\n여기서 전체 변경으로 알려줘봐.\nEnglish Translation\nPlease provide the complete revised R code rather than individual code fragments, incorporating all the changes needed to fix the title and legend layout.\n\n\nPrompt 14 — Reviewing the Final Exported Image\nOriginal Prompt (Korean)\n됐나?\nEnglish Translation\nDoes the final exported image look correct now? Please check whether the title, legend, axes, and chart layout are properly displayed.\nAttachment: Final exported Chart 9 PNG\n\n\nPrompt 15 — Reviewing the Complete Static Chart Code\nOriginal Prompt (Korean)\n이게 전체코드인데 과제 요구사항 등에 다 맞게 된지 최종점검해줘.\nEnglish Translation\nThis is the complete R code for Chart 9. Please conduct a final review and check whether it meets the assignment requirements and whether anything is missing or incorrect.\n\n\nWhat I Revised After AI Assistance\nI improved the static chart through several iterations based on the rendered output.\nI revised the GDP axis formatting, title placement, legend arrangement, figure dimensions, and text sizes. I also used ggsave() to export a high-resolution image for the presentation."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#converting-chart-9-into-an-interactive-shiny-application",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#converting-chart-9-into-an-interactive-shiny-application",
+    "title": "AI Prompts and Revisions",
+    "section": "Converting Chart 9 into an Interactive Shiny Application",
+    "text": "Converting Chart 9 into an Interactive Shiny Application\n\nPrompt 16 — Adding Shiny and Plotly Interactivity\nOriginal Prompt (Korean)\n여기서 Chart 9 scatter plot 코드를 Shiny + Plotly를 이용한 interactive 버전으로 바꾸고 싶은데, 어떻게 코드를 추가하면 될까?\n구체적으로는 GDP range slider, continent filter, country name checkbox, hover 기능을 추가하고 싶고 기존 GDP-HPI 관계와 continent 색상 구분은 유지하고 싶어. 구체적으로 코드 추천해주고 왜 추천하는지도 설명해줘.\nEnglish Translation\nI want to convert my existing Chart 9 scatter plot into an interactive version using Shiny and Plotly.\nSpecifically, I want to add a GDP range slider, a continent filter, a checkbox to show or hide country names, and hover tooltips.\nI want to preserve the original GDP–HPI relationship and continent-based colors.\nPlease recommend specific code and explain why you recommend each feature.\n\n\nPrompt 17 — Improving the Interactive Chart Layout\nOriginal Prompt (Korean)\n이렇게 나오는데 제목이 짤리기 때문에 두 줄로 바꾸거나 수정이 좀 필요할 것 같고 그래프도 중간으로 와야 할 것 같은데 어떻게 생각해?\n또 다른 문제는 없나?\nEnglish Translation\nThe interactive chart now appears as shown in the screenshot, but the title is cut off, so I think it needs to be split into two lines or otherwise adjusted.\nI also think the graph should be more centered. What do you think?\nAre there any other problems with the current layout or functionality?\nAttachment: Screenshot of the interactive Shiny application\n\n\nWhat I Revised After AI Assistance\nI converted the original ggplot2 scatter plot into an interactive Shiny application using Plotly.\nI added a GDP range slider, continent selection, optional country labels, and hover tooltips. I also refined the chart title, dimensions, and margins."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#coordinating-the-visual-design-with-the-team",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#coordinating-the-visual-design-with-the-team",
+    "title": "AI Prompts and Revisions",
+    "section": "Coordinating the Visual Design with the Team",
+    "text": "Coordinating the Visual Design with the Team\n\nPrompt 18 — Unifying the Team’s Chart Designs\nOriginal Prompt (Korean)\n민영이 다음에 이어서 한 과제들인데 좀 통일되게 해야 할 것 같아. 색깔이나 글꼴 등 비슷하게 바꾸고 싶은데 어떻게 바꾸면 될까?\nEnglish Translation\nThese are the additional parts of the assignment that Minyeong worked on. I think our charts should have a more consistent visual appearance.\nHow can we make the colors, fonts, and overall design more similar across the charts?\nAttachments: Teammate’s Shiny application R files\n\n\nWhat I Revised After AI Assistance\nI compared my Chart 9 design with the other team charts and worked toward a more consistent visual style, including fonts, title sizing, spacing, and coordinated colors."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#adding-an-optional-loess-trend-line",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#adding-an-optional-loess-trend-line",
+    "title": "AI Prompts and Revisions",
+    "section": "Adding an Optional LOESS Trend Line",
+    "text": "Adding an Optional LOESS Trend Line\n\nPrompt 19 — Adding a Trend Line Checkbox\nOriginal Prompt (Korean)\n지금 interactive Chart 9 scatter plot에 사용자가 선택해서 볼 수 있는 trend line 기능을 추가하고 싶은데, 그냥 있는 건 아니고 Show trend line 체크박스를 만들고, 체크했을 때 전체 GDP-HPI 관계를 보여주는 LOESS 추세선이 하나만 나타나도록 도와줘.\nEnglish Translation\nI want to add an optional trend line to my interactive Chart 9 scatter plot.\nInstead of displaying the trend line by default, I want to add a Show trend line checkbox.\nWhen the checkbox is selected, only one overall LOESS trend line should appear, showing the GDP–HPI relationship across the selected countries rather than separate trend lines for each continent.\n\n\nPrompt 20 — Troubleshooting Warning Messages\nOriginal Prompt (Korean)\n이런 오류가 뜨는데.\nEnglish Translation\nI am getting these warning or error messages after modifying the application. What is causing them, and how can I resolve them?\nAttachment: Screenshot of RStudio warning messages\n\n\nPrompt 21 — Changing the Trend Line Color\nOriginal Prompt (Korean)\n좋은데 지금 추세선 색깔을 팀 색깔로 변경하고 싶은데 어떤 색깔 추천해?\nEnglish Translation\nThe trend line works, but I want to change its color to match our team’s visual style.\nWhich color would you recommend for the trend line, considering the existing continent colors and the colors used in the other team charts?\n\n\nWhat I Revised After AI Assistance\nI added a Show trend line checkbox and configured the smoothing layer to display one overall LOESS trend line rather than separate lines by continent.\nI also revised the trend-line color so that it remained visually distinct from the continent categories."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#checking-assignment-requirements-and-shared-reactivity",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#checking-assignment-requirements-and-shared-reactivity",
+    "title": "AI Prompts and Revisions",
+    "section": "Checking Assignment Requirements and Shared Reactivity",
+    "text": "Checking Assignment Requirements and Shared Reactivity\n\nPrompt 22 — Reviewing Missing Assignment Requirements\nOriginal Prompt (Korean)\n지금 전체 코드를 보면 과제에서 요구하는 사항 중에 충족이 안 되는 게 있는 것 같아.\nEnglish Translation\nLooking at the complete team application code, I think some of the assignment requirements may not have been satisfied.\nPlease review the code against the Assignment 7 instructions and identify any missing or incomplete requirements.\n\n\nPrompt 23 — Keeping the Contour Plot Independent\nOriginal Prompt (Korean)\nreactive() 이거 contour에는 안 뜨게 하고 싶은데 어떻게 할 수 있어?\nEnglish Translation\nI want the shared reactive() data filtering to apply to the scatter plot and bubble chart, but not to the contour plot.\nHow can I structure the code so that the contour plot remains independent while the other two charts share the same reactive data?\n\n\nPrompt 24 — Final Code Review\nOriginal Prompt (Korean)\n최종 코드인데 괜찮은지 최종확인해줘.\nEnglish Translation\nThis is my final version of the code. Please review it carefully and check whether it works as intended and meets the Assignment 7 requirements.\n\n\nWhat I Revised After AI Assistance\nI reviewed the complete application against the assignment requirements and identified the requirement for at least two charts to use the same reactive dataset.\nThe Scatter and Bubble charts were connected through a shared GDP range filter, while the Contour chart retained its independent controls."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#preparing-the-ai-prompt-documentation",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#preparing-the-ai-prompt-documentation",
+    "title": "AI Prompts and Revisions",
+    "section": "Preparing the AI Prompt Documentation",
+    "text": "Preparing the AI Prompt Documentation\n\nPrompt 25 — Preparing the AI Prompt Record\nOriginal Prompt (Korean)\n지금까지 내가 말한 거 다 모아서 영어 번역 넣어줘. AI prompt 만들어서 제출하려고, 각 부분마다 수정사항들 영어로 간단히 설명해주고.\nEnglish Translation\nPlease collect all the prompts I have used so far and organize them into an AI prompt record for submission.\nInclude an English translation of each prompt and briefly explain in English what I revised or corrected in each section after using AI suggestions.\nPlease format the result so that I can submit it as my AI prompt documentation."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#summary-of-insangs-ai-assisted-work",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#summary-of-insangs-ai-assisted-work",
+    "title": "AI Prompts and Revisions",
+    "section": "Summary of Insang’s AI-Assisted Work",
+    "text": "Summary of Insang’s AI-Assisted Work\nAI assistance supported the interpretation of assignment requirements, variable selection, R coding, debugging, visualization design, Shiny and Plotly interactivity, visual integration, and final code review.\nThe final Chart 9 retained the GDP–HPI relationship, logarithmic GDP scale, continent-based colors, interactive filtering, hover information, optional country labels, and an optional LOESS trend line.\nAll AI suggestions were reviewed against the actual R output and revised as needed."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#building-the-bubble-chart",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#building-the-bubble-chart",
+    "title": "AI Prompts and Revisions",
+    "section": "Building the Bubble Chart",
+    "text": "Building the Bubble Chart\n\nPrompt 1\nHow should I write code to create a bubble chart in Shiny using the 2025 Happy Planet Index data? Please show me the code structure.\n\n\nPrompt 2\nI added GDP per capita to the data preparation code, but gdp is returning NA. Why is this happening?\n\n\nPrompt 3\nI received the following error. How can I fix it?\nError in plotlyOutput(\"bubble_chart\", height = \"600px\") :\n  could not find function \"plotlyOutput\"\n\n\nPrompt 4\nWhat is Plotly used for? Can I create the chart without it?\n\n\nPrompt 5\nAn error appears in the Shiny app. Can you help me identify the problem?\nAttachment: Screenshot\n\n\nPrompt 6\nI am now using a revised server function. It filters countries by GDP, plots GDP on the X-axis and ecological footprint on the Y-axis, and represents life satisfaction through bubble area. Can you review this version in relation to the error?\n\n\nPrompt 7\nWhen I run the app, I receive Excel import warnings about columns V and W, automatic names for blank columns, and a filtering error for gdp &gt;= input$gdp[1].\nThe error says the condition must be of size 134 or 1, not size 0. There are also jsonlite warnings about named vectors. How can I resolve these messages?\n\n\nPrompt 8\nCould you reorganize the complete code? I do not know where to put the individual changes.\n\n\nWhat Was Revised After AI Assistance\nThe Bubble Chart code was reorganized and debugged so that the required variables could be loaded correctly and the Shiny inputs could be used without the earlier filtering errors."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#styling-the-bubble-chart",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#styling-the-bubble-chart",
+    "title": "AI Prompts and Revisions",
+    "section": "Styling the Bubble Chart",
+    "text": "Styling the Bubble Chart\n\nPrompt 9\nThe app works now. How can I change the font and add a border around each circle?\n\n\nPrompt 10\nI would like to use a Google Font with Medium 500 weight.\n\n\nPrompt 11\nShould I use a color gradient? I would like a purple-to-blue gradient.\n\n\nPrompt 12\nCan I use color names instead of numeric color codes?\n\n\nPrompt 13\nI reduced the bubble size, and I think the chart looks better now.\nAttachment: Screenshot\n\n\nWhat Was Revised After AI Assistance\nThe Bubble Chart styling was refined by adjusting the font, bubble borders, bubble sizes, and color gradient to improve readability and visual consistency."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#exploring-a-contour-chart",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#exploring-a-contour-chart",
+    "title": "AI Prompts and Revisions",
+    "section": "Exploring a Contour Chart",
+    "text": "Exploring a Contour Chart\n\nPrompt 14\nHow should I write code to create a contour chart in Shiny using the 2025 HPI data? Please show me the code structure.\n\n\nPrompt 15\nThe contour chart came out like this, but I find it difficult to interpret. Is this correct?\nAttachment: Screenshot\n\n\nPrompt 16\nI wanted to examine the potentially weak relationships between GDP and the indicators used in HPI: ecological footprint, wellbeing, and life expectancy.\n\n\nPrompt 17\nWhich parts of the code should I change to reflect that purpose?\n\n\nPrompt 18\nI used the revised code for three side-by-side charts, but I received an object-not-found error. Can you check my code?\nMy data preparation includes country, gdp, footprint, and satisfaction, while the server also refers to life_expectancy.\n\n\nPrompt 19\nIs this the right chart, or should I instead put GDP and HPI on the X- and Y-axes and show the number of countries through contours?\nAttachment: Screenshot\n\n\nPrompt 20\nWhat would the code look like for GDP on the X-axis, HPI on the Y-axis, and density contours showing where countries cluster?\n\n\nPrompt 21\nThis version seems to make more sense. What do you think?\nAttachment: Screenshot\n\n\nWhat Was Revised After AI Assistance\nThe initial Contour Plot concept was revised after reviewing the output.\nThe final version uses GDP per capita on the X-axis and HPI on the Y-axis, with density contours showing where countries are concentrated within the joint GDP–HPI distribution."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#downloading-charts",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#downloading-charts",
+    "title": "AI Prompts and Revisions",
+    "section": "Downloading Charts",
+    "text": "Downloading Charts\n\nPrompt 22\nWhy do some Shiny charts allow me to download a PNG directly while others do not?\n\n\nPrompt 23\nI do not understand the third step for adding the PNG download feature. Is the following arrangement correct?\nI placed renderPlot() and downloadHandler() inside contour_plot &lt;- reactive({...}), before the chart-building code, and added res = 96 at the end of that reactive expression.\n\n\nWhat Was Revised After AI Assistance\nA PNG download function was added to the Contour Plot so that the visualization could be exported directly from the Shiny application."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#combining-the-three-apps-for-submission",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#combining-the-three-apps-for-submission",
+    "title": "AI Prompts and Revisions",
+    "section": "Combining the Three Apps for Submission",
+    "text": "Combining the Three Apps for Submission\n\nPrompt 24\nI need to submit the files now. How should I combine the three app.R files?\n\n\nPrompt 25\nCan I integrate them simply by copying and pasting the code?\n\n\nPrompt 26\nHere are my three files:\n\nepps6356_assign07_chart18_bubble.R\nepps6356_assign07_contour.R\nepps6356_assign07_chart9_scatter.R\n\n\n\nWhat Was Revised After AI Assistance\nThe three separately developed visualizations were organized into a single Shiny application.\nThe final application uses separate navigation tabs for the Scatter, Bubble, and Contour visualizations while retaining chart-specific controls."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#improving-the-contour-png-export",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#improving-the-contour-png-export",
+    "title": "AI Prompts and Revisions",
+    "section": "Improving the Contour PNG Export",
+    "text": "Improving the Contour PNG Export\n\nPrompt 27\nCan the contour PNG be exported more attractively? The title looks much smaller than it does in the Shiny app. Is that expected?\nAttachment: PNG export\n\n\nWhat Was Revised After AI Assistance\nThe exported Contour Plot was reviewed separately from the browser display because exported graphics may use different physical dimensions and text scaling.\nThe export settings were adjusted to improve readability in the saved image."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#preparing-the-prompt-document",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#preparing-the-prompt-document",
+    "title": "AI Prompts and Revisions",
+    "section": "Preparing the Prompt Document",
+    "text": "Preparing the Prompt Document\n\nPrompt 28\nPlease create prompt.qmd from everything I asked in this conversation.\nThe document should be in English and does not need to include the times of my questions or your responses."
+  },
+  {
+    "objectID": "assignments/Visualization/epps6356_assign07_ai_prompts.html#summary-of-minyeongs-ai-assisted-work",
+    "href": "assignments/Visualization/epps6356_assign07_ai_prompts.html#summary-of-minyeongs-ai-assisted-work",
+    "title": "AI Prompts and Revisions",
+    "section": "Summary of Minyeong’s AI-Assisted Work",
+    "text": "Summary of Minyeong’s AI-Assisted Work\nAI assistance supported the development and debugging of the Bubble Chart, development and interpretation of the Contour Plot, chart styling, PNG export, and integration of the team’s three visualizations into a single Shiny application.\nMinyeong reviewed the visual outputs throughout the process and revised the code, variable choices, styling, and application structure based on the rendered results."
+  },
+  {
+    "objectID": "assignments/Visualization/synergyreport.html",
+    "href": "assignments/Visualization/synergyreport.html",
+    "title": "Synergy report",
+    "section": "",
+    "text": "Our team divided the chart development and documentation responsibilities between two members.\nInsang Lee was responsible for Chart 1, the variable-width column chart, Chart 3, the sorted bar chart comparing the top and bottom 20 countries, and the README with sessionInfo() information.\nMinyeong Yoon was responsible for Chart 2, the table with embedded charts, Chart 4, the column chart comparing regional mean HPI scores, and the synergy report.\nBoth members used the 2025 observations from the same Happy Planet Index dataset.\nWe took responsibility for their assigned tasks and contributed actively to the project.\nWe each developed our charts and prepared our assigned documentation, sharing progress and making adjustments as needed to bring the work together.\nThis balanced contribution helped us complete the project efficiently and work well as a team during limited time.\nAll code, charts, and supporting documentation will be uploaded to the team’s GitHub repository.\nWhen bringing our work together, we needed to align the variable names and regional classifications.\nSome initial code used renamed variables, while other code retained the original Excel column names.\nWe revised the code to match the shared data structure and used consistent regional labels.\nWe also worked on titles, numeric labels, source notes, and chart formatting to make the results easier to interpret on the Quarto page.\nAI assisted with code explanations, troubleshooting, and design revisions.\nWe documented this assistance in our prompt record at the bottom of assignment 4 document and revised the suggestions to fit our data and preferences.\nFor example, revisions addressed missing table value labels, an unsupported caption argument, and colors that did not clearly communicate the chart’s main takeaway.\nIf we repeated this project, we would establish a shared data-preparation script process, naming convention, and visual theme colors before developing the charts separately.\nThis would reduce integration work and help us maintain consistent formatting.\nWe would also reserve more time for rendering the complete Quarto page from a clean R session and checking the final documentation together."
+  },
+  {
+    "objectID": "assignments/Visualization/synergyreport.html#synergy-report",
+    "href": "assignments/Visualization/synergyreport.html#synergy-report",
+    "title": "Synergy report",
+    "section": "",
+    "text": "Our team divided the chart development and documentation responsibilities between two members.\nInsang Lee was responsible for Chart 1, the variable-width column chart, Chart 3, the sorted bar chart comparing the top and bottom 20 countries, and the README with sessionInfo() information.\nMinyeong Yoon was responsible for Chart 2, the table with embedded charts, Chart 4, the column chart comparing regional mean HPI scores, and the synergy report.\nBoth members used the 2025 observations from the same Happy Planet Index dataset.\nWe took responsibility for their assigned tasks and contributed actively to the project.\nWe each developed our charts and prepared our assigned documentation, sharing progress and making adjustments as needed to bring the work together.\nThis balanced contribution helped us complete the project efficiently and work well as a team during limited time.\nAll code, charts, and supporting documentation will be uploaded to the team’s GitHub repository.\nWhen bringing our work together, we needed to align the variable names and regional classifications.\nSome initial code used renamed variables, while other code retained the original Excel column names.\nWe revised the code to match the shared data structure and used consistent regional labels.\nWe also worked on titles, numeric labels, source notes, and chart formatting to make the results easier to interpret on the Quarto page.\nAI assisted with code explanations, troubleshooting, and design revisions.\nWe documented this assistance in our prompt record at the bottom of assignment 4 document and revised the suggestions to fit our data and preferences.\nFor example, revisions addressed missing table value labels, an unsupported caption argument, and colors that did not clearly communicate the chart’s main takeaway.\nIf we repeated this project, we would establish a shared data-preparation script process, naming convention, and visual theme colors before developing the charts separately.\nThis would reduce integration work and help us maintain consistent formatting.\nWe would also reserve more time for rendering the complete Quarto page from a clean R session and checking the final documentation together."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-1",
+    "href": "assignments/Visualization/prompts.html#prompt-1",
+    "title": "Assignment 4",
+    "section": "Prompt 1",
+    "text": "Prompt 1\n\nOriginal Prompt\n안녕. 오늘 EPPS 6356 assignment4할꺼야. 차트를 만들껀데, Variable-width column 랑 Bar chart 2개가 내 담당이여서 만들어볼꺼야. 하면서 네 도움이 필요해, 하다가 궁금한거 있으면 물어볼께.\nHappy Planet Index (HPI) 데이터를 쓸거고 R사용할꺼야\n\n\nEnglish Translation\nHi. I am going to work on EPPS 6356 Assignment 4 today.\nI am responsible for two charts, a variable-width column chart and a bar chart, so I am going to work on those. I will need your help while I work on them, and I will ask questions whenever I am unsure about something.\nI will use the Happy Planet Index (HPI) data and R."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-2",
+    "href": "assignments/Visualization/prompts.html#prompt-2",
+    "title": "Assignment 4",
+    "section": "Prompt 2",
+    "text": "Prompt 2\n\nOriginal Prompt\nHPI 데이터에서 2025년 자료만 사용하고 싶은데, R에서 어떻게 필터링하는지 알려줘.\n코드와 각 부분의 의미도 설명해줘\n(엑셀파일첨부)\n\n\nEnglish Translation\nI want to use only the 2025 observations from the HPI dataset. Can you show me how to filter the data in R?\nPlease provide the code and explain what each part of the code does.\nAttachment: HPI Excel file"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-3",
+    "href": "assignments/Visualization/prompts.html#prompt-3",
+    "title": "Assignment 4",
+    "section": "Prompt 3",
+    "text": "Prompt 3\n\nOriginal Prompt\n2025년 HPI 데이터가 제대로 필터링됐는지 확인하고 싶은데, 기본적인 descriptive information을 간단히 확인할 수 있는 R 코드는 뭐가 있어? 최종 웹페이지에는 출력되지 않게 하고 싶어.\n\n\nEnglish Translation\nI want to check whether the 2025 HPI data were filtered correctly. What are some simple R commands I can use to check basic descriptive information?\nI do not want these diagnostic outputs to appear on the final webpage."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-4",
+    "href": "assignments/Visualization/prompts.html#prompt-4",
+    "title": "Assignment 4",
+    "section": "Prompt 4",
+    "text": "Prompt 4\n\nOriginal Prompt\nContinent 가 뭔데?\n\n\nEnglish Translation\nWhat does the Continent variable mean?"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-5",
+    "href": "assignments/Visualization/prompts.html#prompt-5",
+    "title": "Assignment 4",
+    "section": "Prompt 5",
+    "text": "Prompt 5\n\nOriginal Prompt\nHPI 데이터에 그 변수가 1~8정도로 표기되어있는데, 각 숫자가 어떤 대륙을 의미하는지 엑셀 파일에서 확인이 어렵네, 니가 확인 가능한가?\n\n\nEnglish Translation\nIn the HPI data, the Continent variable is coded with numbers from 1 to 8, but it is difficult to determine from the Excel file what each number represents. Can you check whether it is possible to identify which continent or region corresponds to each number?"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-6",
+    "href": "assignments/Visualization/prompts.html#prompt-6",
+    "title": "Assignment 4",
+    "section": "Prompt 6",
+    "text": "Prompt 6\n\nOriginal Prompt\nvariable-width column만들기 위해서 추천된 hpi 디자인은 Continents: width = population, height = mean HPI 이고, r에서는 geom_rect(), cumulative xmin/xmax suggested 되어 있는데 이거 어떻게 잘 활용해서 R만들수 있을까? 각 단계들도 구체적으로 설명해줘\n\n\nEnglish Translation\nFor the variable-width column chart, the suggested HPI design is Continents: width = population and height = mean HPI, and the suggested R approach is geom_rect() with cumulative xmin/xmax.\nHow can I use these suggestions to create the chart in R? Please explain each step in detail."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-7",
+    "href": "assignments/Visualization/prompts.html#prompt-7",
+    "title": "Assignment 4",
+    "section": "Prompt 7",
+    "text": "Prompt 7\n\nOriginal Prompt\n지금 코드 실행해봤는데 제목이 legend랑 겹쳐서 legend 크기나 위치를 좀 조정해야 할 것 같음. 제목이 안 겹치게 아래쪽으로 내리고 싶고, x축 숫자도 너무 지저분해 보여. 그리고 그래프 내용이 과제에서 요구한 걸 제대로 포함하고 있는지도 확인해줘. 맞아?\n\n\nEnglish Translation\nI ran the code, but the title overlaps with the legend, so I think the legend size or position needs to be adjusted. I want to move the legend downward so that it does not overlap with the title, and the x-axis numbers also look too cluttered.\nAlso, please check whether the chart actually contains what the assignment requires."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-8",
+    "href": "assignments/Visualization/prompts.html#prompt-8",
+    "title": "Assignment 4",
+    "section": "Prompt 8",
+    "text": "Prompt 8\n\nOriginal Prompt\n중간에 이런 warning이 계속 나오는데 괜찮지?\n(사진첨부)\n\n\nEnglish Translation\nI keep getting warning messages like these while running the code. Is this okay?\nAttachment: Screenshot of the warning messages"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-9",
+    "href": "assignments/Visualization/prompts.html#prompt-9",
+    "title": "Assignment 4",
+    "section": "Prompt 9",
+    "text": "Prompt 9\n\nOriginal Prompt\n지금 그래프가 legend가 너무 길어서 오른쪽이 잘리고 아래 공간도 너무 많이 차지해. 제목도 너무 큼. 과제에서 color-blind-safe palette를 쓰라고 되어 있는데 색도 변경필요한거 같음. 전체적으로 안 잘리고 깔끔하게 보이게 코드를 제안해줘. 각 수정이 왜 필요한지도 설명해주고 가장 추천하는 코드가 뭔지 왜인지도 알려줘.\n(사진첨부)\n\n\nEnglish Translation\nThe legend is too long, so part of it is cut off on the right, and it also takes up too much space. The title is also too large.\nThe assignment requires a color-blind-safe palette, so I think the colors should also be changed.\nPlease suggest code that makes the chart clean without anything being cut off. Explain why each change is necessary and which version you recommend most and why.\nAttachment: Screenshot of the rendered chart"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-10",
+    "href": "assignments/Visualization/prompts.html#prompt-10",
+    "title": "Assignment 4",
+    "section": "Prompt 10",
+    "text": "Prompt 10\n\nOriginal Prompt\n지금 수정한 그래프를 보니까 legend는 안 잘리는데 2열로 만들면서 아래쪽에 4줄을 차지해서 실제 chart 영역이 너무 납작하고 전체 비율이 어색해 보여. 그래프를 조금 더 넓게 만들고 legend를 4열 2줄 정도로 배치해서 실제 chart 영역이 더 크게 보이게 할 수 있을까? Quarto에서 fig-width와 fig-height를 조정하는 방법까지 포함해서 가장 적절한 코드를 알려줘.\n(사진첨부)\n\n\nEnglish Translation\nAfter the revision, the legend is no longer cut off, but because it is arranged in two columns, it takes up four rows at the bottom. This makes the actual chart area look too flat and the overall proportions look awkward.\nCan I make the chart wider and arrange the legend in about four columns and two rows so that the chart area appears larger?\nPlease include how to adjust fig-width and fig-height in Quarto and suggest the most appropriate code.\nAttachment: Screenshot of the rendered chart"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-11",
+    "href": "assignments/Visualization/prompts.html#prompt-11",
+    "title": "Assignment 4",
+    "section": "Prompt 11",
+    "text": "Prompt 11\n\nOriginal Prompt\n지금 그래프는 전체 폭에 막대가 너무 길게 퍼져 있어서 비율이 어색해 보임 차트 영역을 전체의 왼쪽 약 2/3 정도만 차지하게 하고, 오른쪽 1/3에는 legend가 오도록 배치하고 싶어.\n즉 막대는 왼쪽에 조금 더 compact하게 보이고, legend는 오른쪽에 세로로 정리되게 하고 싶어. Quarto/ggplot2에서 이 레이아웃을 가장 깔끔하게 만드는 코드를 제안해줘.\n제목, 축, source caption도 같이 자연스럽게 보이게 해주고, 왜 그 방법을 추천하는지도 설명해줘.\n\n\nEnglish Translation\nThe bars currently stretch across the full width of the figure, which makes the proportions look awkward. I want the chart area to occupy about the left two-thirds of the figure and the legend to occupy about the right one-third.\nIn other words, I want the bars to look more compact on the left and the legend to be arranged vertically on the right.\nPlease suggest the cleanest way to create this layout in Quarto and ggplot2. Also make the title, axes, and source caption look natural and explain why you recommend that approach."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-12",
+    "href": "assignments/Visualization/prompts.html#prompt-12",
+    "title": "Assignment 4",
+    "section": "Prompt 12",
+    "text": "Prompt 12\n\nOriginal Prompt\n지금 그래프를 보니까 variable-width 자체는 유지해야 하는데, 막대 순서가 랜덤하게 보여서 흐름이 없고 legend 순서도 막대 순서랑 달라서 보기 어려운 것 같아. 색도 비슷한 색들이 있어서 구분이 잘 안 돼.\n과제의 width = population, height = mean HPI, geom_rect() 구조는 그대로 유지하면서, mean HPI가 높은 순서대로 막대를 정렬하고 legend도 같은 순서로 맞추고 싶어. 그리고 8개 지역이 서로 잘 구분되면서 color-blind-safe한 categorical palette로 바꾸고 싶어. 어떻게 수정하면 좋을지 코드와 이유를 설명해줘.\n\n\nEnglish Translation\nThe variable-width design itself needs to remain, but the current bar order looks random, so the chart does not have a clear visual flow. The legend order is also different from the bar order, which makes the chart harder to read. Some of the colors also look too similar.\nI want to keep the assignment structure of width = population, height = mean HPI, and geom_rect(), but sort the columns from highest to lowest mean HPI and make the legend use the same order.\nI also want to change the colors to a color-blind-safe categorical palette in which the eight regions are easy to distinguish. Please explain how to modify the code and why."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-13",
+    "href": "assignments/Visualization/prompts.html#prompt-13",
+    "title": "Assignment 4",
+    "section": "Prompt 13",
+    "text": "Prompt 13\n\nOriginal Prompt\n지금 그래프는 mean HPI가 높은 순으로 정렬했고 legend 순서도 막대 순서와 맞췄고 color-blind-safe categorical palette로 바꿨음. 그래프를 조금 더 다듬고 싶은데, y축 눈금을 10 단위로 보여주고 minor grid는 없애고 싶은데 어떻게할 수있지?\n지역 이름을 막대 위에 직접 넣으면 좁은 막대에서 복잡할 것 같아서, 대신 각 막대 위에 mean HPI 값만 한 자리 소수로 표시하면 어떨까? 그리고 과제에서 takeaway title을 요구하니까 현재 데이터에 맞는 제목과 subtitle도 제안해줘. 전체적으로 너무 복잡하지 않게 가장 추천하는 코드를 보여주고 각 수정 이유도 설명해줘.\n\n\nEnglish Translation\nThe chart is now sorted from highest to lowest mean HPI, the legend order matches the bar order, and I changed the colors to a color-blind-safe categorical palette.\nI want to refine the chart further. How can I show y-axis ticks in intervals of 10 and remove the minor grid lines?\nPutting region names directly on the columns may look too cluttered for narrow columns, so would it be better to display only the mean HPI value above each column with one decimal place?\nThe assignment also requires a takeaway title, so please suggest an appropriate title and subtitle based on the current data. Please show the version you recommend most and explain the reason for each change."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-14",
+    "href": "assignments/Visualization/prompts.html#prompt-14",
+    "title": "Assignment 4",
+    "section": "Prompt 14",
+    "text": "Prompt 14\n\nOriginal Prompt\n지금 그래프는 전체적으로 괜찮아졌는데 마지막으로 조금만 다듬고 싶어.\nx축 쪽 세로 grid line이 막대와 겹쳐서 조금 어색해 보여서 세로 grid는 없애고, y축의 가로 grid만 유지하고 싶어. 가장 높은 막대 위 숫자 라벨이 답답하지 않도록 y축 상단 여백은 지금처럼 유지하고 싶고, 좁은 막대에는 지역명을 직접 넣지 않고 legend를 계속 사용할 거야. 대신 오른쪽 legend가 조금 작아 보여서 글씨와 color key를 조금만 키우고 싶어. 현재 정렬, 색상, 숫자 라벨, 제목, subtitle은 그대로 유지하면서 가장 깔끔한 최종 코드를 제안해줘. 각 수정 이유도 간단히 설명해줘.\n\n\nEnglish Translation\nThe chart looks good overall, but I want to make a few final refinements.\nThe vertical grid lines overlap with the columns and look slightly awkward, so I want to remove the vertical grid lines while keeping the horizontal grid lines.\nI want to keep enough space above the tallest column so that its numeric label does not look crowded. I also want to continue using the legend instead of placing region names directly on narrow columns.\nHowever, the legend on the right looks slightly too small, so I want to increase the legend text and color-key sizes a little.\nPlease suggest the cleanest final code while keeping the current ordering, colors, value labels, title, and subtitle. Briefly explain the reason for each change."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-15",
+    "href": "assignments/Visualization/prompts.html#prompt-15",
+    "title": "Assignment 4",
+    "section": "Prompt 15",
+    "text": "Prompt 15\n\nOriginal Prompt\n이정도면 괜찮나 1번 과제 제출물로?\nThe 2025 HPI data were summarized by continent. The width of each column represents total population, while the height represents mean HPI.\n설명을 이렇게 넣을건데 맞는 내용인지 최종점검해줘\n(사진첨부)\n\n\nEnglish Translation\nIs this good enough as the final submission for Chart 1?\nI plan to include the following explanation:\n\nThe 2025 HPI data were summarized by continent. The width of each column represents total population, while the height represents mean HPI.\n\nPlease do a final check to make sure this description is accurate.\nAttachment: Screenshot of the final Chart 1\n\n\nWhat I Fixed After AI Assistance\nThe initial AI suggestions required several adjustments after I rendered the chart. I corrected the population scaling after checking the population unit in the HPI data, and I revised the legend placement, ordering, color palette, grid lines, figure dimensions, and value labels to improve readability. I also changed the title to state a clearer takeaway from the chart."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-16",
+    "href": "assignments/Visualization/prompts.html#prompt-16",
+    "title": "Assignment 4",
+    "section": "Prompt 16",
+    "text": "Prompt 16\n\nOriginal Prompt\nㅇㅋ 이제\nbar chart 만들건데. 과제에서는 HPI 기준으로 top 20 countries와 bottom 20 countries를 sorted bar chart로 보여주고, R에서는 geom_col()과 fct_reorder()를 suggested approach로 제시해줬어. 2025 HPI 데이터에서 NA를 제외하고 top 20과 bottom 20을 뽑아서 정렬된 bar chart를 만드는 방법을 단계별로 설명해줘. 각 코드가 왜 필요한지도 같이 알려줘.\n\n\nEnglish Translation\nOkay, now I am going to work on the bar chart.\nThe assignment suggests showing the Top 20 and Bottom 20 countries based on HPI as a sorted bar chart, and it suggests using geom_col() and fct_reorder() in R.\nUsing the 2025 HPI data, please explain step by step how to exclude missing HPI values, select the Top 20 and Bottom 20 countries, and create a sorted bar chart. Also explain why each part of the code is necessary."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-17",
+    "href": "assignments/Visualization/prompts.html#prompt-17",
+    "title": "Assignment 4",
+    "section": "Prompt 17",
+    "text": "Prompt 17\n\nOriginal Prompt\n지금 코드 실행해봤는데 사진과 같이 나옴. top 20과 bottom 20이 한 그래프에 40개 막대로 길게 붙어서 너무 길고 읽기 좀 부담스럽다. 과제에서 요구한 top 20 / bottom 20 sorted bar chart 구조는 그대로 유지하면서, 두 그룹을 facet으로 나누거나 다른 방식으로 더 읽기 쉽게 만들 수 있을까? geom_col()과 fct_reorder()는 그대로 활용하고 싶은데. 각 나라의 HPI 값도 막대 끝에 표시하면 좋은지 같이 봐주고, 가장 추천하는 레이아웃과 코드를 설명해줘.\n(사진첨부)\n\n\nEnglish Translation\nI ran the code, and the result looks like the attached image.\nThe Top 20 and Bottom 20 countries are all placed in a single chart with 40 bars, which makes the figure too long and somewhat difficult to read.\nWhile keeping the assignment requirement of a sorted Top 20 / Bottom 20 bar chart, could I divide the two groups into facets or use another layout that is easier to read?\nI still want to use geom_col() and fct_reorder(). Please also consider whether it would be useful to display each country’s HPI value at the end of the bar, and explain the layout and code you recommend most.\nAttachment: Screenshot of the first Chart 3 output"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-18",
+    "href": "assignments/Visualization/prompts.html#prompt-18",
+    "title": "Assignment 4",
+    "section": "Prompt 18",
+    "text": "Prompt 18\n\nOriginal Prompt\n전체적으로는 괜찮아 보이는데 어때? 제목이 takeway title이여야하니까 Top 20 HPI Scores Are Clearly Separated from the Bottom 20 in 2025 이런거 어떰? 부제도 있으면 추천해줘. Bottom 20 정렬 방향이나 반복되는 x축 제목도 수정할 필요가 있는지 같이 보고, 수정 필요한 부분 있으면 알려줘봐.\n(사진첨부)\n\n\nEnglish Translation\nOverall, the chart looks okay to me. What do you think?\nSince the title needs to be a takeaway title, how about:\nTop 20 HPI Scores Are Clearly Separated from the Bottom 20 in 2025\nPlease also recommend a subtitle if one would be useful.\nAlso check whether the ordering direction of the Bottom 20 and the repeated x-axis titles should be changed. Let me know if there are any other parts that should be revised.\nAttachment: Screenshot of the revised Chart 3"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-19",
+    "href": "assignments/Visualization/prompts.html#prompt-19",
+    "title": "Assignment 4",
+    "section": "Prompt 19",
+    "text": "Prompt 19\n\nOriginal Prompt\n괜찮나?\nThe 2025 HPI data were used to identify the 20 countries with the highest HPI scores and the 20 countries with the lowest HPI scores.\n이런 설명도 넣을예정인데 적합한지 봐줘\n(사진첨부)\n\n\nEnglish Translation\nDoes this look okay?\nI plan to include the following description:\n\nThe 2025 HPI data were used to identify the 20 countries with the highest HPI scores and the 20 countries with the lowest HPI scores.\n\nPlease check whether this description is appropriate for the chart.\nAttachment: Screenshot of the final Chart 3\n\n\nWhat I Fixed After AI Assistance\nThe initial version placed the Top 20 and Bottom 20 countries in one long chart, which was difficult to read. I changed the layout to two side-by-side panels with the same x-axis scale, added HPI value labels, and kept the countries sorted within each group. I also revised the title and subtitle so that the chart communicates a clearer takeaway."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-20",
+    "href": "assignments/Visualization/prompts.html#prompt-20",
+    "title": "Assignment 4",
+    "section": "Prompt 20",
+    "text": "Prompt 20\n\nOriginal Prompt\n이제 최종코드인데 최종 점검해줘. 과제에서 빠뜨리거나 잘못한거 없는지도 봐줘"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#qmd",
+    "href": "assignments/Visualization/prompts.html#qmd",
+    "title": "Assignment 4",
+    "section": "```` qmd",
+    "text": "```` qmd\ntitle: “Assignment 4: 48-Hour Chart Hackathon” format: html —"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#setup",
+    "href": "assignments/Visualization/prompts.html#setup",
+    "title": "Assignment 4",
+    "section": "Setup",
+    "text": "Setup\n#| warning: false #| message: false\nlibrary(readxl) library(tidyverse) library(patchwork)\nhpi &lt;- read_excel( “Happy-Planet-Index-2006-2025-public-data-set.xlsx”, sheet = “All Data”, skip = 1 )\nhpi_2025 &lt;- hpi %&gt;% filter(Year == 2025)\n#| include: false\nnames(hpi) nrow(hpi_2025) unique(hpi_2025$Year) summary(hpi_2025)"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#chart-1-variable-width-column-1",
+    "href": "assignments/Visualization/prompts.html#chart-1-variable-width-column-1",
+    "title": "Assignment 4",
+    "section": "Chart 1: Variable-Width Column",
+    "text": "Chart 1: Variable-Width Column\nThe 2025 HPI data were summarized by continent. The width of each column represents total population, while the height represents mean HPI across countries within each continent.\nhpi_continent &lt;- hpi_2025 %&gt;% group_by(Continent) %&gt;% summarise( population = sum(Population, na.rm = TRUE), mean_hpi = mean(HPI, na.rm = TRUE), .groups = “drop” ) %&gt;% mutate( continent_name = case_when( Continent == 1 ~ “Latin America”, Continent == 2 ~ “N America & Oceania”, Continent == 3 ~ “Western Europe”, Continent == 4 ~ “Middle East & N. Africa”, Continent == 5 ~ “Africa”, Continent == 6 ~ “South Asia”, Continent == 7 ~ “Eastern Europe & Central Asia”, Continent == 8 ~ “East Asia” ) ) %&gt;% arrange(desc(mean_hpi)) %&gt;% mutate( xmax = cumsum(population), xmin = lag(xmax, default = 0), xmid = (xmin + xmax) / 2, continent_name = factor( continent_name, levels = continent_name ) )\n#| include: false\nhpi_continent %&gt;% select(continent_name, population, mean_hpi, xmin, xmax)\n#| fig-width: 7 #| fig-height: 4.8\nggplot(hpi_continent) + geom_rect( aes( xmin = xmin, xmax = xmax, ymin = 0, ymax = mean_hpi, fill = continent_name ), color = “white”, linewidth = 0.4 ) +\ngeom_text( aes( x = xmid, y = mean_hpi + 1.2, label = sprintf(“%.1f”, mean_hpi) ), size = 2.6 ) +\nscale_fill_manual( values = c( “#0072B2”, “#E69F00”, “#009E73”, “#CC79A7”, “#D55E00”, “#56B4E9”, “#F0E442”, “#999999” ) ) +\nscale_x_continuous( labels = scales::label_number( scale = 1e-6, suffix = “B”, accuracy = 0.1 ), expand = c(0, 0) ) +\nscale_y_continuous( limits = c(0, 64), breaks = seq(0, 60, 10), expand = c(0, 0) ) +\nlabs( title = “Latin America Has the Highest Mean HPI in 2025”, subtitle = “Column width represents population; height represents mean HPI”, x = “Population (billions)”, y = “Mean HPI”, fill = NULL, caption = “Source: Happy Planet Index” ) +\nguides( fill = guide_legend( ncol = 1, keywidth = grid::unit(0.38, “cm”), keyheight = grid::unit(0.28, “cm”) ) ) +\ntheme_minimal() +\ntheme( plot.title = element_text( size = 13, face = “bold”, hjust = 0, margin = margin(b = 3) ),\nplot.subtitle = element_text(\n  size = 8,\n  margin = margin(b = 7)\n),\n\naxis.title = element_text(size = 9.5),\naxis.text = element_text(size = 8.5),\n\npanel.grid.minor = element_blank(),\npanel.grid.major.x = element_blank(),\n\nlegend.position = \"right\",\nlegend.justification = \"center\",\nlegend.text = element_text(size = 7.8),\nlegend.spacing.y = grid::unit(0.07, \"cm\"),\nlegend.margin = margin(l = 7),\n\nplot.caption = element_text(\n  size = 7.5,\n  hjust = 1,\n  margin = margin(t = 4)\n),\n\nplot.margin = margin(\n  t = 5,\n  r = 5,\n  b = 4,\n  l = 5\n)\n)"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#chart-3-bar-chart-1",
+    "href": "assignments/Visualization/prompts.html#chart-3-bar-chart-1",
+    "title": "Assignment 4",
+    "section": "Chart 3: Bar Chart",
+    "text": "Chart 3: Bar Chart\nThe 2025 HPI data were used to identify the 20 countries with the highest scores and the 20 countries with the lowest scores. Countries are sorted by HPI within each group.\nhpi_ranked &lt;- hpi_2025 %&gt;% filter(!is.na(HPI))\ntop20 &lt;- hpi_ranked %&gt;% slice_max( order_by = HPI, n = 20, with_ties = FALSE )\nbottom20 &lt;- hpi_ranked %&gt;% slice_min( order_by = HPI, n = 20, with_ties = FALSE )\n#| include: false\nnrow(top20) nrow(bottom20)\ntop20 %&gt;% select(Country, HPI) %&gt;% arrange(desc(HPI))\nbottom20 %&gt;% select(Country, HPI) %&gt;% arrange(desc(HPI))\n#| fig-width: 12 #| fig-height: 7 #| fig-align: center\np_top &lt;- ggplot( top20, aes( x = HPI, y = forcats::fct_reorder(Country, HPI) ) ) + geom_col( fill = “#0072B2”, width = 0.72 ) + geom_text( aes( label = sprintf(“%.1f”, HPI) ), hjust = -0.15, size = 2.5 ) + scale_x_continuous( limits = c(0, 72), breaks = seq(0, 70, 10), expand = c(0, 0) ) + labs( title = “Top 20”, x = “Happy Planet Index”, y = NULL ) + theme_minimal() + theme( plot.title = element_text( size = 11, face = “bold”, margin = margin(b = 5) ), axis.title.x = element_text(size = 9.5), axis.text = element_text(size = 8), panel.grid.minor = element_blank(), panel.grid.major.y = element_blank() )\np_bottom &lt;- ggplot( bottom20, aes( x = HPI, y = forcats::fct_reorder(Country, HPI) ) ) + geom_col( fill = “#D55E00”, width = 0.72 ) + geom_text( aes( label = sprintf(“%.1f”, HPI) ), hjust = -0.15, size = 2.5 ) + scale_x_continuous( limits = c(0, 72), breaks = seq(0, 70, 10), expand = c(0, 0) ) + labs( title = “Bottom 20”, x = “Happy Planet Index”, y = NULL ) + theme_minimal() + theme( plot.title = element_text( size = 11, face = “bold”, margin = margin(b = 5) ), axis.title.x = element_text(size = 9.5), axis.text = element_text(size = 8), panel.grid.minor = element_blank(), panel.grid.major.y = element_blank() )\np_top + p_bottom + plot_annotation( title = “A Clear HPI Gap Separates the Top and Bottom 20 Countries in 2025”, subtitle = “The lowest score in the Top 20 is 57.6, compared with 41.8 at the top of the Bottom 20”, caption = “Source: Happy Planet Index”, theme = theme( plot.title = element_text( size = 14, face = “bold”, margin = margin(b = 3) ), plot.subtitle = element_text( size = 9, margin = margin(b = 7) ), plot.caption = element_text( size = 7.5, hjust = 1, margin = margin(t = 5) ) ) )\n\nEnglish Translation\nThis is now my final code. Please do a final review and check whether I have omitted anything required by the assignment or made any mistakes.\nThe full Quarto code above was included for review."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompt-21",
+    "href": "assignments/Visualization/prompts.html#prompt-21",
+    "title": "Assignment 4",
+    "section": "Prompt 21",
+    "text": "Prompt 21\n\nOriginal Prompt\n지금까지 내가 말한거 다 모아서 영어 번역넣어줘 ai prompt 만들어서 제출할려고, 각 부분마다 수정사항들 영어로 간단히 설명해주고\n\n\nEnglish Translation\nPlease collect all of the prompts I have used so far and organize them into an AI prompt record for submission.\nInclude an English translation for each prompt, and briefly explain in English what I revised or corrected in each section after using the AI suggestions.\nPlease format the result so that I can use it as my submitted AI prompt documentation."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#about-this-prompt-record",
+    "href": "assignments/Visualization/prompts.html#about-this-prompt-record",
+    "title": "Assignment 4",
+    "section": "About this prompt record",
+    "text": "About this prompt record\nThe prompts below are English translations of the user’s Korean requests from this assignment conversation. Code submitted with the requests is retained below, with whitespace and Markdown formatting normalized for readability. These translations are not verbatim copies of the original Korean text. Attachment-only turns and prompts for preparing this disclosure are included. Assistant responses are not reproduced: the assignment requests the prompts, and the scope of the responses is disclosed above.\nDates and times are Central Time. Where a time was not exposed in the available record, it is marked as unavailable. This is the available record of this student’s Chart 2 and Chart 4 assistance, not a claim to include other team members’ AI use."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#shared-preparation-and-initial-code-assistance",
+    "href": "assignments/Visualization/prompts.html#shared-preparation-and-initial-code-assistance",
+    "title": "Assignment 4",
+    "section": "Shared preparation and initial code assistance",
+    "text": "Shared preparation and initial code assistance\n\nPrompt 1 — October 1, 2026; exact time unavailable — Charts 2 and 4\nAttachment: epps6356_assignment04.pdf.\n\nI need to complete this assignment. I am responsible for drawing Chart 2, Table with embedded charts, and Chart 4, Column chart.\n\n\n\nPrompt 2 — October 1, 2026, 5:46 p.m. — Shared preparation\n\nWhat does .name_repair = \"unique\" mean?\n\n\n\nPrompt 3 — October 1, 2026, 5:47 p.m. — Shared preparation\n\nWhat if I want to delete columns 21, 22, and 23?"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#package-choices-debugging-and-table-formatting",
+    "href": "assignments/Visualization/prompts.html#package-choices-debugging-and-table-formatting",
+    "title": "Assignment 4",
+    "section": "Package choices, debugging, and table formatting",
+    "text": "Package choices, debugging, and table formatting\n\nPrompt 4 — October 2, 2026, 2:35 a.m. — Chart 2\n\nCan I create a bar graph using gt + gtExtras or facet_wrap()?\n\n\n\nPrompt 5 — October 2, 2026, 2:42 a.m. — Chart 4\n\nPlease also help me create the bar graph for Chart 4 using geom_col() and position_dodge().\n\n\n\nPrompt 6 — October 2, 2026, 2:50 a.m. — Shared preparation and both charts\n\nI wrote the following code, but the data dataset is not loading correctly.\n\nSubmitted Quarto/R content (formatting normalized):"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#qmd-1",
+    "href": "assignments/Visualization/prompts.html#qmd-1",
+    "title": "Assignment 4",
+    "section": "```` qmd",
+    "text": "```` qmd\ntitle: “Assignment 4” format: html editor: visual —\nlibrary(readxl) library(dplyr) library(ggplot2) library(gt) library(gtExtras)\ndata_raw &lt;- read_excel( “Happy-Planet-Index-2006-2025-public-data-set.xlsx”, sheet = “All Data”, skip = 1, n_max = 19 )\ncontinent &lt;- c( “Latin America”, “North America & Oceania”, “Western Europe”, “Middle East & North Africa”, “Africa”, “South Asia”, “Eastern Europe & Central Asia”, “East Asia” )\ndata &lt;- data_raw |&gt; transmute( country = Country, region_code = as.integer(Continent), year = as.integer(Year), hpi = as.numeric(HPI), life_expectancy = as.numeric(Life Expectancy), life_satisfaction = as.numeric(Life Satisfaction), footprint = as.numeric(Ecological Footprint) ) |&gt; filter(year == 2025) |&gt; mutate(region = continent[region_code])\n\nPlot 2\ntop15 &lt;- data |&gt; arrange(desc(hpi), country) |&gt; slice_head(n = 15) |&gt; mutate(rank = row_number()) |&gt; select(rank, country, hpi, life_expectancy, life_satisfaction, footprint)\nhpi_bar &lt;- function(values) { vapply(values, function(value) { sprintf( paste0( ), value, “white”, value ) }, character(1)) }\nplot2 &lt;- top15 |&gt; gt() |&gt; gt_plt_bar( column = hpi, color = “mediumpurple1”, keep_column = TRUE ) |&gt; cols_label( rank = “Rank”, country = “Country”, hpi = “HPI”, life_expectancy = “Life expectancy (years)”, life_satisfaction = “Life satisfaction (0–10)”, footprint = “Ecological footprint (gha/person)” ) |&gt; fmt_number( columns = c(hpi, life_expectancy, life_satisfaction, footprint), decimals = 1 ) |&gt; tab_header( title = “2025 Happy Planet Index”, subtitle = “Top 15 countries and their sustainable wellbeing indicators” )\nplot2\n\n\nPlot 4\nregion_summary &lt;- data |&gt; group_by(region) |&gt; summarise( mean_hpi = mean(hpi), n_countries = n(), .groups = “drop” ) |&gt; arrange(desc(mean_hpi)) |&gt; mutate(region = factor(region, levels = region))\nplot4 &lt;- ggplot(region_summary, aes(x = region, y = mean_hpi)) + geom_col( fill = “mediumpurple1”, width = 0.7, position = position_dodge(width = 0.8) ) + geom_text( aes(label = sprintf(“%.1f”, mean_hpi)), vjust = -0.4, size = 4 ) + scale_x_discrete( labels = function(x) vapply( x, function(label) paste(strwrap(label, width = 16), collapse = “”), character(1) ) ) + scale_y_continuous( limits = c(0, 70), breaks = seq(0, 70, 10), expand = expansion(mult = c(0, 0)) ) + labs( title = “Latin America has the highest average HPI in 2025”, subtitle = “Each country receives equal weight in the regional average”, x = “Region”, y = “Mean HPI score (0–100)” ) + theme_minimal(base_size = 12) + theme( panel.grid.major.x = element_blank(), panel.grid.minor = element_blank(), plot.title = element_text(face = “bold”), axis.text.x = element_text(size = 10), plot.caption = element_text(hjust = 0) )\nplot4\n\n\nPrompt 7 — October 2, 2026, 2:51 a.m. — Chart 2\n\nDo I need the svglite package?\n\n\n\nPrompt 8 — October 2, 2026, 2:59 a.m. — Chart 2\n\nI want to make the chart look attractive, but I am not sure how. First, the text in the first row does not look good in the table, so I want to fix it. I also want the HPI numbers next to the bars so that the values are intuitive to read.\n\n\n\nPrompt 9 — October 2, 2026, 3:00 a.m. — Chart 2\n\nThat is too fancy.\n\n\n\nPrompt 10 — October 2, 2026, 3:03 a.m. — Chart 2\n\nThere are no numeric values displayed next to the bars."
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#integration-with-the-teams-variable-names",
+    "href": "assignments/Visualization/prompts.html#integration-with-the-teams-variable-names",
+    "title": "Assignment 4",
+    "section": "Integration with the team’s variable names",
+    "text": "Integration with the team’s variable names\n\nPrompt 11 — October 2, 2026, 3:33 p.m. — Chart 2 and shared data structure\n\nIf the data are set up as follows, how should I change the top15 code?\n\nhpi_continent &lt;- hpi_2025 %&gt;% group_by(Continent) %&gt;% summarise( population = sum(Population, na.rm = TRUE), mean_hpi = mean(HPI, na.rm = TRUE), .groups = “drop” ) %&gt;% mutate( continent_name = case_when( Continent == 1 ~ “Latin America”, Continent == 2 ~ “N America & Oceania”, Continent == 3 ~ “Western Europe”, Continent == 4 ~ “Middle East & N. Africa”, Continent == 5 ~ “Africa”, Continent == 6 ~ “South Asia”, Continent == 7 ~ “Eastern Europe & Central Asia”, Continent == 8 ~ “East Asia” ) ) %&gt;% arrange(desc(mean_hpi)) %&gt;% mutate( xmax = cumsum(population), xmin = lag(xmax, default = 0), xmid = (xmin + xmax) / 2, continent_name = factor( continent_name, levels = continent_name ) )\ntop15 &lt;- hpi_2025 |&gt; arrange(desc(hpi), country) |&gt; slice_head(n = 15) |&gt; mutate(rank = row_number()) |&gt; select(rank, country, hpi, life_expectancy, life_satisfaction, footprint)\n\n\nPrompt 12 — October 2, 2026, 3:46 p.m. — Chart 4\n\nPlease also correct the following code, so that I can match with my teammate.\n\nregion_summary &lt;- hpi_2025 |&gt; group_by(region) |&gt; summarise( mean_hpi = mean(hpi), n_countries = n(), .groups = “drop” ) |&gt; arrange(desc(mean_hpi)) |&gt; mutate( region = factor(region, levels = region) )\nplot4 &lt;- ggplot( region_summary, aes(x = region, y = mean_hpi) ) + geom_col( fill = “mediumpurple1”, width = 0.7, position = position_dodge(width = 0.8) ) + geom_text( aes(label = sprintf(“%.1f”, mean_hpi)), vjust = -0.4, size = 4 ) + scale_x_discrete( labels = function(x) vapply( x, function(label) paste(strwrap(label, width = 16), collapse = “”), character(1) ) ) + scale_y_continuous( limits = c(0, 70), breaks = seq(0, 70, 10), expand = expansion(mult = c(0, 0)) ) + labs( title = “Latin America has the highest average HPI in 2025”, subtitle = “Each country receives equal weight in the regional average”, x = “Region”, y = “Mean HPI score (0–100)” ) + theme_minimal(base_size = 12) + theme( panel.grid.major.x = element_blank(), panel.grid.minor = element_blank(), plot.title = element_text(face = “bold”), axis.text.x = element_text(size = 10), plot.caption = element_text(hjust = 0) )"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#color-choices-and-visual-interpretation",
+    "href": "assignments/Visualization/prompts.html#color-choices-and-visual-interpretation",
+    "title": "Assignment 4",
+    "section": "Color choices and visual interpretation",
+    "text": "Color choices and visual interpretation\n\nPrompt 13 — October 2, 2026, 3:58 p.m. — Chart 4\nAttachment: image(1).png.\n\nCould you make the colors in this image more attractive?\n\nThe assistant reported that the image could not be opened and suggested colors based on the chart code already in the conversation.\n\n\nPrompt 14 — October 2, 2026, 4:17 p.m. — Chart 4\n\nRather than that, I would prefer a color arrangement that helps with visual interpretation.\n\n\n\nPrompt 15 — October 2, 2026, 4:19 p.m. — Chart 4\n\nPlease write these colors using color names:\n\n“TRUE” = “#8064A2”, “FALSE” = “#D5CCE3”"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#final-revision",
+    "href": "assignments/Visualization/prompts.html#final-revision",
+    "title": "Assignment 4",
+    "section": "Final revision",
+    "text": "Final revision\n\nPrompt 16 = October 2, 2026, 4:22 p.m. - Chart 2\n\nI have to add a source caption for chart 2. Could you please assist me on this?\n\nplot2 &lt;- top15 |&gt; gt() |&gt; gt_plt_bar( column = hpi, color = “mediumpurple4”, scale_type = “number”, keep_column = FALSE) |&gt; cols_label( rank = “Rank”, country = “Country”, hpi = “HPI”, life_expectancy = “Life expectancy (years)”, life_satisfaction = “Life satisfaction (0–10)”, footprint = “Ecological footprint”) |&gt; fmt_number( columns = c(hpi, life_expectancy, life_satisfaction, footprint),decimals = 1) |&gt; tab_header( title = “2025 Happy Planet Index”, subtitle = “Top 15 countries and their sustainable wellbeing indicators”, caption = “Source: Happy Planet Index public dataset, 2006–2025.”)\nplot2\n\n\nPrompt 17 - October 2, 2026, 4:41 p.m.\n\n“The 2025 HPI data were used to compare HPI scores in terms of continent level.” grammar check"
+  },
+  {
+    "objectID": "assignments/Visualization/prompts.html#prompts-used-to-prepare-this-disclosure",
+    "href": "assignments/Visualization/prompts.html#prompts-used-to-prepare-this-disclosure",
+    "title": "Assignment 4",
+    "section": "Prompts used to prepare this disclosure",
+    "text": "Prompts used to prepare this disclosure\n\nPrompt 17 — October 2, 2026, 8:06 p.m.\n\nI need to submit the questions I asked you as an English prompt.md file. Could you make a .md file that you help me writing the code for the assignment?"
+  },
+  {
+    "objectID": "assignments/Visualization/assign01.html",
+    "href": "assignments/Visualization/assign01.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "1. Revisit Anscombe’s examples\n\ndata(anscombe)  # Load data\nView(anscombe) # View the data\nsummary(anscombe)\n\n       x1             x2             x3             x4           y1        \n Min.   : 4.0   Min.   : 4.0   Min.   : 4.0   Min.   : 8   Min.   : 4.260  \n 1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 8   1st Qu.: 6.315  \n Median : 9.0   Median : 9.0   Median : 9.0   Median : 8   Median : 7.580  \n Mean   : 9.0   Mean   : 9.0   Mean   : 9.0   Mean   : 9   Mean   : 7.501  \n 3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.: 8   3rd Qu.: 8.570  \n Max.   :14.0   Max.   :14.0   Max.   :14.0   Max.   :19   Max.   :10.840  \n       y2              y3              y4        \n Min.   :3.100   Min.   : 5.39   Min.   : 5.250  \n 1st Qu.:6.695   1st Qu.: 6.25   1st Qu.: 6.170  \n Median :8.140   Median : 7.11   Median : 7.040  \n Mean   :7.501   Mean   : 7.50   Mean   : 7.501  \n 3rd Qu.:8.950   3rd Qu.: 7.98   3rd Qu.: 8.190  \n Max.   :9.260   Max.   :12.74   Max.   :12.500  \n\n## Simple version\nplot(anscombe$x1,anscombe$y1)\n\n\n\n\n\n\n\nsummary(anscombe)\n\n       x1             x2             x3             x4           y1        \n Min.   : 4.0   Min.   : 4.0   Min.   : 4.0   Min.   : 8   Min.   : 4.260  \n 1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 8   1st Qu.: 6.315  \n Median : 9.0   Median : 9.0   Median : 9.0   Median : 8   Median : 7.580  \n Mean   : 9.0   Mean   : 9.0   Mean   : 9.0   Mean   : 9   Mean   : 7.501  \n 3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.: 8   3rd Qu.: 8.570  \n Max.   :14.0   Max.   :14.0   Max.   :14.0   Max.   :19   Max.   :10.840  \n       y2              y3              y4        \n Min.   :3.100   Min.   : 5.39   Min.   : 5.250  \n 1st Qu.:6.695   1st Qu.: 6.25   1st Qu.: 6.170  \n Median :8.140   Median : 7.11   Median : 7.040  \n Mean   :7.501   Mean   : 7.50   Mean   : 7.501  \n 3rd Qu.:8.950   3rd Qu.: 7.98   3rd Qu.: 8.190  \n Max.   :9.260   Max.   :12.74   Max.   :12.500  \n\n\n\nlm1 &lt;- lm(y1 ~ x1, data=anscombe)\nsummary(lm1)\n\n\nCall:\nlm(formula = y1 ~ x1, data = anscombe)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-1.92127 -0.45577 -0.04136  0.70941  1.83882 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)   \n(Intercept)   3.0001     1.1247   2.667  0.02573 * \nx1            0.5001     0.1179   4.241  0.00217 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.237 on 9 degrees of freedom\nMultiple R-squared:  0.6665,    Adjusted R-squared:  0.6295 \nF-statistic: 17.99 on 1 and 9 DF,  p-value: 0.00217\n\nlm2 &lt;- lm(y2 ~ x2, data=anscombe)\nsummary(lm2)\n\n\nCall:\nlm(formula = y2 ~ x2, data = anscombe)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-1.9009 -0.7609  0.1291  0.9491  1.2691 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)   \n(Intercept)    3.001      1.125   2.667  0.02576 * \nx2             0.500      0.118   4.239  0.00218 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.237 on 9 degrees of freedom\nMultiple R-squared:  0.6662,    Adjusted R-squared:  0.6292 \nF-statistic: 17.97 on 1 and 9 DF,  p-value: 0.002179\n\nlm3 &lt;- lm(y3 ~ x3, data=anscombe)\nsummary(lm3)\n\n\nCall:\nlm(formula = y3 ~ x3, data = anscombe)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-1.1586 -0.6146 -0.2303  0.1540  3.2411 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)   \n(Intercept)   3.0025     1.1245   2.670  0.02562 * \nx3            0.4997     0.1179   4.239  0.00218 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.236 on 9 degrees of freedom\nMultiple R-squared:  0.6663,    Adjusted R-squared:  0.6292 \nF-statistic: 17.97 on 1 and 9 DF,  p-value: 0.002176\n\nlm4 &lt;- lm(y4 ~ x4, data=anscombe)\nsummary(lm4)\n\n\nCall:\nlm(formula = y4 ~ x4, data = anscombe)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-1.751 -0.831  0.000  0.809  1.839 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)   \n(Intercept)   3.0017     1.1239   2.671  0.02559 * \nx4            0.4999     0.1178   4.243  0.00216 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.236 on 9 degrees of freedom\nMultiple R-squared:  0.6667,    Adjusted R-squared:  0.6297 \nF-statistic:    18 on 1 and 9 DF,  p-value: 0.002165\n\nplot(anscombe$x1,anscombe$y1)\nabline(coefficients(lm1))\n\n\n\n\n\n\n\nplot(anscombe$x2,anscombe$y2)\nabline(coefficients(lm2))\n\n\n\n\n\n\n\nplot(anscombe$x3,anscombe$y3)\nabline(coefficients(lm3))\n\n\n\n\n\n\n\nplot(anscombe$x4,anscombe$y4)\nabline(coefficients(lm4))\n\n\n\n\n\n\n\n## Fancy version (per help file)\n\nff &lt;- y ~ x\nmods &lt;- setNames(as.list(1:4), paste0(\"lm\", 1:4))\n\n# Plot using for loop\nfor(i in 1:4) {\n  ff[2:3] &lt;- lapply(paste0(c(\"y\",\"x\"), i), as.name)\n  ## or   ff[[2]] &lt;- as.name(paste0(\"y\", i))\n  ##      ff[[3]] &lt;- as.name(paste0(\"x\", i))\n  mods[[i]] &lt;- lmi &lt;- lm(ff, data = anscombe)\n  print(anova(lmi))\n}\n\nAnalysis of Variance Table\n\nResponse: y1\n          Df Sum Sq Mean Sq F value  Pr(&gt;F)   \nx1         1 27.510 27.5100   17.99 0.00217 **\nResiduals  9 13.763  1.5292                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y2\n          Df Sum Sq Mean Sq F value   Pr(&gt;F)   \nx2         1 27.500 27.5000  17.966 0.002179 **\nResiduals  9 13.776  1.5307                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y3\n          Df Sum Sq Mean Sq F value   Pr(&gt;F)   \nx3         1 27.470 27.4700  17.972 0.002176 **\nResiduals  9 13.756  1.5285                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y4\n          Df Sum Sq Mean Sq F value   Pr(&gt;F)   \nx4         1 27.490 27.4900  18.003 0.002165 **\nResiduals  9 13.742  1.5269                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nsapply(mods, coef)  # Note the use of this function\n\n                  lm1      lm2       lm3       lm4\n(Intercept) 3.0000909 3.000909 3.0024545 3.0017273\nx1          0.5000909 0.500000 0.4997273 0.4999091\n\nlapply(mods, function(fm) coef(summary(fm)))\n\n$lm1\n             Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.0000909  1.1247468 2.667348 0.025734051\nx1          0.5000909  0.1179055 4.241455 0.002169629\n\n$lm2\n            Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.000909  1.1253024 2.666758 0.025758941\nx2          0.500000  0.1179637 4.238590 0.002178816\n\n$lm3\n             Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.0024545  1.1244812 2.670080 0.025619109\nx3          0.4997273  0.1178777 4.239372 0.002176305\n\n$lm4\n             Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.0017273  1.1239211 2.670763 0.025590425\nx4          0.4999091  0.1178189 4.243028 0.002164602\n\n# Preparing for the plots\nop &lt;- par(mfrow = c(2, 2), mar = 0.1+c(4,4,1,1), oma =  c(0, 0, 2, 0))\n\n# Plot charts using for loop\nfor(i in 1:4) {\n  ff[2:3] &lt;- lapply(paste0(c(\"y\",\"x\"), i), as.name)\n  plot(ff, data = anscombe, col = \"red\", pch = 21, bg = \"orange\", cex = 1.2,\n       xlim = c(3, 19), ylim = c(3, 13))\n  abline(mods[[i]], col = \"blue\")\n}\nmtext(\"Anscombe's 4 Regression data sets\", outer = TRUE, cex = 1.5)\n\n\n\n\n\n\n\npar(op)\n\nThe four datasets produce almost identical summary statistics and regression results, but their scatterplots reveal different relationships. Plot 1 shows a relatively linear pattern, whereas Plot 2 demonstrates a nonlinear and curve relationship. Plot 3 contains an extreme outlier, and Plot 4 depends heavily on a single high-leverage observation. These differences illustrate the limitation of relying solely on numerical summaries and regression coefficients. Therefore, analysis should include graphical examination of the data before interpreting model results, as well as diagnostic checks such as residual plots and investigation of influential observations.\n\n\n2. Run Fall.R\n\nlibrary(gsubfn)\n\nLoading required package: proto\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.1     ✔ readr     2.2.0\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.3     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.2     \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n# Define elements in plant art\n# Each image corresponds to a different axiom, rules, angle and depth\n\n# Leaf of Fall\n\naxiom=\"X\"\nrules=list(\"X\"=\"F-[[X]+X]+F[+FX]-X\", \"F\"=\"FF\")\nangle=22.5\ndepth=6\n\n\nfor (i in 1:depth) axiom=gsubfn(\".\", rules, axiom)\n\nactions=str_extract_all(axiom, \"\\\\d*\\\\+|\\\\d*\\\\-|F|L|R|\\\\[|\\\\]|\\\\|\") %&gt;% unlist\n\nstatus=data.frame(x=numeric(0), y=numeric(0), alfa=numeric(0))\npoints=data.frame(x1 = 0, y1 = 0, x2 = NA, y2 = NA, alfa=90, depth=1)\n\nfor (action in actions)\n{\n  if (action==\"F\")\n  {\n    x=points[1, \"x1\"]+cos(points[1, \"alfa\"]*(pi/180))\n    y=points[1, \"y1\"]+sin(points[1, \"alfa\"]*(pi/180))\n    points[1,\"x2\"]=x\n    points[1,\"y2\"]=y\n    data.frame(x1 = x, y1 = y, x2 = NA, y2 = NA,\n               alfa=points[1, \"alfa\"],\n               depth=points[1,\"depth\"]) %&gt;% rbind(points)-&gt;points\n  }\n  if (action %in% c(\"+\", \"-\")){\n    alfa=points[1, \"alfa\"]\n    points[1, \"alfa\"]=eval(parse(text=paste0(\"alfa\",action, angle)))\n  }\n  if(action==\"[\"){\n    data.frame(x=points[1, \"x1\"], y=points[1, \"y1\"], alfa=points[1, \"alfa\"]) %&gt;%\n      rbind(status) -&gt; status\n    points[1, \"depth\"]=points[1, \"depth\"]+1\n  }\n\n  if(action==\"]\"){\n    depth=points[1, \"depth\"]\n    points[-1,]-&gt;points\n    data.frame(x1=status[1, \"x\"], y1=status[1, \"y\"], x2=NA, y2=NA,\n               alfa=status[1, \"alfa\"],\n               depth=depth-1) %&gt;%\n      rbind(points) -&gt; points\n    status[-1,]-&gt;status\n  }\n}\n\n\nggplot() +\n  geom_segment(aes(x = x1, y = y1, xend = x2, yend = y2),\n               lineend = \"round\",\n               color=\"mediumpurple2\", \n               data=na.omit(points)) +\n  coord_fixed(ratio = 1) +\n  theme_void() # No grid nor axes \n\n\n\n\n\n\n\n\n\n\n3. Write a critique on a chart in published work (book/article/news website)\n\n\n\nConcern About Immigration Differs Widely. Source: Statista Consumer Insights.\n\n\nThis chart communicates differences in concern about immigration across the selected countries. The countries are ordered by percentage, and the direct labels above the bars make comparisons easy without requiring the reader to estimate values from an axis. The limited use of color and the inclusion of country flags also help distinguish the main data from supporting information. However, the presentation of the rank information at the top is less effective. The circles appear to vary in size according to rank, even though rank is an ordinal measure rather than a continuous quantity. This may imply a stronger quantitative relationship between ranks than actually exists, and the smaller circles also force some rank values, such as 14, 18, and 15, to be placed outside the circles, reducing visual consistency. In addition, the percentage and rank represent different concepts: the percentage can be compared directly across countries, whereas the rank depends on how immigration compares with the other 17 issues within each country. Combining both measures with prominent visual encodings adds unnecessary complexity. A clearer design would retain the ordered bar chart for percentages but display rank as a simple text column or in a separate chart. Using full country names instead of abbreviations such as CL, TR, and DE could also make the chart easier to understand without relying on the flags.\n\nsource: https://www.statista.com/chart/33140/share-of-respondents-immigratione-on-of-biggest-issues/",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign04.html",
+    "href": "assignments/Visualization/assign04.html",
+    "title": "Assignment 4: 48-Hour Chart Hackathon",
+    "section": "",
+    "text": "library(readxl) \nlibrary(tidyverse) \nlibrary(patchwork) \nlibrary(dplyr) \nlibrary(ggplot2) \nlibrary(gt) \nlibrary(gtExtras) \n\nhpi &lt;- read_excel(\n  \"Happy-Planet-Index-2006-2025-public-data-set.xlsx\",\n  sheet = \"All Data\",\n  skip = 1\n)\n\nhpi_2025 &lt;- hpi %&gt;%\n  filter(Year == 2025)",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 4"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign04.html#setup",
+    "href": "assignments/Visualization/assign04.html#setup",
+    "title": "Assignment 4: 48-Hour Chart Hackathon",
+    "section": "",
+    "text": "library(readxl) \nlibrary(tidyverse) \nlibrary(patchwork) \nlibrary(dplyr) \nlibrary(ggplot2) \nlibrary(gt) \nlibrary(gtExtras) \n\nhpi &lt;- read_excel(\n  \"Happy-Planet-Index-2006-2025-public-data-set.xlsx\",\n  sheet = \"All Data\",\n  skip = 1\n)\n\nhpi_2025 &lt;- hpi %&gt;%\n  filter(Year == 2025)",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 4"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign04.html#chart-1-variable-width-column",
+    "href": "assignments/Visualization/assign04.html#chart-1-variable-width-column",
+    "title": "Assignment 4: 48-Hour Chart Hackathon",
+    "section": "Chart 1: Variable-Width Column",
+    "text": "Chart 1: Variable-Width Column\nThe 2025 HPI data were summarized by continent. The width of each column represents total population, while the height represents mean HPI across countries within each continent.\n\nhpi_continent &lt;- hpi_2025 %&gt;%\n  group_by(Continent) %&gt;%\n  summarise(\n    population = sum(Population, na.rm = TRUE),\n    mean_hpi = mean(HPI, na.rm = TRUE),\n    .groups = \"drop\"\n  ) %&gt;%\n  mutate(\n    continent_name = case_when(\n      Continent == 1 ~ \"Latin America\",\n      Continent == 2 ~ \"N America & Oceania\",\n      Continent == 3 ~ \"Western Europe\",\n      Continent == 4 ~ \"Middle East & N. Africa\",\n      Continent == 5 ~ \"Africa\",\n      Continent == 6 ~ \"South Asia\",\n      Continent == 7 ~ \"Eastern Europe & Central Asia\",\n      Continent == 8 ~ \"East Asia\"\n    )\n  ) %&gt;%\n  arrange(desc(mean_hpi)) %&gt;%\n  mutate(\n    xmax = cumsum(population),\n    xmin = lag(xmax, default = 0),\n    xmid = (xmin + xmax) / 2,\n    continent_name = factor(\n      continent_name,\n      levels = continent_name\n    )\n  )\n\n\nggplot(hpi_continent) +\n  geom_rect(\n    aes(\n      xmin = xmin,\n      xmax = xmax,\n      ymin = 0,\n      ymax = mean_hpi,\n      fill = continent_name\n    ),\n    color = \"white\",\n    linewidth = 0.4\n  ) +\n\n  geom_text(\n    aes(\n      x = xmid,\n      y = mean_hpi + 1.2,\n      label = sprintf(\"%.1f\", mean_hpi)\n    ),\n    size = 2.6\n  ) +\n\n  scale_fill_manual(\n    values = c(\n      \"#0072B2\",\n      \"#E69F00\",\n      \"#009E73\",\n      \"#CC79A7\",\n      \"#D55E00\",\n      \"#56B4E9\",\n      \"#F0E442\",\n      \"#999999\"\n    )\n  ) +\n\n  scale_x_continuous(\n    labels = scales::label_number(\n      scale = 1e-6,\n      suffix = \"B\",\n      accuracy = 0.1\n    ),\n    expand = c(0, 0)\n  ) +\n\n  scale_y_continuous(\n    limits = c(0, 64),\n    breaks = seq(0, 60, 10),\n    expand = c(0, 0)\n  ) +\n\n  labs(\n    title = \"Latin America Has the Highest Mean HPI in 2025\",\n    subtitle = \"Column width represents population; height represents mean HPI\",\n    x = \"Population (billions)\",\n    y = \"Mean HPI\",\n    fill = NULL,\n    caption = \"Source: Happy Planet Index\"\n  ) +\n\n  guides(\n    fill = guide_legend(\n      ncol = 1,\n      keywidth = grid::unit(0.38, \"cm\"), \n      keyheight = grid::unit(0.28, \"cm\") \n    )\n  ) +\n\n  theme_minimal() +\n\n  theme(\n    plot.title = element_text(\n      size = 13,\n      face = \"bold\",\n      hjust = 0,\n      margin = margin(b = 3)\n    ),\n\n    plot.subtitle = element_text(\n      size = 8,\n      margin = margin(b = 7)\n    ),\n\n    axis.title = element_text(size = 9.5),\n    axis.text = element_text(size = 8.5),\n\n    panel.grid.minor = element_blank(),\n    panel.grid.major.x = element_blank(),\n\n    legend.position = \"right\",\n    legend.justification = \"center\",\n    legend.text = element_text(size = 7.8),\n    legend.spacing.y = grid::unit(0.07, \"cm\"),\n    legend.margin = margin(l = 7),\n\n    plot.caption = element_text(\n      size = 7.5,\n      hjust = 1,\n      margin = margin(t = 4)\n    ),\n\n    plot.margin = margin(\n      t = 5,\n      r = 5,\n      b = 4,\n      l = 5\n    )\n  )",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 4"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign04.html#chart-2-table-with-embedded-charts",
+    "href": "assignments/Visualization/assign04.html#chart-2-table-with-embedded-charts",
+    "title": "Assignment 4: 48-Hour Chart Hackathon",
+    "section": "Chart 2: Table with embedded charts",
+    "text": "Chart 2: Table with embedded charts\nThe 2025 HPI data were used to identify top 15 countries based on the HPI scores. The chart represents HPI with life expectancy, life satisfaction, and ecological footprint scores.\n\ntop15 &lt;- hpi_2025 |&gt;\n  filter(!is.na(HPI)) |&gt;\n  arrange(desc(HPI), Country) |&gt;\n  slice_head(n = 15) |&gt;\n  mutate(rank = row_number()) |&gt;\n  select(rank, country = Country, hpi = HPI, life_expectancy = `Life Expectancy`, life_satisfaction = `Life Satisfaction`, footprint = `Ecological Footprint`) \n\nhpi_bar &lt;- function(values) { \n  vapply(values, function(value){ \n    sprintf(\n      paste0(\n        \n      ), \n      value, \"grey10\", value\n    )\n  }, character(1))\n} \n\n\nplot2 &lt;- top15 |&gt;\n  gt() |&gt;\n  gt_plt_bar(\n    column = hpi,\n    color = \"mediumpurple4\",\n    scale_type = \"number\",\n    accuracy = 0.1,\n    keep_column = FALSE\n  ) |&gt;\n  cols_label(\n    rank = \"Rank\",\n    country = \"Country\",\n    hpi = \"HPI\",\n    life_expectancy = \"Life expectancy (years)\",\n    life_satisfaction = \"Life satisfaction (0–10)\",\n    footprint = \"Ecological footprint (gha/person)\"\n  ) |&gt;\n  fmt_number(\n    columns = c(life_expectancy, life_satisfaction, footprint),\n    decimals = 1\n  ) |&gt;\n  tab_header(\n    title = \"Costa Rica leads 2025 Happy Planet Index\",\n    subtitle = \"Top 15 countries and their sustainable wellbeing indicators\"\n  ) |&gt;\n  tab_source_note(\n    source_note = \"Source: Happy Planet Index public dataset, 2006–2025. Data year: 2025.\"\n  )\n\nplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCosta Rica leads 2025 Happy Planet Index\n\n\nTop 15 countries and their sustainable wellbeing indicators\n\n\nRank\nCountry\nHPI\nLife expectancy (years)\nLife satisfaction (0–10)\nEcological footprint (gha/person)\n\n\n\n\n1\nCosta Rica\n\n    68.3\n\n81.2\n7.6\n2.6\n\n\n2\nGuatemala\n\n    60.7\n\n72.9\n6.7\n1.8\n\n\n3\nTajikistan\n\n    60.7\n\n72.1\n6.0\n1.0\n\n\n4\nSpain\n\n    60.6\n\n84.0\n6.6\n3.2\n\n\n5\nColombia\n\n    60.6\n\n78.1\n6.0\n1.9\n\n\n6\nSwitzerland\n\n    60.4\n\n84.2\n7.1\n3.9\n\n\n7\nEcuador\n\n    60.3\n\n77.8\n6.4\n2.3\n\n\n8\nNicaragua\n\n    59.6\n\n75.3\n6.2\n1.8\n\n\n9\nMexico\n\n    59.5\n\n75.4\n7.0\n2.7\n\n\n10\nBrazil\n\n    59.4\n\n76.2\n6.7\n2.4\n\n\n11\nPhilippines\n\n    59.3\n\n70.1\n6.4\n1.4\n\n\n12\nHonduras\n\n    58.9\n\n73.2\n6.3\n1.8\n\n\n13\nLaos\n\n    58.8\n\n69.5\n5.9\n0.9\n\n\n14\nEl Salvador\n\n    58.5\n\n72.5\n6.8\n2.2\n\n\n15\nAlbania\n\n    58.3\n\n80.0\n6.0\n2.4\n\n\n\nSource: Happy Planet Index public dataset, 2006–2025. Data year: 2025.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 4"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign04.html#chart-3-bar-chart",
+    "href": "assignments/Visualization/assign04.html#chart-3-bar-chart",
+    "title": "Assignment 4: 48-Hour Chart Hackathon",
+    "section": "Chart 3: Bar Chart",
+    "text": "Chart 3: Bar Chart\nThe 2025 HPI data were used to identify the 20 countries with the highest scores and the 20 countries with the lowest scores. Countries are sorted by HPI within each group.\n\nhpi_ranked &lt;- hpi_2025 %&gt;%\n  filter(!is.na(HPI))\n\ntop20 &lt;- hpi_ranked %&gt;%\n  slice_max(\n    order_by = HPI,\n    n = 20,\n    with_ties = FALSE\n  )\n\nbottom20 &lt;- hpi_ranked %&gt;%\n  slice_min(\n    order_by = HPI,\n    n = 20,\n    with_ties = FALSE\n  )\n\n\np_top &lt;- ggplot(\n  top20,\n  aes(\n    x = HPI,\n    y = forcats::fct_reorder(Country, HPI)\n  )\n) +\n  geom_col(\n    fill = \"#0072B2\",\n    width = 0.72\n  ) +\n  geom_text(\n    aes(\n      label = sprintf(\"%.1f\", HPI)\n    ),\n    hjust = -0.15,\n    size = 2.5\n  ) +\n  scale_x_continuous(\n    limits = c(0, 72),\n    breaks = seq(0, 70, 10),\n    expand = c(0, 0)\n  ) +\n  labs(\n    title = \"Top 20\",\n    x = \"Happy Planet Index\",\n    y = NULL\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(\n      size = 11,\n      face = \"bold\",\n      margin = margin(b = 5)\n    ),\n    axis.title.x = element_text(size = 9.5),\n    axis.text = element_text(size = 8),\n    panel.grid.minor = element_blank(),\n    panel.grid.major.y = element_blank()\n  )\n\np_bottom &lt;- ggplot(\n  bottom20,\n  aes(\n    x = HPI,\n    y = forcats::fct_reorder(Country, HPI)\n  )\n) +\n  geom_col(\n    fill = \"#D55E00\",\n    width = 0.72\n  ) +\n  geom_text(\n    aes(\n      label = sprintf(\"%.1f\", HPI)\n    ),\n    hjust = -0.15,\n    size = 2.5\n  ) +\n  scale_x_continuous(\n    limits = c(0, 72),\n    breaks = seq(0, 70, 10),\n    expand = c(0, 0)\n  ) +\n  labs(\n    title = \"Bottom 20\",\n    x = \"Happy Planet Index\",\n    y = NULL\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(\n      size = 11,\n      face = \"bold\",\n      margin = margin(b = 5)\n    ),\n    axis.title.x = element_text(size = 9.5),\n    axis.text = element_text(size = 8),\n    panel.grid.minor = element_blank(),\n    panel.grid.major.y = element_blank()\n  )\n\np_top + p_bottom +\n  plot_annotation(\n    title = \"A Clear HPI Gap Separates the Top and Bottom 20 Countries in 2025\",\n    subtitle = \"The lowest score in the Top 20 is 57.6, compared with 41.8 at the top of the Bottom 20\",\n    caption = \"Source: Happy Planet Index\",\n    theme = theme(\n      plot.title = element_text(\n        size = 14,\n        face = \"bold\",\n        margin = margin(b = 3)\n      ),\n      plot.subtitle = element_text(\n        size = 9,\n        margin = margin(b = 7)\n      ),\n      plot.caption = element_text(\n        size = 7.5,\n        hjust = 1,\n        margin = margin(t = 5)\n      )\n    )\n  )",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 4"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign04.html#chart-4-column-chart",
+    "href": "assignments/Visualization/assign04.html#chart-4-column-chart",
+    "title": "Assignment 4: 48-Hour Chart Hackathon",
+    "section": "Chart 4: Column chart",
+    "text": "Chart 4: Column chart\nThe 2025 HPI data were used to compare HPI scores across continent level. Latin America showed the highest scores of HPI in 2025 and Africa shows the lowest score. Countries with missing HPI scores are excluded.\n\nregion_summary &lt;- hpi_2025 |&gt;\n  filter(!is.na(HPI)) |&gt;\n  group_by(Continent) |&gt;\n  summarise(\n    mean_hpi = mean(HPI),\n    n_countries = n(),\n    .groups = \"drop\"\n  ) |&gt;\n  mutate(\n    region = case_when(\n      Continent == 1 ~ \"Latin America\",\n      Continent == 2 ~ \"N America & Oceania\",\n      Continent == 3 ~ \"Western Europe\",\n      Continent == 4 ~ \"Middle East & N. Africa\",\n      Continent == 5 ~ \"Africa\",\n      Continent == 6 ~ \"South Asia\",\n      Continent == 7 ~ \"Eastern Europe & Central Asia\",\n      Continent == 8 ~ \"East Asia\"\n    )\n  ) |&gt;\n  arrange(desc(mean_hpi)) |&gt;\n  mutate(\n    region = factor(region, levels = region)\n  )\n\n\nplot4 &lt;- ggplot(\n  region_summary,\n  aes(x = region, y = mean_hpi)\n) +\n  geom_col(\n  aes(fill = region == \"Latin America\"),\n  width = 0.7,\n  position = position_dodge(width = 0.8)\n) +\nscale_fill_manual(\n  values = c(\n    \"TRUE\" = \"mediumpurple3\",\n    \"FALSE\" = \"thistle1\"\n  ),\n  guide = \"none\"\n) +\n  geom_text(\n    aes(label = sprintf(\"%.1f\", mean_hpi)),\n    vjust = -0.4,\n    size = 4\n  ) +\n  scale_x_discrete(\n    labels = function(x) vapply(\n      x,\n      function(label) paste(strwrap(label, width = 16), collapse = \"\\n\"),\n      character(1)\n    )\n  ) +\n  scale_y_continuous(\n    limits = c(0, 100),\n    breaks = seq(0, 100, 10),\n    expand = expansion(mult = c(0, 0))\n  ) +\n  labs(\n    title = \"Latin America has the highest average HPI in 2025\",\n    subtitle = \"Each country receives equal weight in the regional average\",\n    x = \"Region\",\n    y = \"Mean HPI score\",\n    caption = paste(\n      \"Source: Happy Planet Index public dataset, 2006–2025.\"\n    )\n  ) +\n  theme_minimal(base_size = 10) +\n  theme(\n    panel.grid.major.x = element_blank(),\n    panel.grid.minor = element_blank(),\n    plot.title = element_text(face = \"bold\"),\n    axis.text.x = element_text(size = 7.5),\n    plot.caption = element_text(hjust = 0)\n  )\n\nplot4",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 4"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign04.html#supporting-documentation",
+    "href": "assignments/Visualization/assign04.html#supporting-documentation",
+    "title": "Assignment 4: 48-Hour Chart Hackathon",
+    "section": "Supporting Documentation",
+    "text": "Supporting Documentation\n\nREADME\nAI Prompts and Revisions\nSynergy Report\nSession Information",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 4"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign02.html",
+    "href": "assignments/Visualization/assign02.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "Data Setup\nI downloaded the Happy Planet Index dataset from the official website and selected 2025 because it is the most recent year available in the dataset.\n\nlibrary(readxl)\nlibrary(dplyr)\n\ndata &lt;- read_excel(\n  \"Happy-Planet-Index-2006-2025-public-data-set.xlsx\",\n  sheet = \"All Data\",\n  skip = 1\n)\n\ncontinent_names &lt;- c(\n  \"Latin America\",\n  \"North America & Oceania\",\n  \"Western Europe\",\n  \"Middle East & North Africa\",\n  \"Africa\",\n  \"South Asia\",\n  \"Eastern Europe & Central Asia\",\n  \"East Asia\"\n)\n\ndata_2025 &lt;- data %&gt;%\n  filter(Year == 2025) %&gt;%\n  mutate(\n    Continent = factor(\n      Continent,\n      levels = 1:8,\n      labels = continent_names\n    )\n  ) %&gt;%\n  arrange(HPI)\n\nx &lt;- data_2025$HPI\ny1 &lt;- data_2025$`Life Expectancy`\ny2 &lt;- data_2025$`Life Satisfaction`\n\nkorea &lt;- data_2025 %&gt;%\n  filter(Country == \"South Korea\")\n\n\n\nPoints and Lines\npar() controls graphical parameters such as margins, text orientation, and text size. plot.new() creates a new plotting frame, while plot.window() defines the coordinate system for the plot.\nlines() adds connected lines to an existing plot, and `points() adds individual observations.\naxis() controls the axes and tick marks, while box() controls the border around the plotting region.\ntext() places text at specified coordinates, mtext() adds text in the plot margins, and legend() identifies plotted symbols or groups.\n\nHPI and Life Expectancy\n\npar(las = 1, mar = c(4, 4, 2, 4), cex = 0.7)\n\nplot.new()\n\nplot.window(\n  range(x, na.rm = TRUE),\n  range(y1, na.rm = TRUE)\n)\n\nlines(x, y1)\n\npoints(\n  x, y1,\n  pch = 1,\n  cex = 1\n)\n\naxis(1, at = seq(30, 70, 5))\naxis(2, at = seq(50, 90, 10))\naxis(4, at = seq(50, 90, 10))\n\nbox(bty = \"u\")\n\npoints(\n  korea$HPI,\n  korea$`Life Expectancy`,\n  pch = 22,\n  bg = \"red\",\n  cex = 1.8,\n  lwd = 2\n)\n\ntext(\n  korea$HPI,\n  korea$`Life Expectancy`,\n  \"South Korea\",\n  pos = 3,\n  cex = 0.7\n)\n\nlegend(\n  \"bottomright\",\n  legend = c(\"Other Countries\", \"South Korea\"),\n  pch = c(1, 22),\n  pt.bg = c(NA, \"red\"),\n  bty = \"n\",\n  cex = 0.7\n)\n\nmtext(\n  \"Happy Planet Index\",\n  side = 1,\n  line = 2,\n  cex = 0.8\n)\n\nmtext(\n  \"Life Expectancy\",\n  side = 2,\n  line = 2,\n  las = 0,\n  cex = 0.8\n)\n\n\n\n\n\n\n\npar(\n  mar = c(5.1, 4.1, 4.1, 2.1),\n  las = 0,\n  cex = 1\n)\n\n\n\nHPI and Life Satisfaction\n\npar(las = 1, mar = c(4, 4, 2, 4), cex = 0.7)\n\nplot.new()\n\nplot.window(\n  range(x, na.rm = TRUE),\n  range(y2, na.rm = TRUE)\n)\n\nlines(x, y2)\n\npoints(\n  x, y2,\n  pch = 22,\n  col = \"mediumpurple4\",\n  bg = \"mediumpurple2\",\n  cex = 1\n)\n\naxis(1, at = seq(30, 70, 5))\naxis(2, at = seq(0, 10, 1))\naxis(4, at = seq(0, 10, 1))\n\nbox(bty = \"u\")\n\npoints(\n  korea$HPI,\n  korea$`Life Satisfaction`,\n  pch = 22,\n  col = \"black\",\n  bg = \"red\",\n  cex = 1.8,\n  lwd = 2\n)\n\ntext(\n  korea$HPI,\n  korea$`Life Satisfaction`,\n  \"South Korea\",\n  pos = 3,\n  cex = 0.7\n)\n\nlegend(\n  \"bottomright\",\n  legend = c(\"Other Countries\", \"South Korea\"),\n  pch = 22,\n  pt.bg = c(\"mediumpurple2\", \"red\"),\n  col = c(\"mediumpurple4\", \"black\"),\n  bty = \"n\",\n  cex = 0.7\n)\n\nmtext(\n  \"Happy Planet Index\",\n  side = 1,\n  line = 2,\n  cex = 0.8\n)\n\nmtext(\n  \"Life Satisfaction\",\n  side = 2,\n  line = 2,\n  las = 0,\n  cex = 0.8\n)\n\n\n\n\n\n\n\npar(\n  mar = c(5.1, 4.1, 4.1, 2.1),\n  las = 0,\n  cex = 1\n)\n\n\n\n\nHistogram\nhist() displays the distribution of a numeric variable by dividing observations into intervals.\n\nhist(\n  y1,\n  breaks = seq(50, 90, 5),\n  col = \"snow\",\n  freq = FALSE,\n  xlab = \"Life Expectancy\",\n  main = \"Distribution of Life Expectancy\"\n)\n\ndensity_x &lt;- seq(\n  min(y1, na.rm = TRUE),\n  max(y1, na.rm = TRUE),\n  length.out = 200\n)\n\nnormal_density &lt;- dnorm(\n  density_x,\n  mean = mean(y1, na.rm = TRUE),\n  sd = sd(y1, na.rm = TRUE)\n)\n\nlines(\n  density_x,\n  normal_density,\n  lwd = 2\n)\n\n\n\n\n\n\n\n\n\n\nBarplot\nbarplot() displays values for categorical groups using the height of bars.\n\ndata_bar &lt;- data_2025 %&gt;%\n  group_by(Continent) %&gt;%\n  summarise(\n    mean_life_expectancy = mean(`Life Expectancy`, na.rm = TRUE),\n    mean_life_satisfaction = mean(`Life Satisfaction`, na.rm = TRUE),\n    .groups = \"drop\"\n  )\n\n\nMean Life Expectancy\n\npar(mar = c(10, 4.1, 2, 1))\n\nbarplot(\n  data_bar$mean_life_expectancy,\n  names.arg = data_bar$Continent,\n  ylab = \"Mean Life Expectancy\",\n  main = \"Life Expectancy by Continent\",\n  col = \"mediumpurple4\",\n  las = 2,\n  cex.names = 0.7\n)\n\n\n\n\n\n\n\npar(mar = c(5.1, 4.1, 4.1, 2.1))\n\n\n\nMean Life Satisfaction\n\npar(mar = c(10, 4.1, 2, 1))\n\nbarplot(\n  data_bar$mean_life_satisfaction,\n  names.arg = data_bar$Continent,\n  ylab = \"Mean Life Satisfaction\",\n  main = \"Life Satisfaction by Continent\",\n  col = \"mediumpurple4\",\n  las = 2,\n  cex.names = 0.7\n)\n\n\n\n\n\n\n\npar(mar = c(5.1, 4.1, 4.1, 2.1))\n\n\n\n\nBoxplot\nboxplot() displays the distribution of a numeric variable across groups using the median, quartiles, and potential outliers.\n\npar(mar = c(10, 4.1, 2, 1))\n\nboxplot(\n  `Life Expectancy` ~ Continent,\n  data = data_2025,\n  boxwex = 0.50,\n  col = \"grey\",\n  xlab = \"\",\n  ylab = \"Life Expectancy\",\n  ylim = c(50, 90),\n  las = 2,\n  cex.axis = 0.7\n)\n\nmtext(\n  \"Continent\",\n  side = 1,\n  line = 8,\n  cex = 0.8\n)\n\n\n\n\n\n\n\npar(mar = c(5.1, 4.1, 4.1, 2.1))\n\n\npar(mar = c(10, 4.1, 2, 1))\n\nboxplot(\n  `Life Satisfaction` ~ Continent,\n  data = data_2025,\n  boxwex = 0.50,\n  col = \"grey\",\n  xlab = \"\",\n  ylab = \"Life Satisfaction\",\n  ylim = c(3, 8),\n  las = 2,\n  cex.axis = 0.7\n)\n\nmtext(\n  \"Continent\",\n  side = 1,\n  line = 8,\n  cex = 0.8\n)\n\n\n\n\n\n\n\npar(mar = c(5.1, 4.1, 4.1, 2.1))\n\n\n\nPerspective Plot\npersp() displays a three-dimensional surface defined by x, y, and z values. Here, the surface represents HPI values predicted from ecological footprint and life satisfaction using the 2025 data.\n\ndata_persp &lt;- data_2025 %&gt;%\n  filter(\n    !is.na(`Ecological Footprint`),\n    !is.na(`Life Satisfaction`),\n    !is.na(HPI)\n  ) %&gt;%\n  transmute(\n    footprint = `Ecological Footprint`,\n    satisfaction = `Life Satisfaction`,\n    hpi = HPI\n  )\n\nx_grid &lt;- seq(\n  min(data_persp$footprint),\n  max(data_persp$footprint),\n  length.out = 30\n)\n\ny_grid &lt;- seq(\n  min(data_persp$satisfaction),\n  max(data_persp$satisfaction),\n  length.out = 30\n)\n\nmodel &lt;- loess(\n  hpi ~ footprint + satisfaction,\n  data = data_persp\n)\n\nprediction_grid &lt;- expand.grid(\n  footprint = x_grid,\n  satisfaction = y_grid\n)\n\nz_grid &lt;- predict(\n  model,\n  newdata = prediction_grid\n)\n\nz_grid &lt;- matrix(\n  z_grid,\n  nrow = length(x_grid),\n  ncol = length(y_grid)\n)\n\npar(\n  mar = c(0, 0.5, 0, 0),\n  lwd = 0.5\n)\n\npersp(\n  x_grid,\n  y_grid,\n  z_grid,\n  theta = 30,\n  phi = 30,\n  expand = 0.5,\n  xlab = \"Ecological Footprint\",\n  ylab = \"Life Satisfaction\",\n  zlab = \"HPI\"\n)\n\n\n\n\n\n\n\npar(\n  mar = c(5.1, 4.1, 4.1, 2.1),\n  lwd = 1\n)\n\n\n\nPie Chart\npie() displays how categorical groups contribute to a whole as proportional slices.\n\ncontinent_count &lt;- table(data_2025$Continent)\n\npercent &lt;- round(\n  100 * continent_count / sum(continent_count),\n  1\n)\n\npie_labels &lt;- paste0(\n  names(continent_count),\n  \" (\",\n  percent,\n  \"%)\"\n)\n\npar(\n  mar = c(0, 2, 1, 2),\n  cex = 0.7\n)\n\npie(\n  continent_count,\n  labels = pie_labels,\n  col = hcl.colors(\n    length(continent_count),\n    palette = \"Purples\"\n  ),\n  main = \"Distribution of Countries by Continent\",\n  cex = 0.7\n)\n\n\n\n\n\n\n\npar(\n  mar = c(5.1, 4.1, 4.1, 2.1),\n  cex = 1\n)",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 2"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html",
+    "href": "assignments/Visualization/assign07.html",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "",
+    "text": "This project uses the Happy Planet Index 2026 dataset to explore the relationship between economic wealth, subjective wellbeing, ecological impact, and sustainable wellbeing across countries.\nRather than treating GDP alone as an indicator of national wellbeing, we use three complementary visualizations to examine how GDP per capita relates to the Happy Planet Index (HPI), life satisfaction, and ecological footprint.\nThe interactive application contains three visualizations:\n\nChart 9: Interactive Scatter Plot — GDP per capita and Happy Planet Index\nChart 18: Interactive Bubble Chart — GDP per capita, life satisfaction, and ecological footprint\nContour Plot — distribution and concentration of countries across GDP per capita and HPI\n\nAll visualizations use 2025 observations from the Happy Planet Index 2026 public dataset.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#project-overview",
+    "href": "assignments/Visualization/assign07.html#project-overview",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "",
+    "text": "This project uses the Happy Planet Index 2026 dataset to explore the relationship between economic wealth, subjective wellbeing, ecological impact, and sustainable wellbeing across countries.\nRather than treating GDP alone as an indicator of national wellbeing, we use three complementary visualizations to examine how GDP per capita relates to the Happy Planet Index (HPI), life satisfaction, and ecological footprint.\nThe interactive application contains three visualizations:\n\nChart 9: Interactive Scatter Plot — GDP per capita and Happy Planet Index\nChart 18: Interactive Bubble Chart — GDP per capita, life satisfaction, and ecological footprint\nContour Plot — distribution and concentration of countries across GDP per capita and HPI\n\nAll visualizations use 2025 observations from the Happy Planet Index 2026 public dataset.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#research-question",
+    "href": "assignments/Visualization/assign07.html#research-question",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Research Question",
+    "text": "Research Question\n\nHow does economic wealth relate to sustainable wellbeing across countries?\nThe three visualizations examine this broader question from different perspectives.\n\nDoes higher GDP per capita correspond to a higher Happy Planet Index?\nHow do life satisfaction and ecological footprint vary across levels of economic wealth?\nWhere are countries concentrated within the joint distribution of GDP and HPI?\n\nTogether, these charts provide a multidimensional view of sustainable wellbeing that cannot be captured by GDP alone.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#data",
+    "href": "assignments/Visualization/assign07.html#data",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Data",
+    "text": "Data\nData source: Happy Planet Index 2026 public dataset.\nThe analysis uses country-level observations for 2025.\nKey variables include:\n\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\nGDP per capita\nGDP per capita in PPP-adjusted constant 2021 international dollars\n\n\nHappy Planet Index\nMeasure of sustainable wellbeing\n\n\nLife satisfaction\nSelf-reported life satisfaction\n\n\nEcological footprint\nEnvironmental resource use\n\n\nContinent\nGeographic region of each country\n\n\n\nFor the 2025 observations, the GDP measure uses the dataset variable reporting 2024 GDP per capita for the 2025 HPI observations.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#interactive-shiny-application",
+    "href": "assignments/Visualization/assign07.html#interactive-shiny-application",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Interactive Shiny Application",
+    "text": "Interactive Shiny Application\nThe application below was developed in R Shiny and published through Posit Connect Cloud.\nThe controls allow users to interactively explore differences across countries and compare patterns across the three visualizations.\n\n Open Shiny App in a New Window",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#chart-9-gdp-and-happy-planet-index",
+    "href": "assignments/Visualization/assign07.html#chart-9-gdp-and-happy-planet-index",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Chart 9: GDP and Happy Planet Index",
+    "text": "Chart 9: GDP and Happy Planet Index\n\nHow Does GDP Relate to HPI?\nThe first visualization is an interactive scatter plot corresponding to Chart 9 in Abela’s Chart Chooser.\nA scatter plot is appropriate because both GDP per capita and HPI are numeric variables, and the primary purpose is to examine their relationship across countries.\n\nX-axis: GDP per capita\nY-axis: Happy Planet Index\nColor: Continent\nObservation: Country\n\nGDP per capita is displayed on a logarithmic scale to make countries across very different income levels easier to compare.\nInteractive features include:\n\nGDP per capita range filter\nContinent filter\nCountry-name labels\nOptional trend line\nHover information\nPlotly zoom and pan controls\n\nThe visualization allows users to investigate whether greater economic wealth is consistently associated with higher levels of sustainable wellbeing and whether patterns differ across geographic regions.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#chart-18-wealth-wellbeing-and-ecological-footprint",
+    "href": "assignments/Visualization/assign07.html#chart-18-wealth-wellbeing-and-ecological-footprint",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Chart 18: Wealth, Wellbeing, and Ecological Footprint",
+    "text": "Chart 18: Wealth, Wellbeing, and Ecological Footprint\nThe second visualization is an interactive bubble chart corresponding to Chart 18 in Abela’s Chart Chooser.\nA bubble chart is appropriate because the visualization examines the relationship among three quantitative variables simultaneously.\n\nX-axis: GDP per capita\nY-axis: Life satisfaction\nBubble size / color: Ecological footprint\n\nEach bubble represents a country.\nThis visualization extends the GDP comparison by showing that countries with similar levels of economic wealth or life satisfaction may differ substantially in their ecological footprint.\nInteractive controls allow users to modify bubble size, GDP scaling, labels, and hover information.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#additional-visualization-contour-plot",
+    "href": "assignments/Visualization/assign07.html#additional-visualization-contour-plot",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Additional Visualization: Contour Plot",
+    "text": "Additional Visualization: Contour Plot\nThe third visualization is a contour plot examining the joint distribution of GDP per capita and the Happy Planet Index.\nUnlike the individual-country emphasis of the scatter plot, the contour visualization emphasizes where countries are concentrated within the GDP–HPI distribution.\nThe contour lines identify areas with greater concentrations of observations, while optional country points and a trend line provide additional context.\nInteractive controls allow users to adjust:\n\nNumber of contour levels\nLogarithmic GDP scaling\nCountry points\nCountry labels\nTrend line\n\nThis visualization complements the scatter and bubble charts by emphasizing the overall distributional structure of the data rather than only individual observations.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#shared-reactivity",
+    "href": "assignments/Visualization/assign07.html#shared-reactivity",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Shared Reactivity",
+    "text": "Shared Reactivity\nTo support direct comparison across visualizations, the Scatter Plot and Bubble Chart share the same GDP range filter.\nA single reactive dataset is generated from the selected GDP range and is supplied to both charts.\nTherefore, when the GDP range changes, both visualizations update using the same subset of countries.\nThis shared reactive structure ensures that comparisons between the Scatter and Bubble charts remain consistent.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#supporting-documentation",
+    "href": "assignments/Visualization/assign07.html#supporting-documentation",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Supporting Documentation",
+    "text": "Supporting Documentation\n\nAI Prompts and Revisions\nSynergy Report\nPresentation Slides",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#team",
+    "href": "assignments/Visualization/assign07.html#team",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Team",
+    "text": "Team\n\nMinyeong Yoon\n\nProposed the overall project topic and visualization direction using the Happy Planet Index data.\nDeveloped the interactive Chart 18 Bubble Chart.\nDeveloped the additional Contour Plot.\nOrganized the overall Shiny application structure and integrated the three visualizations into a single application.\n\n\n\nInsang Lee\n\nDeveloped the interactive Chart 9 Scatter Plot examining GDP per capita and HPI.\nAdded continent filtering, country labels, hover information, and the optional trend line.\nHelped implement the shared GDP reactive filter used by the Scatter and Bubble charts.\nPrepared the presentation materials.\nCreated and organized the SYNERGY.md documentation.\n\nFor a detailed description of team contributions and integration, see the Synergy Report.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign07.html#source",
+    "href": "assignments/Visualization/assign07.html#source",
+    "title": "Assignment 7: Hackathon 2.0",
+    "section": "Source",
+    "text": "Source\nHappy Planet Index. Happy Planet Index 2026 Public Dataset.\nAll visualizations and interpretations presented on this page were created by the project team using R and R Shiny.",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 7"
+    ]
+  },
+  {
+    "objectID": "assignments/Visualization/assign03.html",
+    "href": "assignments/Visualization/assign03.html",
+    "title": "Assignment 3",
+    "section": "",
+    "text": "1. Murrell01 data bar plot explanation\n\n# Barplot\n\n# Set the plot margins in the order: bottom, left, top, and right.\npar(mar=c(2, 3.1, 2, 2.1)) \n\n# Create a bar chart using the VADeaths dataset.\n# gray() defines five different shades of gray.\n# names=rep(\"\", 4) suppresses the default x-axis labels.\n# midpts stores the horizontal center positions of the four bars.\nmidpts &lt;- barplot(VADeaths, col=gray(0.1 + seq(1, 9, 2)/11), names=rep(\"\", 4))\n\n# Add category labels below each bar.\n# sub() replaces the space in each category name with a line break.\n# at=midpts positions the labels at the center of each bar.\n# side=1 places labels below the plot.\n# line=0.5 controls the distance from the axis.\n# cex=0.5 reduces the text size.\nmtext(sub(\" \", \"\\n\", colnames(VADeaths)), at=midpts, side=1, line=0.5, cex=0.5)\n\n# Add numerical values inside each stacked bar segment.\n# rep(midpts, each=5) repeats the x-position for five segments.\n# cumsum() calculates the cumulative height of each segment.\n# Subtracting VADeaths/2 places each value at the segment's center.\n# Alternating white and black text improves readability.\n# cex=0.8 adjusts the text size.\ntext(rep(midpts, each=5), apply(VADeaths, 2, cumsum) - VADeaths/2, VADeaths, col=rep(c(\"white\", \"black\"), times=3:2), cex=0.8)\n\n\n\n\n\n\n\n# Restore the default plot margins for subsequent charts.\npar(mar=c(5.1, 4.1, 4.1, 2.1)) \n\n\n\n2.Anscombe’s Quartet\n\n## Anscombe (1973) Quartlet\n\ndata(anscombe)  # Load Anscombe's data\nView(anscombe) # View the data\nsummary(anscombe)\n\n       x1             x2             x3             x4           y1        \n Min.   : 4.0   Min.   : 4.0   Min.   : 4.0   Min.   : 8   Min.   : 4.260  \n 1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 8   1st Qu.: 6.315  \n Median : 9.0   Median : 9.0   Median : 9.0   Median : 8   Median : 7.580  \n Mean   : 9.0   Mean   : 9.0   Mean   : 9.0   Mean   : 9   Mean   : 7.501  \n 3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.: 8   3rd Qu.: 8.570  \n Max.   :14.0   Max.   :14.0   Max.   :14.0   Max.   :19   Max.   :10.840  \n       y2              y3              y4        \n Min.   :3.100   Min.   : 5.39   Min.   : 5.250  \n 1st Qu.:6.695   1st Qu.: 6.25   1st Qu.: 6.170  \n Median :8.140   Median : 7.11   Median : 7.040  \n Mean   :7.501   Mean   : 7.50   Mean   : 7.501  \n 3rd Qu.:8.950   3rd Qu.: 7.98   3rd Qu.: 8.190  \n Max.   :9.260   Max.   :12.74   Max.   :12.500  \n\n## Simple version\nsummary(anscombe)\n\n       x1             x2             x3             x4           y1        \n Min.   : 4.0   Min.   : 4.0   Min.   : 4.0   Min.   : 8   Min.   : 4.260  \n 1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 6.5   1st Qu.: 8   1st Qu.: 6.315  \n Median : 9.0   Median : 9.0   Median : 9.0   Median : 8   Median : 7.580  \n Mean   : 9.0   Mean   : 9.0   Mean   : 9.0   Mean   : 9   Mean   : 7.501  \n 3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.:11.5   3rd Qu.: 8   3rd Qu.: 8.570  \n Max.   :14.0   Max.   :14.0   Max.   :14.0   Max.   :19   Max.   :10.840  \n       y2              y3              y4        \n Min.   :3.100   Min.   : 5.39   Min.   : 5.250  \n 1st Qu.:6.695   1st Qu.: 6.25   1st Qu.: 6.170  \n Median :8.140   Median : 7.11   Median : 7.040  \n Mean   :7.501   Mean   : 7.50   Mean   : 7.501  \n 3rd Qu.:8.950   3rd Qu.: 7.98   3rd Qu.: 8.190  \n Max.   :9.260   Max.   :12.74   Max.   :12.500  \n\nlm1 &lt;- lm(y1 ~ x1, data=anscombe)\nsummary(lm1)\n\n\nCall:\nlm(formula = y1 ~ x1, data = anscombe)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-1.92127 -0.45577 -0.04136  0.70941  1.83882 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)   \n(Intercept)   3.0001     1.1247   2.667  0.02573 * \nx1            0.5001     0.1179   4.241  0.00217 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.237 on 9 degrees of freedom\nMultiple R-squared:  0.6665,    Adjusted R-squared:  0.6295 \nF-statistic: 17.99 on 1 and 9 DF,  p-value: 0.00217\n\nlm2 &lt;- lm(y2 ~ x2, data=anscombe)\nsummary(lm2)\n\n\nCall:\nlm(formula = y2 ~ x2, data = anscombe)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-1.9009 -0.7609  0.1291  0.9491  1.2691 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)   \n(Intercept)    3.001      1.125   2.667  0.02576 * \nx2             0.500      0.118   4.239  0.00218 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.237 on 9 degrees of freedom\nMultiple R-squared:  0.6662,    Adjusted R-squared:  0.6292 \nF-statistic: 17.97 on 1 and 9 DF,  p-value: 0.002179\n\nlm3 &lt;- lm(y3 ~ x3, data=anscombe)\nsummary(lm3)\n\n\nCall:\nlm(formula = y3 ~ x3, data = anscombe)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-1.1586 -0.6146 -0.2303  0.1540  3.2411 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)   \n(Intercept)   3.0025     1.1245   2.670  0.02562 * \nx3            0.4997     0.1179   4.239  0.00218 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.236 on 9 degrees of freedom\nMultiple R-squared:  0.6663,    Adjusted R-squared:  0.6292 \nF-statistic: 17.97 on 1 and 9 DF,  p-value: 0.002176\n\nlm4 &lt;- lm(y4 ~ x4, data=anscombe)\nsummary(lm4)\n\n\nCall:\nlm(formula = y4 ~ x4, data = anscombe)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-1.751 -0.831  0.000  0.809  1.839 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)   \n(Intercept)   3.0017     1.1239   2.671  0.02559 * \nx4            0.4999     0.1178   4.243  0.00216 **\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.236 on 9 degrees of freedom\nMultiple R-squared:  0.6667,    Adjusted R-squared:  0.6297 \nF-statistic:    18 on 1 and 9 DF,  p-value: 0.002165\n\nplot(anscombe$x1,anscombe$y1)\nabline(coefficients(lm1))\n\n\n\n\n\n\n\nplot(anscombe$x2,anscombe$y2)\nabline(coefficients(lm2))\n\n\n\n\n\n\n\nplot(anscombe$x3,anscombe$y3)\nabline(coefficients(lm3))\n\n\n\n\n\n\n\nplot(anscombe$x4,anscombe$y4)\nabline(coefficients(lm4))\n\n\n\n\n\n\n\nff &lt;- y ~ x\nmods &lt;- setNames(as.list(1:4), paste0(\"lm\", 1:4))\n\nfor(i in 1:4) {\n  ff[2:3] &lt;- lapply(paste0(c(\"y\",\"x\"), i), as.name)\n  mods[[i]] &lt;- lmi &lt;- lm(ff, data = anscombe)\n  print(anova(lmi))\n}\n\nAnalysis of Variance Table\n\nResponse: y1\n          Df Sum Sq Mean Sq F value  Pr(&gt;F)   \nx1         1 27.510 27.5100   17.99 0.00217 **\nResiduals  9 13.763  1.5292                   \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y2\n          Df Sum Sq Mean Sq F value   Pr(&gt;F)   \nx2         1 27.500 27.5000  17.966 0.002179 **\nResiduals  9 13.776  1.5307                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y3\n          Df Sum Sq Mean Sq F value   Pr(&gt;F)   \nx3         1 27.470 27.4700  17.972 0.002176 **\nResiduals  9 13.756  1.5285                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\nAnalysis of Variance Table\n\nResponse: y4\n          Df Sum Sq Mean Sq F value   Pr(&gt;F)   \nx4         1 27.490 27.4900  18.003 0.002165 **\nResiduals  9 13.742  1.5269                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nsapply(mods, coef)  # Note the use of this function\n\n                  lm1      lm2       lm3       lm4\n(Intercept) 3.0000909 3.000909 3.0024545 3.0017273\nx1          0.5000909 0.500000 0.4997273 0.4999091\n\nlapply(mods, function(fm) coef(summary(fm)))\n\n$lm1\n             Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.0000909  1.1247468 2.667348 0.025734051\nx1          0.5000909  0.1179055 4.241455 0.002169629\n\n$lm2\n            Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.000909  1.1253024 2.666758 0.025758941\nx2          0.500000  0.1179637 4.238590 0.002178816\n\n$lm3\n             Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.0024545  1.1244812 2.670080 0.025619109\nx3          0.4997273  0.1178777 4.239372 0.002176305\n\n$lm4\n             Estimate Std. Error  t value    Pr(&gt;|t|)\n(Intercept) 3.0017273  1.1239211 2.670763 0.025590425\nx4          0.4999091  0.1178189 4.243028 0.002164602\n\nop &lt;- par(mfrow = c(2, 2), mar = 0.1+c(4,4,1,1), oma =  c(0, 0, 2, 0))\n\nfor(i in 1:4) {\n  ff[2:3] &lt;- lapply(paste0(c(\"y\",\"x\"), i), as.name)\n  plot(ff, data = anscombe, col = \"red\", pch = 21, bg = \"orange\", cex = 1.2,\n       xlim = c(3, 19), ylim = c(3, 13))\n  abline(mods[[i]], col = \"blue\")\n}\nmtext(\"Anscombe's 4 Regression data sets\", outer = TRUE, cex = 1.5)\n\n\n\n\n\n\n\npar(op)\n\nmodels &lt;- list(lm1, lm2, lm3, lm4)\n\ncomparison &lt;- data.frame(\n  Dataset = c(\"I\", \"II\", \"III\", \"IV\"),\n  Intercept = sapply(models, function(m) coef(m)[1]),\n  Slope = sapply(models, function(m) coef(m)[2]),\n  R_squared = sapply(models, function(m) summary(m)$r.squared),\n  Residual_SE = sapply(models, function(m) sigma(m))\n)\n\ncomparison[-1] &lt;- round(comparison[-1], 4)\n\nprint(comparison, row.names = FALSE)\n\n Dataset Intercept  Slope R_squared Residual_SE\n       I    3.0001 0.5001    0.6665      1.2366\n      II    3.0009 0.5000    0.6662      1.2372\n     III    3.0025 0.4997    0.6663      1.2363\n      IV    3.0017 0.4999    0.6667      1.2357\n\n\nThe four regression models produced similar results. The intercepts were about 3, and the slopes were 0.50. In addition, the R-squared values were 0.67, and the residual standard errors were 1.24. Based on these statistical results, the four models appear to have similar linear relationships.\nHowever, the scatterplots reveal substantial differences in the distribution of observations. Graph 1 shows a relatively linear relationship, with observations scattered around the regression line. Graph 2 shows a clear nonlinear pattern, suggesting that a linear regression model may not adequately capture the relationship. Graph 3 contains an outlier that deviates significantly from the other observations and may influence the regression estimates. Finally, Graph 4 contains a high-leverage observation, while most observations share the same x-value.\nThese findings demonstrate that similar summary statistics and regression estimates do not necessarily indicate similar data structures. Although all four models have nearly identical coefficients, R-squared values, and residual standard errors, the visualizations reveal nonlinearity, an outlier, and an influential observation that cannot be identified from these statistics alone. Therefore, data visualization is essential for evaluating regression models and understanding the underlying patterns of the data.\n\n\n3. Finetune without leaving base R\n\npar(family = \"serif\") \nplot(anscombe$x1, anscombe$y1, pch = 8, col = \"mediumpurple3\", cex = 1) \nabline(lm1, col = \"red\", lty = 2, lwd = 2) \n\n\n\n\n\n\n\n\n\n\n4. ggplot2\n\nlibrary(ggplot2)\n\ndata(anscombe)\n\nggplot(anscombe, aes(x = x1, y = y1)) +\n\n  geom_point(\n    shape = 8,\n    color = \"mediumpurple3\",\n    size = 3\n  ) +\n    geom_smooth(\n    method = \"lm\",\n    formula = y ~ x,\n    se = FALSE,\n    color = \"red\",\n    linetype = 2,\n    linewidth = 1\n  ) +\n  labs(\n    x = \"anscombe$x1\",\n    y = \"anscombe$y1\"\n  ) +\n  theme_classic(base_family = \"serif\")\n\n\n\n\n\n\n\n\nI reproduced the scatterplot from Part 3 using ggplot2 while maintaining the same visual characteristics, including a serif font, purple plotting characters, and a red dashed regression line. In ggplot2, the base R plotting character (pch = 8) was replaced with shape = 8 in geom_point(). The regression line created by abline() was reproduced using geom_smooth(method = \"lm\"), with linetype = 2 specifying a dashed line. The serif font was applied using theme_classic(base_family = \"serif\"). Although ggplot2 provides scale_*() functions for controlling axis scales and aesthetic mappings, these functions were not necessary for the fixed colors and plotting characters used in this visualization. Some base R parameters do not have exact one-to-one equivalents. For example, cex and lwd correspond conceptually to size and linewidth, but their numerical scales differ between the two graphics systems.\n\n\n5. Duplicate the COVID deaths chart\n\nurl &lt;- paste0(\"https://raw.githubusercontent.com/owid/covid-19-data/\", \"master/public/data/owid-covid-data.csv\")\ndownload.file(url, \"owid-covid-data.csv\")\nowidall &lt;- read.csv(\"owid-covid-data.csv\")\nowidall &lt;- owidall[!grepl(\"^OWID\", owidall$iso_code), ]\nowideu &lt;- subset(owidall, continent == \"Europe\") \nowideu$date &lt;- as.Date(owideu$date)\n\nowideu &lt;- subset(owideu, !is.na(date) & !is.na(new_deaths) & new_deaths &gt;= 0)\n\n\npar(mar = c(8, 5, 2, 2), family = \"serif\", las = 1)\n\nplot(\n  owideu$date,\n  owideu$new_deaths,\n  type = \"p\",\n  pch = 16,\n  cex = 0.25,\n  col = \"deeppink\",\n  xlab = \"\",\n  ylab = \"COVID Deaths in Europe (Daily)\",\n  xaxt = \"n\",\n  ylim = c(0, max(owideu$new_deaths, na.rm = TRUE))\n)\n\ndate_ticks &lt;- seq(as.Date(\"2020-01-01\"), as.Date(\"2024-08-01\"), by = \"4 months\")\n\naxis(\n  1,\n  at = date_ticks,\n  labels = format(date_ticks, \"%Y-%m\"),\n  las = 2,\n  cex.axis = 0.65\n)\n\nmtext(\"Date\", side = 1, line = 6)\n\nbox()\n\nfind_peak &lt;- function(country, start, end) {\n  d &lt;- subset(owideu, location == country & date &gt;= as.Date(start) & date &lt;= as.Date(end))\n  if (nrow(d) == 0) {return(NULL)}\n  d[which.max(d$new_deaths), ]\n}\n\nlabel_points &lt;- list(\n  find_peak(\"Spain\", \"2020-03-01\", \"2020-05-31\"),\n  find_peak(\"Germany\", \"2020-10-01\", \"2021-04-30\"),\n  find_peak(\"Ukraine\", \"2021-08-01\", \"2022-03-31\"),\n  find_peak(\"Germany\", \"2022-10-01\", \"2023-12-31\"),\n  find_peak(\"Italy\", \"2024-01-01\", \"2024-08-19\")\n)\n\nlabel_points &lt;- Filter(Negate(is.null), label_points)\nif (length(label_points) &gt; 0) {\n  labels_df &lt;- do.call(rbind, label_points)\n  text(x = labels_df$date, y = labels_df$new_deaths, labels = labels_df$location, pos = 4, cex = 0.80, col = \"black\", offset = 0.3, xpd = TRUE)\n}",
+    "crumbs": [
+      "Class Assignments",
+      "EPPS6356",
+      "Assignment 3"
     ]
   }
 ]
