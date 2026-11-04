@@ -1,0 +1,130 @@
+---
+title: "Assignment 5"
+format: html
+editor: visual
+---
+
+## Code
+
+```{r}
+library(httr2) 
+library(tidyverse)
+
+api_key <- Sys.getenv("GOVINFO_API_KEY")
+
+body <- list(query = 'collection:(CHRG) AND "Committee on Foreign Relations"', pageSize = 100, offsetMark = "*", sorts = list(list(field = "publishdate", sortOrder = "DESC")))
+
+found <- request("https://api.govinfo.gov/search") |>
+req_url_query(api_key = Sys.getenv("GOVINFO_API_KEY")) |>
+req_body_json(body) |>
+req_perform() |>
+resp_body_json()
+```
+
+```{r}
+data_1to10 <- found$results[1:10]
+data_1to10[[1]]
+
+package_ids <- sapply(data_1to10, function(x) x$packageId)
+titles <- sapply(data_1to10, function(x) x$title)
+date <- sapply(data_1to10, function(x) x$dateIssued)
+
+data <- data.frame(package_id = package_ids, date = date, title = titles)
+data 
+```
+
+```{r}
+
+dir.create("govinfo_downloads", showWarnings = FALSE)
+
+for (i in 1:10) {
+
+  pdf_url <- data_1to10[[i]]$download$pdfLink
+  package_id <- data_1to10[[i]]$packageId
+
+  request(pdf_url) |>
+    req_url_query(api_key = api_key) |>
+    req_perform(path = paste0("govinfo_downloads/", package_id, ".pdf"))}
+
+data_1to10
+list.files("govinfo_downloads") 
+```
+
+```{r}
+download_log <- data.frame(
+  package_id = sapply(data_1to10, function(x) x$packageId),
+  date = sapply(data_1to10, function(x) x$dateIssued),
+  title = sapply(data_1to10, function(x) x$title),
+  file = paste0("govinfo_downloads/", sapply(data_1to10, function(x) x$packageId), ".pdf"))
+
+download_log
+
+write.csv(download_log, "govinfo_download_log.csv", row.names = FALSE)
+```
+
+```{r}
+manual <- read.csv("govinfo-search-results.csv")
+names(manual) 
+
+manual_10 <- manual |>
+  arrange(desc(publishdate)) |>
+  slice_head(n = 10)
+
+setdiff(package_ids, manual_10$packageId)
+setdiff(manual_10$packageId, package_ids) 
+```
+
+## Comparison
+
+Initially, the manual search and API search produced different results
+because the GovInfo website sorted results by relevance, while the API
+sorted them by publication date in descending order. After changing the
+manual search to "Newest First," both methods returned the same ten
+hearings.
+
+## Reports
+
+### 1. Usability of Downloaded Documents
+
+The GovInfo API provided access to congressional hearing documents and
+their associated metadata. I successfully retrieved the ten most recent
+Senate Foreign Relations Committee hearings and downloaded their PDF
+files.
+
+Although PDFs are useful for reading and preserving the original
+documents, they are less convenient for quantitative or text analysis.
+To convert these ten PDFs into a structured dataset, I had to extract
+relevant information, such as hearing titles and dates and organize it
+into a table. For text analysis, it was inconvenient to extract the text
+from each document, clean formatting inconsistencies, and combine the
+documents into a corpus.
+
+### 2. Difficulties and Improvements
+
+One difficulty was handling the nested JSON structure returned by the
+API. Some fields, such as governmentAuthor and download, contained
+multiple values, which caused errors when I attempted to convert the
+entire response into a data frame. I resolved this issue by extracting
+only the variables needed for the assignment.
+
+Another issue occurred when comparing the API results with the manually
+exported CSV file. Initially, the two methods returned different
+hearings because the GovInfo website sorted results by relevance, while
+the API sorted them by publication date in descending order. After
+changing the manual search to "Newest First," both methods returned the
+same ten hearings.
+
+The data collection process could be improved by using alternative
+formats, such as TXT/HTML or XML, rather than relying exclusively on
+PDFs. These formats may make text extraction and automated processing
+easier. In addition, the API provides metadata, including document
+titles, identifiers, dates, and download links, which can be organized
+into a dataset without opening each document.
+
+### 3. Advantages of Using an API
+
+Compared with the GovInfo search page, the API allows users to automate
+searches, specify sorting criteria, retrieve structured metadata, and
+download multiple documents programmatically. Compared with last week's
+web scraping, the API provides a more direct and standardized way to
+access data without relying on the structure of a website's HTML.
